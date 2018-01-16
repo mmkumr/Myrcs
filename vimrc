@@ -1,5 +1,28 @@
 set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
 filetype off                 " required
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 "plug installation manager.
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-vividchalk'
@@ -11,8 +34,8 @@ Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
 Plug 'https://github.com/Shougo/vimproc.vim.git'
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'https://github.com/chriskempson/tomorrow-theme.git'
 Plug 'mileszs/ack.vim'
+Plug 'https://github.com/sjl/badwolf.git'
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -40,7 +63,7 @@ set ignorecase
 set smartcase
 set visualbell
 "disabling annoying bell sound
-colorscheme Tomorrow-Night-Bright 
+colorscheme badwolf
 "ignore up down right left keys in insert mode.
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
@@ -58,7 +81,6 @@ map <C-h> <c-w>h
 map <C-j> <c-w>j
 map <C-k> <c-w>k
 map <C-l> <c-w>l
-imap jj <esc>
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
 "ctrlP plugin
@@ -70,13 +92,13 @@ hi Normal ctermbg=none
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
 "php autocomplete
-au FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 "diabling preview window of omnifunc
 set completeopt-=preview
 highlight Search cterm=underline
 "multiple cursors
-let g:multi_cursor_next_key='<C-l>'
-let g:multi_cursor_prev_key='<C-h>'
+let g:multi_cursor_next_key='<C-j>'
+let g:multi_cursor_prev_key='<C-k>'
 let g:multi_cursor_skip_key='<C-i>'
 let g:multi_cursor_quit_key='<Esc>'
 let &statusline = ' '
