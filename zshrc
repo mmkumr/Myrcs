@@ -95,5 +95,7 @@ fi
 # aliases
 alias tell='sdcv'
 alias irssi='sh ~/.irc.sh'
+alias blog-digitalOcean='ssh root@139.59.37.31'
+alias vim='sh ~/.swapescape.sh'
 #path varibles.
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
