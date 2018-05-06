@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set nowrap
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -9,6 +10,29 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+" Utility
+Plugin 'majutsushi/tagbar'
+Plugin 'wesQ3/vim-windowswap'
+Plugin 'godlygeek/tabular'
+Plugin 'jeetsukumaran/vim-buffergator'
+
+" Generic Programming Support
+Plugin 'Townk/vim-autoclose'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'janko-m/vim-test'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-syntastic/syntastic'
+" PHP Support
+Plugin 'phpvim/phpcd.vim'
+Plugin 'tobyS/pdv'
+"markdown
+Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+
+" Theme / Interface
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 filetype off                 " required
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -36,6 +60,7 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
+
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -61,7 +86,8 @@ set wildmode=longest:full,full
 set copyindent
 set ignorecase
 set smartcase
-set visualbell
+set novisualbell
+set cursorline
 "disabling annoying bell sound
 colorscheme badwolf
 "ignore up down right left keys in insert mode.
@@ -78,11 +104,11 @@ nnoremap j gj
 nnoremap k gk
 "maping switching windows
 map <C-h> <c-w>h
-map <C-j> <c-w>j
-map <C-k> <c-w>k
-map <C-l> <c-w>l
+map <C-j> <c-w>j map <C-k> <c-w>k map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
+"tagbar
+map <C-m> :TagbarToggle<CR>
 "ctrlP plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP ../'
@@ -102,3 +128,23 @@ let g:multi_cursor_prev_key='<C-k>'
 let g:multi_cursor_skip_key='<C-i>'
 let g:multi_cursor_quit_key='<Esc>'
 let &statusline = ' '
+" Vim-Airline Configuration
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='hybridline'
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
+
+" Syntastic Configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+
+" Markdown Syntax Support
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
