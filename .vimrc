@@ -104,7 +104,9 @@ nnoremap j gj
 nnoremap k gk
 "maping switching windows
 map <C-h> <c-w>h
-map <C-j> <c-w>j map <C-k> <c-w>k map <C-l> <c-w>l
+map <C-j> <c-w>j 
+map <C-k> <c-w>k 
+map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
 "tagbar
@@ -142,7 +144,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-
+let g:syntastic_ignore_files = ['.zsh_history']
 " Markdown Syntax Support
 augroup markdown
     au!

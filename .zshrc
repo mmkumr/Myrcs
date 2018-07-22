@@ -93,9 +93,14 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # aliases
-alias tell='sdcv'
-alias irssi='sh ~/.irc.sh'
+alias define='sdcv'
 alias blog-digitalOcean='ssh root@139.59.37.31'
-alias vim='sh ~/.swapescape.sh'
+alias irssi='sh ~/.irc.sh'
+alias yourtube-dl-resume='sh ~/.apps/yvr.sh'
+alias reboot="sudo /sbin/shutdown -r now"
+alias shutdown="sudo /sbin/shutdown -h now"
+alias wifi="nmtui"
 #path varibles.
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
