@@ -9,7 +9,6 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 " Utility
 Plugin 'majutsushi/tagbar'
 Plugin 'wesQ3/vim-windowswap'
@@ -60,7 +59,9 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
-
+Plug 'valloric/YouCompleteMe', { 'do':
+                     $HOME.'/.pyenv/shims/python3 ./install.py --js-completer'
+                     }
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
