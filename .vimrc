@@ -21,6 +21,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'janko-m/vim-test'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'valloric/YouCompleteMe'
 " PHP Support
 Plugin 'phpvim/phpcd.vim'
 Plugin 'tobyS/pdv'
@@ -59,9 +60,6 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
-Plug 'valloric/YouCompleteMe', { 'do':
-                     $HOME.'/.pyenv/shims/python3 ./install.py --js-completer'
-                     }
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
