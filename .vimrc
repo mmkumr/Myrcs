@@ -135,7 +135,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='hybridline'
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
-
+let g:airline#extensions#tabline#enabled = 1
 " Syntastic Configuration
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -149,3 +149,5 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
