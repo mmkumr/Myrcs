@@ -65,7 +65,7 @@ syntax enable             " Turn on syntax highlighting
 "nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "For toogle nerdtree with ctrl + n
-map <C-n> :NERDTreeToggle<CR>
+map N :NERDTreeToggle<CR>
 "End nerdtree
 "php indentation
 let g:PHP_default_indenting = 1
@@ -109,7 +109,7 @@ map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
 "tagbar
-map <C-m> :TagbarToggle<CR>
+"map <C-m> :TagbarToggle<CR>
 "ctrlP plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP ../'
