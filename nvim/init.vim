@@ -21,7 +21,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'janko-m/vim-test'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'valloric/YouCompleteMe'
 " PHP Support
 Plugin 'phpvim/phpcd.vim'
 Plugin 'tobyS/pdv'
@@ -60,6 +59,14 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'joshdick/onedark.vim'
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -159,3 +166,5 @@ if has('clipboard')
         set clipboard=unnamed
     endif
 endif
+"for deocomplete
+let g:deoplete#enable_at_startup = 1

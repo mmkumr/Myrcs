@@ -100,7 +100,10 @@ alias yourtube-dl-resume='sh ~/.apps/yvr.sh'
 alias reboot="sudo /sbin/shutdown -r now"
 alias shutdown="sudo /sbin/shutdown -h now"
 alias wifi="nmtui"
+alias vim="nvim"
+#alias xilinx="sudo sh /opt/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 #path varibles.
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-
+export PATH="/usr/sbin:$PATH"
+PATH=/usr/sbin:/home/mmkumr/.rbenv/bin:/home/mmkumr/.config/composer/vendor/bin:/home/mmkumr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/sbin:/home/mmkumr/Software/scilab-6.0.1/bin
