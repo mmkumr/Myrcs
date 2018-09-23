@@ -237,4 +237,7 @@ exec_always xset s off -dpms
 exec nautilus
 #Enabling touchpad gestures
 exec_always touchpad-indicator
+#Enabling netspeed applet
 exec indicator-netspeed-unity
+#For Pushing all rc update files to GitHub
+exec gnome-terminal -e "sh .commit.sh"
