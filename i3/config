@@ -240,4 +240,4 @@ exec_always touchpad-indicator
 #Enabling netspeed applet
 exec indicator-netspeed-unity
 #For Pushing all rc update files to GitHub
-exec gnome-terminal -e "sh .commit.sh"
+exec gnome-terminal -e "sh .commitrc.sh"
