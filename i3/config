@@ -241,3 +241,4 @@ exec_always touchpad-indicator
 exec indicator-netspeed-unity
 #For Pushing all rc update files to GitHub
 exec gnome-terminal -e "sh .commitrc.sh"
+exec wicd-gtk
