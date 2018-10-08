@@ -98,7 +98,6 @@ alias blog-digitalOcean='ssh root@139.59.37.31'
 alias irssi='sh ~/.irc.sh'
 alias yourtube-dl-resume='sh ~/.apps/yvr.sh'
 alias reboot="sudo /sbin/shutdown -r now"
-alias shutdown="sudo /sbin/shutdown -h now"
 alias wifi="nmtui"
 alias vim="nvim"
 #alias xilinx="sudo sh /opt/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
