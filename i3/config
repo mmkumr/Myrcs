@@ -242,4 +242,5 @@ exec_always touchpad-indicator
 exec indicator-netspeed-unity
 #For Pushing all rc update files to GitHub
 exec gnome-terminal -e "sh .commitrc.sh"
-
+#restarting network manager
+bindsym $mod+n exec sudo service network-manager restart
