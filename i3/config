@@ -238,10 +238,9 @@ exec_always xset s off -dpms
 exec nautilus
 #Enabling touchpad gestures
 exec_always touchpad-indicator
-#Enabling netspeed applet
-exec indicator-netspeed-unity
 #For Pushing all rc update files to GitHub
 exec gnome-terminal -e "sh .commitrc.sh"
 #restarting network manager
 bindsym $mod+n exec sudo service network-manager restart
+#irssi notifier 
 exec sh /home/mmkumr/bin/irssi-notifier.sh
