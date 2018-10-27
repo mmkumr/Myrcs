@@ -14,7 +14,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'godlygeek/tabular'
 Plugin 'jeetsukumaran/vim-buffergator'
-
+" Track the engine.
+Plugin 'https://github.com/SirVer/ultisnips.git'
 " Generic Programming Support
 Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
@@ -168,3 +169,10 @@ if has('clipboard')
 endif
 "for deocomplete
 let g:deoplete#enable_at_startup = 1
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsJumpForwardTrigger="<C-n>"
+let g:UltiSnipsJumpBackwardTrigger="<C-p>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

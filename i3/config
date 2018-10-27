@@ -215,8 +215,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 # Print screen control
-bindsym --release Shift+Print exec import "$(date).png"
-bindsym --release Print gnome-screenshot
+bindsym --release Shift+Print exec gnome-screenshot -a -i
+bindsym --release Print exec gnome-screenshot
 # For starting redshift on startup
 exec_always --no-startup-id redshift -l 19.31151:84.7929
 # For setting the wallpaper
@@ -242,5 +242,3 @@ exec_always touchpad-indicator
 exec gnome-terminal -e "sh .commitrc.sh"
 #restarting network manager
 bindsym $mod+n exec sudo service network-manager restart
-#irssi notifier 
-exec sh /home/mmkumr/bin/irssi-notifier.sh
