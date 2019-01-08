@@ -98,6 +98,7 @@ alias irssi='sh ~/.irc.sh'
 alias reboot="sudo /sbin/shutdown -r now"
 alias wifi="nmtui"
 alias vim="nvim"
+alias gsocdir="cd /media/mmkumr/MyWorkspace/GSOC/"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
