@@ -87,6 +87,7 @@ set ignorecase
 set smartcase
 set novisualbell
 set cursorline
+set wrap "wrapping the lines vetically
 "disabling annoying bell sound
 colorscheme badwolf
 "ignore up down right left keys in insert mode.

@@ -93,9 +93,9 @@ set wildmode=longest:full,full
 set copyindent
 set ignorecase
 set smartcase
-set novisualbell
+set novisualbell "disabling annoying bell sound
 set cursorline
-"disabling annoying bell sound
+set wrap "wrapping the lines vetically
 colorscheme badwolf
 "ignore up down right left keys in insert mode.
 inoremap <Up> <NOP>
