@@ -97,8 +97,8 @@ set $workspace2 "2 Firefox"
 set $workspace3 "3 Files"
 set $workspace4 "4 PDF"
 set $workspace5 "5 VLC Media Player"
-set $workspace6 "6 Octave"
-set $workspace7 "7 Xilinx"
+set $workspace6 "6 Franz"
+set $workspace7 "7 Octave"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -131,8 +131,8 @@ assign [class = "Spacefm"] $workspace3
 assign [class = "Nautilus"] $workspace3
 assign [class = "Evince"] $workspace4
 assign [class = "vlc"] $workspace5
-assign [class = "octave-gui"] $workspace6
-assign [class = "_pn"] $workspace7
+assign [class = "Franz"] $workspace6
+assign [class = "octave-gui"] $workspace7
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -214,9 +214,14 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
 # Print screen control
 bindsym --release Shift+Print exec gnome-screenshot -a -i
 bindsym --release Print exec gnome-screenshot
+
+#restarting network manager
+bindsym $mod+n exec sudo service network-manager restart
+
 # For starting redshift on startup
 exec_always --no-startup-id redshift -l 19.31151:84.7929
 # For setting the wallpaper
@@ -226,9 +231,8 @@ exec i3-sensible-terminal
 # For starting firefox on startup
 exec firefox
 #rofi config
-bindsym $mod+d exec rofi -show run -lines 5 #-eh 2 -width 100 -padding 400 -opacity “85” -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 14"
-# For starting terminal on startup
-# For starting firefox on startup
+bindsym $mod+d exec rofi -show run -lines 5 
+# For starting comption on startup
 exec --no-startup-id compton -f
 #Exchanging capslock with escape key
 exec_always sh .swapescape.sh
@@ -240,5 +244,5 @@ exec nautilus
 exec_always touchpad-indicator
 #For Pushing all rc update files to GitHub
 exec gnome-terminal -e "sh .commitrc.sh"
-#restarting network manager
-bindsym $mod+n exec sudo service network-manager restart
+#For opening franz on startup.
+exec franz 
