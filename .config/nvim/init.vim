@@ -60,6 +60,7 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
+Plug 'dyng/ctrlsf.vim'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -116,6 +117,8 @@ map <C-k> <c-w>k
 map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
+"Mapping for clearing highlighted search word
+map <esc> :noh<cr>
 "tagbar
 "map <C-m> :TagbarToggle<CR>
 "ctrlP plugin
