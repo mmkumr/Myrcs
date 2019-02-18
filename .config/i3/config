@@ -235,7 +235,7 @@ bindsym $mod+d exec rofi -show run -lines 5
 # For starting comption on startup
 exec --no-startup-id compton -f
 #Exchanging capslock with escape key
-exec_always sh .swapescape.sh
+exec_always sh ~/.apps/swapescape.sh
 #For disabling screen timeout.
 exec_always xset s off -dpms 
 #Starting file manager
@@ -243,6 +243,6 @@ exec nautilus
 #Enabling touchpad gestures
 exec_always touchpad-indicator
 #For Pushing all rc update files to GitHub
-exec gnome-terminal -e "sh .commitrc.sh"
+exec gnome-terminal -e "sh ~/.apps/commitrc.sh"
 #For opening franz on startup.
 exec franz 
