@@ -127,8 +127,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Determine class with the help of xprop
 assign [class = "Gnome-terminal"] $workspace1 
 assign [class = "Firefox"] $workspace2
-assign [class = "Spacefm"] $workspace3
-assign [class = "Nautilus"] $workspace3
+assign [class = "konsole"] $workspace3
 assign [class = "Evince"] $workspace4
 assign [class = "vlc"] $workspace5
 assign [class = "Franz"] $workspace6
@@ -166,7 +165,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -238,11 +236,8 @@ exec --no-startup-id compton -f
 exec_always sh ~/.apps/swapescape.sh
 #For disabling screen timeout.
 exec_always xset s off -dpms 
-#Starting file manager
-exec nautilus
 #Enabling touchpad gestures
 exec_always touchpad-indicator
 #For Pushing all rc update files to GitHub
-exec gnome-terminal -e "sh ~/.apps/commitrc.sh"
-#For opening franz on startup.
-exec franz 
+exec gnome-terminal -e "/home/mmkumr/.apps/commitrc.sh"
+exec konsole -e ranger

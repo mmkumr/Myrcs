@@ -102,4 +102,3 @@ alias gsocdir="cd /media/mmkumr/MyWorkspace/GSOC/"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
-export PATH="/usr/bin/scilab/bin/:$PATH"
