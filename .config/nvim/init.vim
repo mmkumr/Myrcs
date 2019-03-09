@@ -110,6 +110,8 @@ noremap <Right> <NOP>
 noremap <Left> <NOP>
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 "maping switching windows
 map <C-h> <c-w>h
 map <C-j> <c-w>j 
