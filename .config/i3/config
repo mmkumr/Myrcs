@@ -223,8 +223,6 @@ bindsym $mod+n exec sudo service network-manager restart
 
 # For starting redshift on startup
 exec_always --no-startup-id redshift -l 19.31151:84.7929
-# For setting the wallpaper
-exec_always feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png 
 # For starting terminal on startup
 exec i3-sensible-terminal
 # For starting firefox on startup
