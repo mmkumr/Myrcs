@@ -232,11 +232,11 @@ bindsym $mod+d exec rofi -show run -lines 5
 # For starting comption on startup
 exec --no-startup-id compton -f
 #Exchanging capslock with escape key
-exec_always sh ~/.apps/swapescape.sh
+exec_always sh ~/.swapescape.sh 
 #For disabling screen timeout.
 exec_always xset s off -dpms 
 #Enabling touchpad gestures
 exec_always touchpad-indicator
 #For Pushing all rc update files to GitHub
-exec gnome-terminal -e "/home/mmkumr/.apps/commitrc.sh"
+exec gnome-terminal -e "sh /home/mmkumr/.commitrc.sh"
 exec konsole -e ranger
