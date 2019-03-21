@@ -1,0 +1,18 @@
+open_with 
+d
+open_with evince
+
+open_with _evince
+open_with Evince
+w
+mark
+unmark 
+Help
+help
+delete 
+search /m
+search .vi
+search .vim
+unmark
+delete
+find m
