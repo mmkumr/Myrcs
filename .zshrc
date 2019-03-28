@@ -98,8 +98,8 @@ alias irssi='sh ~/.irc.sh'
 alias reboot="sudo /sbin/shutdown -r now"
 alias wifi="nmtui"
 alias vim="nvim"
-alias gsocdir="cd /media/mmkumr/MyWorkspace/GSOC/"
-alias gitdir="cd /media/mmkumr/MyWorkspace/Code/GitHub/"
+gsocdir="/media/mmkumr/MyWorkspace/GSOC/"
+gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
 alias deadline="vim /media/mmkumr/MyWorkspace/GSOC/deadline.txt"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
