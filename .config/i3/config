@@ -239,11 +239,3 @@ exec_always touchpad-indicator
 exec gnome-terminal -e "sh /home/mmkumr/.commitrc.sh"
 exec konsole -e ranger
 exec gitter
-exec --no-startup-id dbus-send \
-    --session \
-    --print-reply=literal \
-    --dest=org.gnome.SessionManager \
-    "/org/gnome/SessionManager" \
-    org.gnome.SessionManager.RegisterClient \
-    "string:i3" \
-    "string:$DESKTOP_AUTOSTART_ID"
