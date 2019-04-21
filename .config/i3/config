@@ -238,11 +238,10 @@ exec konsole -e ranger
 #For starting gitter on startup
 exec gitter
 #Exchanging capslock with escape key
-exec gnome-terminal -e sh ~/.swapescape.sh
+exec gnome-terminal -e ./.swapescape.sh
 #GNOME Settings Daemon
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #polkit-gnome. Starts authentication-agent needed to get sudo password check available for GUIs needing it.
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #GNOME Flashback. GNOME Flashback integrates more features from GNOME such as full functionality forgnome-control-center:
 exec --no-startup-id gnome-flashback
-
