@@ -9,6 +9,7 @@
            order += "load"
            order += "battery 0"
            order += "tztime local"
+           order += "connection"
 
            wireless wlp2s0 {
                    format_up = "W: (%quality at %essid, %bitrate)"
