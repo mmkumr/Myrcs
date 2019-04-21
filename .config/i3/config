@@ -238,7 +238,7 @@ exec konsole -e ranger
 #For starting gitter on startup
 exec gitter
 #Exchanging capslock with escape key
-exec gnome-terminal -e ./.swapescape.sh
+exec ./.swapescape.sh
 #GNOME Settings Daemon
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #polkit-gnome. Starts authentication-agent needed to get sudo password check available for GUIs needing it.
