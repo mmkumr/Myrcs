@@ -246,6 +246,4 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #GNOME Flashback. GNOME Flashback integrates more features from GNOME such as full functionality forgnome-control-center:
 exec --no-startup-id gnome-flashback
 #Exchanging capslock with escape key
-exec_always sh ~/.swapescape.sh
-# Starting network manager applet on startup.
-exec --no-startup-id nm-applet
+exec sh ~/.swapescape.sh
