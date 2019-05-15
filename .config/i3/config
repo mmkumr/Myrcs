@@ -138,7 +138,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You have pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 # Shutdown shortcut
-bindsym $mod+q exec "i3-nagbar -t warning -m 'You have pressed the poweroff shortcut. Do you really want to turn off your computer?' -b 'Yes, shutdown' 'sudo shutdown now' -b 'Yes, reboot' 'sudo reboot'"
+bindsym $mod+q exec "i3-nagbar -t warning -m 'You have pressed the poweroff shortcut. Do you really want to turn off your computer?' -b 'Yes, shutdown' 'shutdown now' -b 'Yes, reboot' 'reboot'"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
