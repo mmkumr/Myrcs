@@ -162,8 +162,6 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
-nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
-nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "For coping selected text in vim visual mode to global clipboard
 if has('clipboard')
     if has('unnamedplus')  " When possible use + register for copy-paste
@@ -181,3 +179,6 @@ let g:UltiSnipsJumpBackwardTrigger="<C-p>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Update binds when sxhkdrc is updated.
+autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

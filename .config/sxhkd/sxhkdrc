@@ -1,0 +1,94 @@
+# Basic binds
+super + Return
+	$TERMINAL
+super + d
+	dmenu_run
+super + n
+    $TERMINAL -e $FILE
+super + e
+	$TERMINAL -e neomutt
+super + m
+	$TERMINAL -e sudo simple-mtpfs --device 0 /media/mmkumr/Android -o allow_other
+super + shift + m
+    $TERMINAL -e sudo fusermount -u /media/mmkumr/Android
+super + p
+    $TERMINAL -e sudo mount /dev/sdb1 /media/mmkumr/Pendrive -o defaults
+super + shift + p
+    $TERMINAL -e sudo umount /media/mmkumr/Pendrive
+super + w
+	firefox
+super + shift + g
+	gimp
+
+# Et cetera...
+super + Scroll_Lock
+	killall screenkey || screenkey
+super + Insert
+	showclip
+super + shift + x
+	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "sudo shutdown now" -b "Yes, Reboot" "sudo reboot"
+super + x
+	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
+XF86Launch1
+	xset dpms force off
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5% 
+shift+XF86AudioLowerVolume
+	lmc down 10
+control+XF86AudioLowerVolume
+	lmc down 1
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+shift+XF86AudioRaiseVolume
+	lmc up 10
+control+XF86AudioRaiseVolume
+	lmc up 1
+XF86AudioNext
+	lmc next
+XF86AudioPlay
+	lmc toggle
+XF86AudioPrev
+	lmc prev
+XF86AudioStop
+	lmc toggle
+XF86MonBrightnessDown
+	xbacklight -dec 15
+XF86MonBrightnessUp
+	xbacklight -inc 15
+
+
+# Recording
+# Take screenshot
+shift + Print
+	gnome-screenshot -a -i 
+# Pick screenshot type
+Print
+	gnome-screenshot 
+# Record audio or video
+super + Print
+	kazam
+
+# Function keys
+# F2 is restart in i3 right now.
+# Change display
+super + F3
+	displayselect
+
+super + F5
+	sudo -A systemctl restart NetworkManager
+# sync email
+super + F8
+	mailsync
+# Mount a USB drive or Android device
+super + F9
+	dmenumount
+# Unmount a USB drive or Android device
+super + F10
+	dmenuumount
+# Network Manager interface
+super + F12
+	$TERMINAL -e sudo -A nmtui
+
+

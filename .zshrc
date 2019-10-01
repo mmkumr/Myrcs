@@ -97,10 +97,13 @@ alias define='sdcv'
 alias irssi='sh ~/.irc.sh'
 alias reboot="sudo /sbin/shutdown -r now"
 alias wifi="nmtui"
-alias vim="nvim"
-gsocdir="/media/mmkumr/MyWorkspace/GSOC/"
 gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
-alias deadline="vim /media/mmkumr/MyWorkspace/GSOC/deadline.txt"
+website="/media/mmkumr/MyWorkspace/vegifruit/vfwebsite"
+alias vegifruit="sh ~/.vegifruit.sh"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
+export PATH="/snap/bin/:$PATH"
+export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.composer/vendor/bin/:$PATH"
+export EDITOR=vim
