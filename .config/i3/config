@@ -7,13 +7,12 @@
 # export FILE="ranger"
 
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
-set $TERMINAL "konsole"
+set $TERMINAL "urxvt"
 exec redshift-gtk
 exec compton
 #for disabling screen timeout
 exec_always xset s off -dpms 
 exec $TERMINAL  
-exec pulseaudio
 exec --no-startup-id nm-applet
 # for setting wallpaper
 exec feh --bg-fill ~/Pictures/Wallpapers/Firefox_wallpaper.png

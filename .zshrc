@@ -93,6 +93,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # aliases
+neofetch
 alias define='sdcv'
 alias irssi='sh ~/.irc.sh'
 alias reboot="sudo /sbin/shutdown -r now"

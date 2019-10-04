@@ -29,25 +29,29 @@
 *color15: #f1efee
 
 URxvt.intensityStyles:	false
-URxvt.background:       [70]#000000
+URxvt.background:       [90]#000000
 URxvt.depth:		32
 URxvt.font: 		xft:monospace:size=11
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 
 !! Extensions
-URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select,clipboard
 URxvt.colorUL:		#4682B4
 !! url-select
 URxvt.keysym.M-u:	perl:url-select:select_next
-URxvt.url-select.launcher: webview
+URxvt.url-select.launcher: firefox
 URxvt.url-select.underline: true
 !! keyboard-select:
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 !! resize-font
-URxvt.resize-font.smaller:	C-Down
-URxvt.resize-font.bigger:	C-Up
+URxvt.resize-font.smaller:	M-j
+URxvt.resize-font.bigger:	M-k
 !! Matcher
-URxvt.url-launcher:	webview
+URxvt.url-launcher:	firefox
 URxvt.matcher.button:	1
-
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+URxvt.clipboard.autocopy: true
