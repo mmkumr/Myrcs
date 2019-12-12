@@ -29,35 +29,29 @@ super + shift + x
 	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "sudo shutdown now" -b "Yes, Reboot" "sudo reboot"
 super + x
 	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
-XF86Launch1
-	xset dpms force off
-XF86AudioMute
-	pactl set-sink-mute 0 toggle
-XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5% 
-shift+XF86AudioLowerVolume
-	lmc down 10
-control+XF86AudioLowerVolume
-	lmc down 1
-XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
-shift+XF86AudioRaiseVolume
-	lmc up 10
-control+XF86AudioRaiseVolume
-	lmc up 1
-XF86AudioNext
-	lmc next
-XF86AudioPlay
-	lmc toggle
-XF86AudioPrev
-	lmc prev
-XF86AudioStop
-	lmc toggle
-XF86MonBrightnessDown
-	xbacklight -dec 15
-XF86MonBrightnessUp
-	xbacklight -inc 15
 
+XF86AudioRaiseVolume 
+    pactl set-sink-volume 0 +5% #increase sound volume
+XF86AudioLowerVolume 
+    pactl set-sink-volume 0 -5% #decrease sound volume
+XF86AudioMute 
+    pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+XF86MonBrightnessUp 
+    xbacklight -inc 20 # increase screen brightness
+XF86MonBrightnessDown 
+    xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+XF86AudioPlay 
+    playerctl play
+XF86AudioPause 
+    playerctl pause
+XF86AudioNext 
+    playerctl next
+XF86AudioPrev
+    playerctl previous
 
 # Recording
 # Take screenshot
@@ -68,7 +62,7 @@ Print
 	gnome-screenshot 
 # Record audio or video
 super + Print
-	kazam
+	peek
 
 # Function keys
 # F2 is restart in i3 right now.

@@ -128,7 +128,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP ../'
 set directory=$HOME/.vim/swp//
 "For ignoring scheme background.
-hi Normal ctermbg=none 
+"hi Normal ctermbg=none 
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
 "php autocomplete

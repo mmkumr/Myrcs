@@ -7,15 +7,21 @@
 # export FILE="ranger"
 
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
-set $TERMINAL "urxvt"
-exec redshift-gtk
+set $TERMINAL "termite"
+exec redshift -l 19.31151:84.7929
 exec compton
+exec termite -e "sh /home/mmkumr/.commitrc.sh"
 #for disabling screen timeout
 exec_always xset s off -dpms 
 exec $TERMINAL  
 exec --no-startup-id nm-applet
 # for setting wallpaper
-exec feh --bg-fill ~/Pictures/Wallpapers/Firefox_wallpaper.png
+exec feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png 
+#for swaping escape with capslock.
+exec sh /home/mmkumr/.swapescape.sh
+exec dropbox
+exec --no-startup-id xfce4-power-manager-settings
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -189,12 +195,11 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 for_window [class="Pinentry"] sticky enable
 for_window [class="sent"] border pixel 0px
-for_window [title="GIMP Startup"] move workspace $ws5
-for_window [class="Gimp"] move workspace $ws5
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
-
+for_window [class="firefox"] move workspace $ws2
+for_window [title="nautilus"] move workspace $ws10
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
 for_window [title="mpvfloat"] sticky enable

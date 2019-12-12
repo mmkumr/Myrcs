@@ -93,14 +93,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # aliases
-neofetch
 alias define='sdcv'
 alias irssi='sh ~/.irc.sh'
-alias reboot="sudo /sbin/shutdown -r now"
 alias wifi="nmtui"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias vmware="sudo vmware"
 gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
-website="/media/mmkumr/MyWorkspace/vegifruit/vfwebsite"
-alias vegifruit="sh ~/.vegifruit.sh"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
