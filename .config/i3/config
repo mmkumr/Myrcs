@@ -8,7 +8,6 @@
 
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 set $TERMINAL "termite"
-exec redshift -l 19.31151:84.7929
 exec compton
 exec termite -e "sh /home/mmkumr/.commitrc.sh"
 #for disabling screen timeout
@@ -20,7 +19,7 @@ exec feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png
 #for swaping escape with capslock.
 exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
-exec --no-startup-id xfce4-power-manager-settings
+exec gammy
 
 # kill focused window
 bindsym $mod+Shift+q kill
