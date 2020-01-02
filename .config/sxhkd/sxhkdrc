@@ -8,7 +8,7 @@ super + n
 super + e
 	$TERMINAL -e neomutt
 super + m
-	$TERMINAL -e sudo simple-mtpfs --device 0 /media/mmkumr/Android -o allow_other
+	$TERMINAL -e sudo simple-mtpfs --device 1 /media/mmkumr/Android -o allow_other
 super + shift + m
     $TERMINAL -e sudo fusermount -u /media/mmkumr/Android
 super + p

@@ -15,11 +15,10 @@ exec_always xset s off -dpms
 exec $TERMINAL  
 exec --no-startup-id nm-applet
 # for setting wallpaper
-exec feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png 
+exec feh --bg-fill ~/Pictures/arch.jpg  
 #for swaping escape with capslock.
 exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
-exec gammy
 
 # kill focused window
 bindsym $mod+Shift+q kill
