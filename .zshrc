@@ -94,7 +94,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # aliases
 alias define='sdcv'
-alias irssi='sh ~/.irc.sh'
 alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
