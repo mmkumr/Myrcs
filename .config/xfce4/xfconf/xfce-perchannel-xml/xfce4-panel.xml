@@ -44,7 +44,7 @@
       <property name="show-military" type="bool" value="false"/>
       <property name="show-seconds" type="bool" value="true"/>
       <property name="show-meridiem" type="bool" value="true"/>
-      <property name="flash-separators" type="bool" value="true"/>
+      <property name="flash-separators" type="bool" value="false"/>
     </property>
     <property name="plugin-4" type="string" value="windowmenu">
       <property name="workspace-actions" type="bool" value="false"/>
