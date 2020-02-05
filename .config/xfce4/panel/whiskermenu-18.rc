@@ -1,5 +1,5 @@
 favorites=
-recent=org.gnome.Nautilus.desktop,firefox.desktop,termite.desktop
+recent=freeoffice-textmaker.desktop,org.gnome.Nautilus.desktop,firefox.desktop,termite.desktop
 button-title=Applications
 button-icon=archlinux
 button-single-row=false
