@@ -104,5 +104,7 @@ export PATH="/usr/sbin:$PATH"
 export PATH="/snap/bin/:$PATH"
 export PATH="$HOME/.local/bin/:$PATH"
 export PATH="$HOME/.composer/vendor/bin/:$PATH"
+export PATH="$HOME/flutter/bin/:$PATH"
 export EDITOR=vim
+export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
