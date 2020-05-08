@@ -108,3 +108,4 @@ export PATH="$HOME/flutter/bin/:$PATH"
 export EDITOR=vim
 export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
+export ANDROID_HOME=/home/mmkumr/mmkumr/mmkumr/.apps/android-studio
