@@ -57,18 +57,11 @@ Plug 'https://github.com/ervandew/supertab.git'
 Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
 Plug 'https://github.com/Shougo/vimproc.vim.git'
 Plug 'https://github.com/majutsushi/tagbar.git'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'https://github.com/sjl/badwolf.git'
 Plug 'dyng/ctrlsf.vim'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
 Plug 'joshdick/onedark.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -136,12 +129,6 @@ autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 "diabling preview window of omnifunc
 set completeopt-=preview
 highlight Search cterm=underline
-"multiple cursors
-let g:multi_cursor_next_key='<C-j>'
-let g:multi_cursor_prev_key='<C-k>'
-let g:multi_cursor_skip_key='<C-i>'
-let g:multi_cursor_quit_key='<Esc>'
-let &statusline = ' '
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -170,8 +157,6 @@ if has('clipboard')
         set clipboard=unnamed
     endif
 endif
-"for deocomplete
-let g:deoplete#enable_at_startup = 1
 "UltiSnips
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<C-n>"
