@@ -62,6 +62,7 @@ Plug 'https://github.com/sjl/badwolf.git'
 Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'stevearc/vim-arduino'
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -167,3 +168,21 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Update binds when sxhkdrc is updated.
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+
+" Setup for using nvim for arduino.
+function! MyStatusLine()
+  let port = arduino#GetPort()
+  let line = '%f [' . g:arduino_board . '] [' . g:arduino_programmer . ']'
+  if !empty(port)
+    let line = line . ' (' . port . ':' . g:arduino_serial_baud . ')'
+  endif
+  return line
+endfunction
+setl statusline=%!MyStatusLine()
+autocmd BufNewFile,BufRead *.ino let g:airline_section_x='%{MyStatusLine()}'
+let g:arduino_dir="~/.arduino15/"
+nnoremap <buffer> <leader>av :ArduinoVerify<CR>
+nnoremap <buffer> <leader>au :ArduinoUpload<CR>
+nnoremap <buffer> <leader>as :ArduinoSerial<CR>
+nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
+nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
