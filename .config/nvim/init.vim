@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set nowrap
 
-" set the runtime path to include Vundle and initialize
+"set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
