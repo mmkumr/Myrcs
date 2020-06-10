@@ -97,6 +97,7 @@ alias define='sdcv'
 alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
+alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
 gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
