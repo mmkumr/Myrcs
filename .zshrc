@@ -99,6 +99,7 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
 alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
 gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
+alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
