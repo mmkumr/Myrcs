@@ -26,5 +26,6 @@
     <property name="lid-action-on-ac" type="uint" value="1"/>
     <property name="lock-screen-suspend-hibernate" type="bool" value="true"/>
     <property name="general-notification" type="bool" value="true"/>
+    <property name="inactivity-sleep-mode-on-battery" type="uint" value="1"/>
   </property>
 </channel>
