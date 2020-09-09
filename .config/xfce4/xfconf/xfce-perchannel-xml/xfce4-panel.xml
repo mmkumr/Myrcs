@@ -10,13 +10,11 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="34"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="18"/>
+        <value type="int" value="10"/>
         <value type="int" value="8"/>
         <value type="int" value="15"/>
         <value type="int" value="5"/>
         <value type="int" value="1"/>
-        <value type="int" value="2"/>
-        <value type="int" value="10"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="9"/>
@@ -52,7 +50,7 @@
       <property name="show-seconds" type="bool" value="true"/>
       <property name="show-meridiem" type="bool" value="true"/>
       <property name="flash-separators" type="bool" value="false"/>
-      <property name="timezone" type="string" value=""/>
+      <property name="timezone" type="string" value="GMT+5.30"/>
     </property>
     <property name="plugin-18" type="string" value="whiskermenu"/>
     <property name="plugin-19" type="string" value="systray">
@@ -88,7 +86,6 @@
       <property name="expand" type="bool" value="false"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-2" type="string" value="netload"/>
     <property name="plugin-3" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="false"/>
@@ -103,11 +100,14 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="false"/>
     </property>
-    <property name="plugin-10" type="string" value="netload"/>
     <property name="plugin-8" type="string" value="pager">
       <property name="rows" type="uint" value="1"/>
       <property name="workspace-scrolling" type="bool" value="false"/>
     </property>
     <property name="plugin-4" type="string" value="xfce4-mount-plugin"/>
+    <property name="plugin-10" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="archlinux"/>
+      <property name="button-title" type="string" value=""/>
+    </property>
   </property>
 </channel>
