@@ -103,6 +103,7 @@
     <property name="plugin-8" type="string" value="pager">
       <property name="rows" type="uint" value="1"/>
       <property name="workspace-scrolling" type="bool" value="false"/>
+      <property name="miniature-view" type="bool" value="false"/>
     </property>
     <property name="plugin-4" type="string" value="xfce4-mount-plugin"/>
     <property name="plugin-10" type="string" value="applicationsmenu">
