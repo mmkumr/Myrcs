@@ -1,3 +1,4 @@
+#Set environment variables.
 # Basic binds
 super + Return
 	$TERMINAL
