@@ -50,7 +50,7 @@
       <property name="show-seconds" type="bool" value="true"/>
       <property name="show-meridiem" type="bool" value="true"/>
       <property name="flash-separators" type="bool" value="false"/>
-      <property name="timezone" type="string" value="GMT+5.30"/>
+      <property name="timezone" type="string" value="Asia/Kolkata"/>
     </property>
     <property name="plugin-18" type="string" value="whiskermenu"/>
     <property name="plugin-19" type="string" value="systray">
