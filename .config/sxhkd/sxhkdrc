@@ -27,7 +27,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "sudo shutdown now" -b "Yes, Reboot" "sudo reboot"
+	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "shutdown now" -b "Yes, Reboot" "reboot"
 super + x
 	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
 

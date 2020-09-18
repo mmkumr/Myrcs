@@ -1,7 +1,7 @@
 Use_Label=true
 Show_Values=true
 Show_Bars=true
-Colorize_Values=true
+Colorize_Values=false
 Color_In=rgb(255,79,0)
 Color_Out=rgb(255,229,0)
 Text=Wlan
