@@ -56,6 +56,7 @@
     <property name="plugin-18" type="string" value="whiskermenu"/>
     <property name="plugin-19" type="string" value="systray">
       <property name="names-ordered" type="array">
+        <value type="string" value="bluetooth disabled"/>
         <value type="string" value="teamviewer"/>
         <value type="string" value="kmix"/>
         <value type="string" value="bluetooth enabled"/>
