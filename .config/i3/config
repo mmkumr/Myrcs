@@ -200,6 +200,7 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 for_window [class="firefox"] move workspace $ws2
 for_window [title="nautilus"] move workspace $ws10
+for_window [title="sudo mono /opt/mission-planner/MissionPlanner.exe"] move workspace $ws10
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
 for_window [title="mpvfloat"] sticky enable
