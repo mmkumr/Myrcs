@@ -78,6 +78,13 @@
         <value type="string" value="kazam"/>
         <value type="string" value="networkmanager applet"/>
       </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-569"/>
+        <value type="string" value="blueman"/>
+      </property>
     </property>
     <property name="plugin-21" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
