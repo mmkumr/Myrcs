@@ -58,7 +58,6 @@ Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
 Plug 'https://github.com/Shougo/vimproc.vim.git'
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'mileszs/ack.vim'
-Plug 'https://github.com/sjl/badwolf.git'
 Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -91,7 +90,7 @@ set smartcase
 set novisualbell "disabling annoying bell sound
 set cursorline
 set wrap "wrapping the lines vetically
-colorscheme badwolf
+colorscheme onedark 
 "ignore up down right left keys in insert mode.
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>

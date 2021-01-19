@@ -9,7 +9,7 @@ dynamic_title = true
 #font = Monospace 9
 #fullscreen = true
 #icon_name = terminal
-#mouse_autohide = false
+mouse_autohide = true 
 #scroll_on_output = false
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
@@ -17,13 +17,13 @@ dynamic_title = true
 scrollback_lines = 10000
 #search_wrap = true
 #urgent_on_bell = true
-#hyperlinks = false
+hyperlinks = true 
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 #browser = xdg-open
 
 # "system", "on" or "off"
-#cursor_blink = system
+cursor_blink = on
 
 # "block", "underline" or "ibeam"
 #cursor_shape = block
@@ -38,43 +38,55 @@ scrollback_lines = 10000
 #size_hints = false
 
 # "off", "left" or "right"
-#scrollbar = off
+scrollbar = right
+
 [colors]
+# Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
 
-# special
-foreground      = #f8f8f2
-foreground_bold = #f8f8f2
-cursor          = #ffffff
-#background      = #282a36
-background = rgba(40, 42, 54, 0.8)
-# black
-color0  = #000000
-color8  = #4d4d4d
+foreground      = #abb2bf
+foreground_bold = #b6bdca
+cursor          = #b6bdca
+background      = rgba(29, 31, 33, 0.9)
 
-# red
-color1  = #ff5555
-color9  = #ff6e67
+# 16 color space
 
-# green
-color2  = #50fa7b
-color10 = #5af78e
+# Black, Gray, Silver, White
+color0  = #282c34
+color8  = #545862
+color7  = #abb2bf
+color15 = #c8ccd4
 
-# yellow
-color3  = #f1fa8c
-color11 = #f4f99d
+# Red
+color1  = #e06c75
+color9  = #e06c75
 
-# blue
-color4  = #bd93f9
-color12 = #caa9fa
+# Green
+color2  = rgba(29, 31, 33, 0.8)
+color10 = #98c379
 
-# magenta
-color5  = #ff79c6
-color13 = #ff92d0
+# Yellow
+color3  = #e5c07b
+color11 = #e5c07b
 
-# cyan
-color6  = #8be9fd
-color14 = #9aedfe
+# Blue
+color4  = #61afef
+color12 = #61afef
 
-# white
-color7  = #bfbfbf
-color15 = #e6e6e6
+# Purple
+color5  = #c678dd
+color13 = #c678dd
+
+# Teal
+color6  = #56b6c2
+color14 = #56b6c2
+
+# Extra colors
+color16 = #d19a66
+color17 = #be5046
+color18 = #353b45
+color19 = #3e4451
+color20 = #565c64
+color21 = #b6bdca
+
+#onedark

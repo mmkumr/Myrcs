@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gallois"
+ZSH_THEME="juanghurtado"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -113,3 +113,7 @@ export PATH="/home/mmkumr/.apps/WPS/usr/bin/:$PATH"
 export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
 export ANDROID_HOME=/opt/android-studio/
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_osc7
+fi
