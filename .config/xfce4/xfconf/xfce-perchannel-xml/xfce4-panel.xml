@@ -82,6 +82,7 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
         <value type="string" value="dropbox-client-608"/>
         <value type="string" value="dropbox-client-569"/>
         <value type="string" value="blueman"/>
@@ -89,7 +90,7 @@
     </property>
     <property name="plugin-21" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1054;firefox.instance11089;firefox.instance1109;firefox.instance12488;firefox.instance13547;firefox.instance1448;firefox.instance1500;firefox.instance1669;firefox.instance17473;firefox.instance18720;firefox.instance1932;firefox.instance19322;firefox.instance2006;firefox.instance2856;firefox.instance3688;firefox.instance4198;firefox.instance5113;firefox.instance8013;firefox.instance9202;firefox.instance933;smplayer;vlc;vlc.instance3176"/>
+      <property name="mpris-players" type="string" value="firefox.instance1054;firefox.instance11089;firefox.instance1109;firefox.instance12488;firefox.instance13547;firefox.instance1448;firefox.instance1500;firefox.instance1669;firefox.instance17473;firefox.instance1763;firefox.instance18720;firefox.instance1932;firefox.instance19322;firefox.instance2006;firefox.instance2856;firefox.instance3688;firefox.instance4198;firefox.instance46059;firefox.instance5113;firefox.instance8013;firefox.instance9202;firefox.instance933;smplayer;vlc;vlc.instance3176"/>
     </property>
     <property name="plugin-24" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="separator">

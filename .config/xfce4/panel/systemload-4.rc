@@ -6,7 +6,7 @@ Click_Command=xfce4-taskmanager
 [SL_Cpu]
 Enabled=true
 Use_Label=true
-Color=rgb(0,0,192)
+Color=rgb(237,51,59)
 Text=cpu
 
 [SL_Mem]
@@ -18,7 +18,7 @@ Text=mem
 [SL_Swap]
 Enabled=true
 Use_Label=true
-Color=rgb(240,240,0)
+Color=rgb(28,113,216)
 Text=swap
 
 [SL_Uptime]
