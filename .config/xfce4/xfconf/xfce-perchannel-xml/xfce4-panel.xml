@@ -79,6 +79,7 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="bluetooth enabled"/>
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
