@@ -43,7 +43,7 @@ for_window [instance="dropdown_tmuxdd"] border pixel 3
 for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
 
-#exec xfce4-panel
+exec xfce4-panel
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f

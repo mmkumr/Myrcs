@@ -4,125 +4,55 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=683;y=384"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="19"/>
       <property name="size" type="uint" value="34"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="2"/>
-        <value type="int" value="10"/>
-        <value type="int" value="8"/>
-        <value type="int" value="15"/>
+        <value type="int" value="1"/>
         <value type="int" value="4"/>
         <value type="int" value="3"/>
-        <value type="int" value="5"/>
-        <value type="int" value="1"/>
         <value type="int" value="9"/>
-        <value type="int" value="24"/>
-        <value type="int" value="6"/>
-        <value type="int" value="21"/>
-        <value type="int" value="19"/>
         <value type="int" value="7"/>
+        <value type="int" value="2"/>
+        <value type="int" value="11"/>
+        <value type="int" value="8"/>
       </property>
       <property name="nrows" type="uint" value="1"/>
-      <property name="background-style" type="uint" value="0"/>
-      <property name="icon-size" type="uint" value="0"/>
-      <property name="mode" type="uint" value="1"/>
-      <property name="disable-struts" type="bool" value="false"/>
-      <property name="enter-opacity" type="uint" value="87"/>
-      <property name="leave-opacity" type="uint" value="87"/>
-      <property name="background-rgba" type="array">
-        <value type="double" value="0.000000"/>
-        <value type="double" value="0.617021"/>
-        <value type="double" value="1.000000"/>
-        <value type="double" value="1.000000"/>
-      </property>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="disable-struts" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-15" type="string" value="separator">
-      <property name="expand" type="bool" value="true"/>
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="archlinux-logo"/>
     </property>
-    <property name="plugin-5" type="string" value="clock">
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="true"/>
+    </property>
+    <property name="plugin-2" type="string" value="clock">
       <property name="mode" type="uint" value="4"/>
-      <property name="show-military" type="bool" value="false"/>
-      <property name="show-seconds" type="bool" value="true"/>
       <property name="show-meridiem" type="bool" value="true"/>
-      <property name="flash-separators" type="bool" value="false"/>
-      <property name="timezone" type="string" value="Asia/Kolkata"/>
+      <property name="show-seconds" type="bool" value="true"/>
+      <property name="show-military" type="bool" value="false"/>
     </property>
-    <property name="plugin-18" type="string" value="whiskermenu"/>
-    <property name="plugin-19" type="string" value="systray">
-      <property name="names-ordered" type="array">
-        <value type="string" value="bluetooth disabled"/>
-        <value type="string" value="teamviewer"/>
-        <value type="string" value="kmix"/>
-        <value type="string" value="bluetooth enabled"/>
-        <value type="string" value="zoom"/>
-        <value type="string" value="wicd-client.py"/>
-        <value type="string" value="simplescreenrecorder"/>
-        <value type="string" value="gtk-recordmydesktop"/>
-        <value type="string" value="blueman"/>
-        <value type="string" value="blueman-tray"/>
-        <value type="string" value="skypeforlinux"/>
-        <value type="string" value="gammy"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="vmware-tray"/>
-        <value type="string" value="kde connect indicator"/>
-        <value type="string" value="dropbox"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="flameshot"/>
-        <value type="string" value="deepin-screen-recorder"/>
-        <value type="string" value="kazam"/>
-        <value type="string" value="networkmanager applet"/>
-      </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="string" value="netload"/>
+    <property name="plugin-8" type="string" value="systray">
       <property name="known-legacy-items" type="array">
-        <value type="string" value="bluetooth enabled"/>
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
-        <value type="string" value="vlc"/>
-        <value type="string" value="dropbox-client-608"/>
-        <value type="string" value="dropbox-client-569"/>
         <value type="string" value="blueman"/>
       </property>
     </property>
-    <property name="plugin-21" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1054;firefox.instance11089;firefox.instance1109;firefox.instance12488;firefox.instance13547;firefox.instance1448;firefox.instance1500;firefox.instance1669;firefox.instance17473;firefox.instance1763;firefox.instance18720;firefox.instance1932;firefox.instance19322;firefox.instance2006;firefox.instance2856;firefox.instance3688;firefox.instance4198;firefox.instance46059;firefox.instance5113;firefox.instance8013;firefox.instance9202;firefox.instance933;smplayer;vlc;vlc.instance3176"/>
-    </property>
-    <property name="plugin-24" type="string" value="power-manager-plugin"/>
-    <property name="plugin-1" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-3" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="false"/>
-    </property>
-    <property name="plugin-6" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-7" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-9" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="false"/>
-    </property>
-    <property name="plugin-8" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-      <property name="workspace-scrolling" type="bool" value="true"/>
-      <property name="miniature-view" type="bool" value="false"/>
-    </property>
-    <property name="plugin-10" type="string" value="applicationsmenu">
-      <property name="button-icon" type="string" value="archlinux"/>
-      <property name="button-title" type="string" value=""/>
-    </property>
-    <property name="plugin-2" type="string" value="netload"/>
-    <property name="plugin-4" type="string" value="systemload"/>
+    <property name="plugin-9" type="string" value="systemload"/>
+    <property name="plugin-11" type="string" value="power-manager-plugin"/>
   </property>
 </channel>
