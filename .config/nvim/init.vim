@@ -105,6 +105,8 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
+
+
 "maping switching windows
 map <C-h> <c-w>h
 map <C-j> <c-w>j 
@@ -112,6 +114,7 @@ map <C-k> <c-w>k
 map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
+nmap <tab> :BuffergatorMruCycleNext<CR>
 "Mapping for clearing highlighted search word
 map <esc> :noh<cr>
 "tagbar
