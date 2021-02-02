@@ -103,6 +103,8 @@ alias vmware="sudo vmware"
 alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
 gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
 alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
+alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
+alias docker_clean="sudo docker-compose exec php php /var/www/html/artisan cache:clear && sudo docker-compose exec php php /var/www/html/artisan config:clear"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
