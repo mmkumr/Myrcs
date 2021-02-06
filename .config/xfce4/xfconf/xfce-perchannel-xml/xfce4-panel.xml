@@ -48,10 +48,12 @@
       <property name="miniature-view" type="bool" value="true"/>
     </property>
     <property name="plugin-2" type="string" value="clock">
-      <property name="mode" type="uint" value="4"/>
+      <property name="mode" type="uint" value="2"/>
       <property name="show-meridiem" type="bool" value="true"/>
       <property name="show-seconds" type="bool" value="true"/>
       <property name="show-military" type="bool" value="false"/>
+      <property name="flash-separators" type="bool" value="false"/>
+      <property name="digital-format" type="string" value="%a %_d %b, %r"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
