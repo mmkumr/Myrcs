@@ -65,6 +65,7 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1445"/>
         <value type="string" value="dropbox-client-1399"/>
         <value type="string" value="dropbox-client-1315"/>
         <value type="string" value="dropbox-client-1329"/>
@@ -102,7 +103,7 @@
     <property name="plugin-13" type="string" value="separator"/>
     <property name="plugin-14" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance10275;firefox.instance1049;firefox.instance1214;firefox.instance1264;firefox.instance1311;firefox.instance1565;firefox.instance1995;firefox.instance2467;firefox.instance2468;firefox.instance2707;firefox.instance32731;vlc"/>
+      <property name="mpris-players" type="string" value="firefox.instance10275;firefox.instance1049;firefox.instance1214;firefox.instance1264;firefox.instance1311;firefox.instance1565;firefox.instance1995;firefox.instance24209;firefox.instance2467;firefox.instance2468;firefox.instance2707;firefox.instance32731;firefox.instance50053;vlc"/>
     </property>
   </property>
 </channel>
