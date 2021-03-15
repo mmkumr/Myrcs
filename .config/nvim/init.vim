@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " Utility
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'majutsushi/tagbar'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'godlygeek/tabular'
@@ -53,15 +54,14 @@ Plug 'tpope/vim-vividchalk'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
-Plug 'https://github.com/ervandew/supertab.git'
 Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
 Plug 'https://github.com/Shougo/vimproc.vim.git'
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'mileszs/ack.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'stevearc/vim-arduino'
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
