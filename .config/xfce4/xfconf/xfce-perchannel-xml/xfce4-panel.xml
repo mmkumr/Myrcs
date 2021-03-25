@@ -65,6 +65,9 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1380"/>
+        <value type="string" value="dropbox-client-1331"/>
+        <value type="string" value="dropbox-client-1411"/>
         <value type="string" value="dropbox-client-2240"/>
         <value type="string" value="dropbox-client-1378"/>
         <value type="string" value="dropbox-client-2581"/>
