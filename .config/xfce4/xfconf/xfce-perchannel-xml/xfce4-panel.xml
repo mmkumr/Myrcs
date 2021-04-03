@@ -61,12 +61,13 @@
     <property name="plugin-7" type="string" value="netload"/>
     <property name="plugin-8" type="string" value="systray">
       <property name="known-legacy-items" type="array">
-        <value type="string" value="bluetooth active
-&lt;b&gt;1 active connection&lt;/b&gt;"/>
+        <value type="string" value="bluetooth active &lt;b&gt;1 active connection&lt;/b&gt;"/>
         <value type="string" value="bluetooth enabled"/>
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1809"/>
+        <value type="string" value="dropbox-client-1345"/>
         <value type="string" value="dropbox-client-14480"/>
         <value type="string" value="dropbox-client-1099"/>
         <value type="string" value="dropbox-client-4677"/>
