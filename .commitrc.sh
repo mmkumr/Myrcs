@@ -2,7 +2,7 @@
 cp ~/.commitrc.sh /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/
 cp ~/.zshrc /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/
 cp ~/.config/i3/ /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
-cp ~/.config/xfce4 /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
+cp ~/.config/xfce4/panel /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/xfce4/ -r
 cp ~/.config/nvim/ /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
 cp ~/.config/ranger /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
 cp ~/.config/termite /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
