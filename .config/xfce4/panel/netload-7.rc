@@ -1,11 +1,11 @@
 Use_Label=true
 Show_Values=true
 Show_Bars=true
-Colorize_Values=false
+Colorize_Values=true
 Color_In=rgb(255,79,0)
 Color_Out=rgb(255,229,0)
-Text=wlan
-Network_Device=wlp9s0
+Text=WIFI
+Network_Device=wlp2s0
 Max_In=4096
 Max_Out=4096
 Auto_Max=true
