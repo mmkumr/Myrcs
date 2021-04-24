@@ -47,7 +47,7 @@ scrollbar = right
 foreground      = #abb2bf
 foreground_bold = #b6bdca
 cursor          = #b6bdca
-background      = rgba(29, 31, 33, 0.9)
+background      = rgba(45, 45, 45, 0.95)
 
 # 16 color space
 
