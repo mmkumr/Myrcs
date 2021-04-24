@@ -34,6 +34,7 @@ set $mod Mod4
 # #---Dropdown Windows---# #
 # General dropdown window traits. The order can matter.
 for_window [instance="dropdown_*"] floating enable
+for_window [title="Android Emulator"] floating enable
 for_window [instance="dropdown_*"] move scratchpad
 for_window [instance="dropdown_*"] sticky enable
 for_window [instance="dropdown_*"] scratchpad show
@@ -148,7 +149,8 @@ bindsym $mod+Prior		workspace prev
 bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
-bindsym $mod+Tab		workspace back_and_forth
+bindsym $mod+Tab		workspace next
+bindsym $mod+Shift+Tab	workspace prev
 bindsym $mod+XF86Back		workspace prev
 bindsym $mod+Shift+XF86Back	move container to workspace prev
 bindsym $mod+XF86Forward	workspace next

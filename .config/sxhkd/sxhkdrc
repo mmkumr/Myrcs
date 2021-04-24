@@ -36,9 +36,9 @@ XF86AudioMute
 
 # Sreen brightness controls
 XF86MonBrightnessUp 
-    echo $(($(cat $bl_device)+20)) |tee $bl_device # increase screen brightness
+    light -A 5 # increase screen brightness
 XF86MonBrightnessDown 
-    echo $(($(cat $bl_device)-20)) |tee $bl_device # decrease screen brightness
+    light -U 5 # decrease screen brightness
 
 # Media player controls
 XF86AudioPlay 
