@@ -17,6 +17,9 @@ super + w
 super + shift + g
 	gimp
 
+super+Shift+Tab	
+    rofi -run window
+
 # Et cetera...
 super + Scroll_Lock
 	killall screenkey || screenkey
