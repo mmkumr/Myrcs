@@ -9,7 +9,7 @@ super + n
 super + e
 	$TERMINAL -e neomutt
 super + m
-	$TERMINAL -e "sudo simple-mtpfs --device 1 /media/mmkumr/Android -o allow_other"
+    $TERMINAL -e "sudo simple-mtpfs --device 1 /media/mmkumr/Android -o allow_other"
 super + shift + m
     $TERMINAL -e "sudo fusermount -u /media/mmkumr/Android"
 super + w
@@ -23,7 +23,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "shutdown now" -b "Yes, Reboot" "reboot"
+	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "shutdown now" -b "Yes, Reboot" "reboot" -b "Yes, Hibernate" "sudo hibernate now"
 super + x
 	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
 

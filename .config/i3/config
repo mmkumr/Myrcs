@@ -68,6 +68,7 @@ set $urgent-bg-color     #E53935
 #      
 #   }
 
+
 # #---Basic Bindings---# #
 bindsym $mod+Shift+Return	exec --no-startup-id samedir
 
