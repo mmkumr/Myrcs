@@ -3,7 +3,7 @@
 super + Return
 	$TERMINAL
 super + d
-	rofi -show run
+	rofi -modi drun,window,run,keys,ssh -show drun -show-icons -sidebar-mode
 super + n
     $TERMINAL -e $FILE
 super + e
@@ -16,7 +16,6 @@ super + w
 	firefox
 super + shift + g
 	gimp
-
 
 # Et cetera...
 super + Scroll_Lock

@@ -115,6 +115,7 @@ export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/home/mmkumr/flutter/bin"
 export EDITOR=vim
 export PATH="/home/mmkumr/.apps/WPS/usr/bin/:$PATH"
+export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
 export ANDROID_HOME=/opt/android-studio/
