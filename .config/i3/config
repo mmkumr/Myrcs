@@ -22,9 +22,10 @@ exec feh --bg-fill ~/Pictures/wallpaper.jpg
 exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
 exec --no-startup-id xss-lock --transfer-sleep-lock -- lock --nofork
-
+exec firefox
 # kill focused window
 bindsym $mod+Shift+q kill
+exec trello
 
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
@@ -204,6 +205,7 @@ for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 for_window [class="firefox"] move workspace $ws2
+for_window [class="trello"] move workspace $ws3
 for_window [title="nautilus"] move workspace $ws10
 for_window [title="sudo mono /opt/mission-planner/MissionPlanner.exe"] move workspace $ws10
 # Bindings to make the webcam float and stick.

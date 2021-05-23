@@ -25,7 +25,7 @@ super + Insert
 super + shift + x
 	i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "shutdown now" -b "Yes, Reboot" "reboot" -b "Yes, Hibernate" "hibernate now"
 super + x
-	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
+    lock; xset dpms force off
 
 XF86AudioRaiseVolume 
     pactl set-sink-volume 0 +5% #increase sound volume
