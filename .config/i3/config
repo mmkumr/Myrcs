@@ -21,7 +21,7 @@ exec feh --bg-fill ~/Pictures/wallpaper.jpg
 #for swaping escape with capslock.
 exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
-exec --no-startup-id xss-lock --transfer-sleep-lock -- scripts/lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/mmkumr/.config/i3/scripts/lock --nofork
 exec firefox
 # kill focused window
 bindsym $mod+Shift+q kill
