@@ -117,7 +117,7 @@ export PATH="/home/mmkumr/.apps/WPS/usr/bin/:$PATH"
 export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
-export ANDROID_HOME=/opt/android-studio/
+
 if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh
   __vte_osc7
