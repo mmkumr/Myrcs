@@ -9,7 +9,7 @@
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 exec xfce4-power-manager
 set $TERMINAL "termite"
-exec compton
+#exec compton
 exec termite -e "sh /home/mmkumr/.commitrc.sh"
 #for disabling screen timeout
 exec_always xset s off -dpms 
