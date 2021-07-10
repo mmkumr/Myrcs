@@ -6,9 +6,9 @@ Color_In=rgb(255,79,0)
 Color_Out=rgb(255,229,0)
 Text=WIFI
 Network_Device=wlp2s0
-Max_In=4096
-Max_Out=4096
-Auto_Max=true
+Max_In=3932160
+Max_Out=3932160
+Auto_Max=false
 Update_Interval=250
 Values_As_Bits=false
 
