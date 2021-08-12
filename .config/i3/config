@@ -23,9 +23,9 @@ exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
 exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/mmkumr/.config/i3/scripts/lock --nofork
 exec firefox
+exec franz
 # kill focused window
 bindsym $mod+Shift+q kill
-exec trello
 
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
@@ -37,7 +37,6 @@ set $mod Mod4
 # General dropdown window traits. The order can matter.
 for_window [instance="dropdown_*"] floating enable
 for_window [title="Android Emulator"] floating enable
-for_window [title="Adobe Photoshop CC 2018"] floating enable
 for_window [instance="dropdown_*"] move scratchpad
 for_window [instance="dropdown_*"] sticky enable
 for_window [instance="dropdown_*"] scratchpad show
@@ -206,7 +205,7 @@ for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 for_window [class="firefox"] move workspace $ws2
-for_window [class="Trello"] move workspace $ws3
+for_window [class="Franz"] move workspace $ws3
 for_window [title="nautilus"] move workspace $ws10
 for_window [title="sudo mono /opt/mission-planner/MissionPlanner.exe"] move workspace $ws10
 # Bindings to make the webcam float and stick.

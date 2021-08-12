@@ -116,6 +116,7 @@ nmap hs :split<cr>
 nmap <tab> :BuffergatorMruCycleNext<CR>
 "Mapping for clearing highlighted search word
 map <esc> :noh<cr>
+let mapleader = ","
 "tagbar
 "map <C-m> :TagbarToggle<CR>
 "ctrlP plugin
@@ -169,7 +170,4 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Update binds when sxhkdrc is updated.
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
-
-setl statusline=%!MyStatusLine()
-autocmd BufNewFile,BufRead *.ino let g:airline_section_x='%{MyStatusLine()}'
-
+autocmd BufWritePost init.vim source %
