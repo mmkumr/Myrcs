@@ -5,7 +5,7 @@ super + Return
 super + d
 	rofi -modi drun,window,run,keys,ssh -show drun -show-icons -sidebar-mode
 super + n
-    $TERMINAL -e $FILE
+    $TERMINAL  -t "nautilus" -e $FILE 
 super + e
 	$TERMINAL -e neomutt
 super + m
@@ -23,8 +23,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-    /home/mmkumr/.config/i3/powermenu	
-	#i3-nagbar -t warning -m "Shutdown computer?" -b "Yes, Shutdown" "shutdown now" -b "Yes, Reboot" "reboot" -b "Yes, Hibernate" "hibernate now"
+    powermenu
 super + x
     /home/mmkumr/.config/i3/scripts/lock; xset dpms force off
 
@@ -37,9 +36,9 @@ XF86AudioMute
 
 # Sreen brightness controls
 XF86MonBrightnessUp 
-    light -A 5 # increase screen brightness
+    sudo light -A 2 # increase screen brightness
 XF86MonBrightnessDown 
-    light -U 5 # decrease screen brightness
+    sudo light -U 2 # decrease screen brightness
 
 # Media player controls
 XF86AudioPlay 

@@ -15,7 +15,6 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'godlygeek/tabular'
 Plugin 'jeetsukumaran/vim-buffergator'
 " Track the engine.
-Plugin 'https://github.com/SirVer/ultisnips.git'
 " Generic Programming Support
 Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
@@ -49,6 +48,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "plug installation manager.
 call plug#begin('~/.vim/plugged')
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'Neevash/awesome-flutter-snippets'
 Plug 'tpope/vim-vividchalk'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
@@ -61,6 +63,9 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'akinsho/flutter-tools.nvim'
+Plug 'stevearc/vim-arduino'
 call plug#end()
 syntax enable             " Turn on syntax highlighting
 "nerdtree
@@ -105,18 +110,12 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-
 "maping switching windows
-map <C-h> <c-w>h
-map <C-j> <c-w>j 
-map <C-k> <c-w>k 
-map <C-l> <c-w>l
 nmap vs :vsplit<cr>
 nmap hs :split<cr>
 nmap <tab> :BuffergatorMruCycleNext<CR>
 "Mapping for clearing highlighted search word
 map <esc> :noh<cr>
-let mapleader = ","
 "tagbar
 "map <C-m> :TagbarToggle<CR>
 "ctrlP plugin
@@ -160,14 +159,30 @@ if has('clipboard')
         set clipboard=unnamed
     endif
 endif
-"UltiSnips
-let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsJumpForwardTrigger="<C-n>"
-let g:UltiSnipsJumpBackwardTrigger="<C-p>"
 
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 " Update binds when sxhkdrc is updated.
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 autocmd BufWritePost init.vim source %
+
+lua << EOF
+  require("flutter-tools").setup{} -- use defaults
+EOF
+
+" arduino vim config
+nnoremap <buffer> <leader>am :ArduinoVerify<CR>
+nnoremap <buffer> <leader>au :ArduinoUpload<CR>
+nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
+nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
+nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
+" vsnip keybinds
+imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+"For coc shortcuts
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+map F :split <bar> :wincmd h <bar> :q <bar> :bnext <bar> :resize 22<cr>

@@ -105,6 +105,7 @@ alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
 alias docker_clean="sudo docker-compose exec php php /var/www/html/artisan cache:clear && sudo docker-compose exec php php /var/www/html/artisan config:clear"
 alias working_path="/media/mmkumr/MyWorkspace/Code/GitHub/pyable/Python\ App"
+alias flutter_release_install="flutter build apk && adb install build/app/outputs/apk/release/app-release.apk"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
