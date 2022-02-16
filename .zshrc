@@ -100,11 +100,10 @@ alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
 alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
-gitdir="/media/mmkumr/MyWorkspace/Code/GitHub/"
+export project_dir="/media/mmkumr/MyWorkspace/Projects"
 alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
 alias docker_clean="sudo docker-compose exec php php /var/www/html/artisan cache:clear && sudo docker-compose exec php php /var/www/html/artisan config:clear"
-alias working_path="/media/mmkumr/MyWorkspace/Code/GitHub/pyable/Python\ App"
 alias flutter_release_install="flutter build apk && adb install build/app/outputs/apk/release/app-release.apk"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -119,7 +118,7 @@ export PATH="/home/mmkumr/.apps/WPS/usr/bin/:$PATH"
 export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/home/mmkumr/Android/Sdk/platform-tools:/home/mmkumr/Android/Sdk/tools/
 export bl_device=/sys/class/backlight/intel_backlight/brightness
-
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh
   __vte_osc7

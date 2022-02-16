@@ -1,14 +1,19 @@
 #Copying rc file to git directory.
-cp ~/.commitrc.sh /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/
-cp ~/.zshrc /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/
-cp ~/.config/i3/ /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
-cp ~/.config/xfce4/panel /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/xfce4/ -r
-cp ~/.config/nvim/ /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
-cp ~/.config/ranger /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
-cp ~/.config/termite /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
-cp ~/.config/sxhkd /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/.config/ -r
+#!/usr/bin/zsh
+cp  ~/.commitrc.sh \
+    ~/.zshrc \
+    $project_dir/Myrcs/
+
+cp  ~/.config/i3/ \
+    ~/.config/xfce4/ \
+    ~/.config/nvim/ \
+    ~/.config/ranger \
+    ~/.config/alacritty \
+    ~/.config/sxhkd \
+    $project_dir/Myrcs/.config/ -r
 #Changing to git directory.
-cd /media/mmkumr/MyWorkspace/Code/GitHub/Myrcs/
+cd $project_dir/Myrcs
+pwd
 git status 
 git status | grep clean
 if [ $? -gt 0 ] 

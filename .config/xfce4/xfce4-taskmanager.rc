@@ -1,9 +1,9 @@
 [Settings]
 ShowAllProcesses=FALSE
+ShowLegend=TRUE
 MorePrecision=FALSE
 FullCommandLine=FALSE
 ShowStatusIcon=FALSE
-ShowMemoryInXBytes=FALSE
 MonitorPaintBox=TRUE
 ShowApplicationIcons=TRUE
 ToolbarStyle=DEFAULT
@@ -20,6 +20,6 @@ ColumnPriority=FALSE
 SortColumn=0
 SortType=0
 WindowWidth=664
-WindowHeight=716
+WindowHeight=674
 HandlePosition=100
 ProcessTreeView=FALSE

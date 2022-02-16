@@ -8,9 +8,9 @@
 
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 exec xfce4-power-manager
-set $TERMINAL "alacritty"
+set $TERMINAL alacritty
 #exec compton
-exec alacritty -e "sh /home/mmkumr/.commitrc.sh"
+exec $TERMINAL -e "sh /home/mmkumr/.commitrc.sh"
 #for disabling screen timeout
 exec_always xset s off -dpms 
 exec $TERMINAL  
@@ -22,14 +22,15 @@ exec feh --bg-fill ~/Pictures/wallpaper.jpg
 exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slimlock
-exec brave
+exec opera
 exec franz
+exec syndaemon -t -K -R -d
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
-gaps inner 10
+gaps inner 5
 #gaps outer 10
 set $term --no-startup-id gnome-terminal
 set $mod Mod4
@@ -204,7 +205,7 @@ for_window [class="sent"] border pixel 0px
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Adobe Photoshop CC 2018"] floating enable
-for_window [window_role="Brave-browser"] move workspace $ws2
+for_window [class="Opera"] move workspace $ws2
 for_window [class="Franz"] move workspace $ws3
 for_window [title="nautilus"] move workspace $ws10
 # Bindings to make the webcam float and stick.

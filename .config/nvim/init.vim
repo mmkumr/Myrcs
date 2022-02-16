@@ -6,32 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-" Utility
-Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'majutsushi/tagbar'
-Plugin 'wesQ3/vim-windowswap'
-Plugin 'godlygeek/tabular'
-Plugin 'jeetsukumaran/vim-buffergator'
-" Track the engine.
-" Generic Programming Support
-Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'janko-m/vim-test'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'vim-syntastic/syntastic'
-" PHP Support
-Plugin 'phpvim/phpcd.vim'
-Plugin 'tobyS/pdv'
-"markdown
-Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
-
-" Theme / Interface
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
+"file for storing all vundle plugins
+source ~/.config/nvim/vundle.vim
 filetype off                 " required
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,67 +33,38 @@ Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
 Plug 'https://github.com/Shougo/vimproc.vim.git'
-Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'mileszs/ack.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'ervandew/supertab'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'akinsho/flutter-tools.nvim'
 Plug 'stevearc/vim-arduino'
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'hrsh7th/nvim-compe'
+Plug 'RishabhRD/popfix'
+Plug 'RishabhRD/nvim-lsputils'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+"Dart/Flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+Plug 'thosakwe/vim-flutter'
+Plug 'rafamadriz/neon'
 call plug#end()
-syntax enable             " Turn on syntax highlighting
-"nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"For toogle nerdtree with ctrl + n
-map N :NERDTreeToggle<CR>
-"End nerdtree
-"php indentation
-let g:PHP_default_indenting = 1
-set backspace=indent,eol,start
-filetype plugin indent on
-set smarttab
-set tabstop=4
-set shiftwidth=4
-set expandtab
-syntax on
-set ruler
-set relativenumber
-set number
-set showmatch
-set autoindent
-set wildmode=longest:full,full
-set copyindent
-set ignorecase
-set smartcase
-set novisualbell "disabling annoying bell sound
-set cursorline
-set wrap "wrapping the lines vetically
-colorscheme onedark 
-"ignore up down right left keys in insert mode.
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-inoremap <Right> <NOP>
-inoremap <Left> <NOP>
-"ignore up down right left keys in normal mode.
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Right> <NOP>
-noremap <Left> <NOP>
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 
-"maping switching windows
-nmap vs :vsplit<cr>
-nmap hs :split<cr>
-nmap <tab> :BuffergatorMruCycleNext<CR>
-"Mapping for clearing highlighted search word
-map <esc> :noh<cr>
-"tagbar
-"map <C-m> :TagbarToggle<CR>
+luafile ~/.config/nvim/compe.lua
+luafile ~/.config/nvim/lsp_utils.lua
+luafile ~/.config/nvim/nvim-tree.lua
+"nerdtree closing if open while closing the file.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+ 
+luafile ~/.config/nvim/keybind.lua
+luafile ~/.config/nvim/defval.lua
 "ctrlP plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP ../'
@@ -134,19 +81,11 @@ highlight Search cterm=underline
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='atomic'
+let g:airline_theme='codedark'
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
 let g:airline#extensions#tabline#enabled = 1
-" Syntastic Configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_ignore_files = ['.zsh_history']
-" Markdown Syntax Support
+
 augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
@@ -165,24 +104,7 @@ endif
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 autocmd BufWritePost init.vim source %
 
-lua << EOF
-  require("flutter-tools").setup{} -- use defaults
-EOF
-
-" arduino vim config
-nnoremap <buffer> <leader>am :ArduinoVerify<CR>
-nnoremap <buffer> <leader>au :ArduinoUpload<CR>
-nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
-nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
-nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
-" vsnip keybinds
-imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-"For coc shortcuts
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-map F :split <bar> :wincmd h <bar> :q <bar> :bnext <bar> :resize 22<cr>
+" auto-format
+autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.ino lua vim.lsp.buf.formatting_sync(nil, 100)
