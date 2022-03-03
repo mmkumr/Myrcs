@@ -42,4 +42,4 @@ vim.cmd "nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>"
 -- For toogle nerdtree with ctrl + n
 vim.cmd "map N :NvimTreeToggle<CR>" 
 vim.cmd "map t :Telescope<CR>"
-vim.cmd "map tc :Telescope lsp_code_actions<CR>"
+vim.cmd "map tc :lua require('lsp-fastaction').code_action()<CR>"

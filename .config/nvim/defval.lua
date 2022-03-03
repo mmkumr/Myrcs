@@ -18,7 +18,8 @@ vim.cmd("set wildmode=longest:full,full")
 vim.cmd("syntax enable") -- Turn on syntax highlighting
 vim.cmd("set backspace=indent,eol,start")
 vim.cmd("filetype plugin indent on")
-vim.cmd[[colorscheme neon]]
+vim.cmd[[colorscheme material]]
+vim.g.material_style = "oceanic"
 vim.g.neon_italic_keyword = true
 vim.g.neon_italic_function = true
 vim.g.neon_italic_variable = true

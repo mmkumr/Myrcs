@@ -4,7 +4,8 @@ cp  ~/.commitrc.sh \
     ~/.zshrc \
     $project_dir/Myrcs/
 
-cp  ~/.config/i3/ \
+cp  ~/.i3/ \
+    ~/.i3status.conf \
     ~/.config/xfce4/ \
     ~/.config/nvim/ \
     ~/.config/ranger \
@@ -13,7 +14,6 @@ cp  ~/.config/i3/ \
     $project_dir/Myrcs/.config/ -r
 #Changing to git directory.
 cd $project_dir/Myrcs
-pwd
 git status 
 git status | grep clean
 if [ $? -gt 0 ] 

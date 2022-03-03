@@ -1,0 +1,35 @@
+#!/bin/sh
+
+B='#00000000'  # blank
+C='#ffffff22'  # clear ish
+D='#ffffffcc'  # default
+T='#ee00eeee'  # text
+W='#880000bb'  # wrong
+V='#bb00bbbb'  # verifying
+
+i3lock \
+--inside-color=$C   \
+--ring-color=$V     \
+\
+--insidewrong-color=$C \
+--ringwrong-color=$W   \
+\
+--radius=150          \
+--inside-color=$B      \
+--ring-color=$D        \
+--line-color=$B        \
+--separator-color=$D   \
+\
+--time-color=$T        \
+--date-color=$T        \
+--layout-color=$T      \
+--keyhl-color=$W       \
+--bshl-color=$W        \
+\
+--ignore-empty-password \
+--blur 8              \
+--clock               \
+--indicator           \
+--timestr="%l:%M:%S %p"  \
+--datestr="%A, %m %Y" \
+--screen 1            \

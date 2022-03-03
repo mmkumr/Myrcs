@@ -27,14 +27,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'Neevash/awesome-flutter-snippets'
-Plug 'tpope/vim-vividchalk'
-Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
-Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'https://github.com/2072/PHP-Indenting-for-VIm.git'
-Plug 'https://github.com/Shougo/vimproc.vim.git'
-Plug 'mileszs/ack.vim'
-Plug 'dyng/ctrlsf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'stevearc/vim-arduino'
 Plug 'neovim/nvim-lspconfig'
@@ -45,24 +39,27 @@ Plug 'RishabhRD/nvim-lsputils'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'tomasiser/vim-code-dark'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'marko-cerovac/material.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'appelgriebsch/surround.nvim'
 "Dart/Flutter
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
-Plug 'thosakwe/vim-flutter'
+Plug 'akinsho/flutter-tools.nvim'
 Plug 'rafamadriz/neon'
+Plug 'windwp/lsp-fastaction.nvim'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 luafile ~/.config/nvim/compe.lua
 luafile ~/.config/nvim/lsp_utils.lua
 luafile ~/.config/nvim/nvim-tree.lua
+luafile ~/.config/nvim/code_action_dart.lua
 "nerdtree closing if open while closing the file.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
- 
 luafile ~/.config/nvim/keybind.lua
 luafile ~/.config/nvim/defval.lua
 "ctrlP plugin
@@ -70,7 +67,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP ../'
 set directory=$HOME/.vim/swp//
 "For ignoring scheme background.
-"hi Normal ctermbg=none 
+"hi Normal ctermbg=none
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
 "php autocomplete
@@ -81,8 +78,8 @@ highlight Search cterm=underline
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='codedark'
 let g:hybrid_custom_term_colors = 1
+let g:airline_theme = 'codedark'
 let g:hybrid_reduced_contrast = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -108,3 +105,11 @@ autocmd BufWritePost init.vim source %
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.ino lua vim.lsp.buf.formatting_sync(nil, 100)
+
+lua require"surround".setup{}
+
+lua << EOF
+  require("flutter-tools").setup{
+    flutter_path = "/home/mmkumr/flutter/bin/flutter"
+  } -- use defaults
+EOF

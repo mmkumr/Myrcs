@@ -5,7 +5,7 @@ super + Return
 super + d
 	rofi -modi drun,window,run,keys,ssh -show drun -show-icons -sidebar-mode
 super + n
-    $TERMINAL  -t "nautilus" -e $FILE 
+    $FILE
 super + e
 	$TERMINAL -e neomutt
 super + m
@@ -13,7 +13,7 @@ super + m
 super + shift + m
     $TERMINAL -e "sudo fusermount -u /media/mmkumr/Android"
 super + w
-	firefox
+	opera
 super + shift + g
 	gimp
 
@@ -23,22 +23,22 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-    $TERMINAL -e rofi -show powermenu -modi powermenu:/home/mmkumr/.config/sxhkd/powermenu
+    $TERMINAL -t powermenu -e rofi -show powermenu -modi powermenu:/home/mmkumr/.config/sxhkd/powermenu
 super + x
     xset dpms force off; /usr/bin/slimlock
 
-XF86AudioRaiseVolume 
-    pactl set-sink-volume 0 +5% #increase sound volume
-XF86AudioLowerVolume 
-    pactl set-sink-volume 0 -5% #decrease sound volume
-XF86AudioMute 
-    pactl set-sink-mute 0 toggle # mute sound
-
-# Sreen brightness controls
-XF86MonBrightnessUp 
-    sudo light -A 2 # increase screen brightness
-XF86MonBrightnessDown 
-    sudo light -U 2 # decrease screen brightness
+# XF86AudioRaiseVolume 
+#     pactl set-sink-volume 0 +5% #increase sound volume
+# XF86AudioLowerVolume 
+#     pactl set-sink-volume 0 -5% #decrease sound volume
+# XF86AudioMute 
+#     pactl set-sink-mute 0 toggle # mute sound
+#
+# # Sreen brightness controls
+# XF86MonBrightnessUp 
+#     sudo light -A 2 # increase screen brightness
+# XF86MonBrightnessDown 
+#     sudo light -U 2 # decrease screen brightness
 
 # Media player controls
 XF86AudioPlay 
@@ -53,10 +53,10 @@ XF86AudioPrev
 # Recording
 # Take screenshot
 shift + Print
-	gnome-screenshot -a -i 
+	i3-scrot -s
 # Pick screenshot type
 Print
-	gnome-screenshot 
+	i3-scrot
 # Record audio or video
 super + Print
 	peek
