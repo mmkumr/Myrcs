@@ -1,12 +1,12 @@
 #Copying rc file to git directory.
 #!/usr/bin/zsh
-cp  ~/.commitrc.sh \
-    ~/.zshrc \
-    $project_dir/Myrcs/
-
 cp  ~/.i3/ \
     ~/.i3status.conf \
-    ~/.config/xfce4/ \
+    ~/.commitrc.sh \
+    ~/.zshrc \
+    $project_dir/Myrcs/ -r
+
+cp  ~/.config/xfce4/ \
     ~/.config/nvim/ \
     ~/.config/ranger \
     ~/.config/alacritty \
