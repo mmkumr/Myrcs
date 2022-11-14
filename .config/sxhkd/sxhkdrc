@@ -25,7 +25,7 @@ super + Insert
 super + shift + x
     $TERMINAL -t powermenu -e rofi -show powermenu -modi powermenu:/home/mmkumr/.config/sxhkd/powermenu
 super + x
-    xset dpms force off; /usr/bin/slimlock
+    xset dpms force off; /home/mmkumr/.i3/scripts/lock
 
 # XF86AudioRaiseVolume 
 #     pactl set-sink-volume 0 +5% #increase sound volume

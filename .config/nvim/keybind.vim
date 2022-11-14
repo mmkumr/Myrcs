@@ -1,3 +1,4 @@
+let mapleader=","
 " ignore up down right left keys in insert mode.
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
@@ -19,11 +20,11 @@ nmap <tab> :BuffergatorMruCycleNext<CR>
 " Mapping for clearing highlighted search word
 map <esc> :noh<cr>
 " arduino vim keybindings
-nnoremap <buffer> <leader>am :ArduinoVerify<CR>
+nnoremap <buffer> <leader>av :ArduinoVerify<CR>
 nnoremap <buffer> <leader>au :ArduinoUpload<CR>
 nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
 nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
-nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
+nnoremap <buffer> <leader>ap :ArduinoChoosePort<CR>
 " vsnip keybinds
 imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
@@ -41,5 +42,5 @@ nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 " For toogle nerdtree with ctrl + n
 map N :NvimTreeToggle<CR>
-map t :Telescope<CR>
 map tc :lua require('lsp-fastaction').code_action()<CR>
+map T :terminal<CR>

@@ -48,15 +48,15 @@ autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 " Update binds when init.vim is updated.
 autocmd BufWritePost init.vim source %
 
+
 " auto-format
-autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.ino lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.dart lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.js lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.py lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.ino lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.dart lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.php lua vim.lsp.buf.format(nil, 100)
 
 lua << EOF
-    require"surround".setup{}
-
     require("flutter-tools").setup{
         flutter_path = "/home/mmkumr/flutter/bin/flutter"
     } -- use defaults
