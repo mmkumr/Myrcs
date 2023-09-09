@@ -5,9 +5,9 @@ set nowrap
 " Plugins for nvim.
 source ~/.config/nvim/plug.vim
 " Default keybindings.
-source ~/.config/nvim/keybind.vim
-luafile ~/.config/nvim/compe.lua
-luafile ~/.config/nvim/lsp_utils.lua
+source ~/.config/nvim/keybind.lua
+luafile ~/.config/nvim/cmp.lua
+luafile ~/.config/nvim/lutils.lua
 luafile ~/.config/nvim/nvim-tree.lua
 luafile ~/.config/nvim/code_action_dart.lua
 " Configuration values

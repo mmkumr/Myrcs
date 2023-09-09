@@ -1,0 +1,22 @@
+2023/09/10-01:17:30.424 51e Reusing MANIFEST /home/mmkumr/.config/opera/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/09/10-01:17:30.631 51e Recovering log #13
+2023/09/10-01:17:30.712 51e Level-0 table #16: started
+2023/09/10-01:17:31.405 51e Level-0 table #16: 13487 bytes OK
+2023/09/10-01:17:31.405 51e Recovering log #22
+2023/09/10-01:17:32.390 51e Reusing old log /home/mmkumr/.config/opera/Default/Sync Data/LevelDB/000022.log 
+2023/09/10-01:17:33.166 51e Delete type=2 #18
+2023/09/10-01:17:33.166 51e Delete type=2 #21
+2023/09/10-01:17:33.166 51e Delete type=0 #13
+2023/09/10-01:17:33.166 51e Delete type=2 #23
+2023/09/10-01:17:33.167 4c7 Compacting 4@0 + 1@1 files
+2023/09/10-01:17:35.389 4c7 Generated table #23@0: 974 keys, 69286 bytes
+2023/09/10-01:17:35.389 4c7 Compacted 4@0 + 1@1 files => 69286 bytes
+2023/09/10-01:17:35.429 4c7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/09/10-01:17:35.429 4c7 Delete type=2 #7
+2023/09/10-01:17:35.430 4c7 Delete type=2 #16
+2023/09/10-01:17:35.430 4c7 Delete type=2 #12
+2023/09/10-01:17:35.430 4c7 Delete type=2 #9
+2023/09/10-01:17:35.430 4c7 Delete type=2 #14
+2023/09/10-01:17:35.550 4c9 Level-0 table #25: started
+2023/09/10-01:17:35.785 4c9 Level-0 table #25: 184312 bytes OK
+2023/09/10-01:17:35.898 4c9 Delete type=0 #22

@@ -1,0 +1,18 @@
+2023/09/09-02:37:52.593 3 Reusing MANIFEST /home/mmkumr/.config/opera/Default/Local Storage/leveldb/MANIFEST-000001
+2023/09/09-02:37:52.595 3 Recovering log #35
+2023/09/09-02:37:52.596 3 Reusing old log /home/mmkumr/.config/opera/Default/Local Storage/leveldb/000035.log 
+2023/09/09-03:17:13.733 5 Level-0 table #39: started
+2023/09/09-03:17:14.532 5 Level-0 table #39: 64895 bytes OK
+2023/09/09-03:17:14.571 5 Delete type=0 #35
+2023/09/09-03:17:14.572 5 Compacting 4@0 + 1@1 files
+2023/09/09-03:17:14.770 5 Generated table #40@0: 227 keys, 63711 bytes
+2023/09/09-03:17:14.770 5 Compacted 4@0 + 1@1 files => 63711 bytes
+2023/09/09-03:17:14.787 5 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/09/09-03:17:14.788 5 Delete type=2 #39
+2023/09/09-03:17:14.788 5 Delete type=2 #30
+2023/09/09-03:17:14.788 5 Delete type=2 #32
+2023/09/09-03:17:14.788 5 Delete type=2 #36
+2023/09/09-03:17:14.788 5 Delete type=2 #34
+2023/09/09-03:37:10.569 5 Level-0 table #42: started
+2023/09/09-03:37:10.599 5 Level-0 table #42: 34330 bytes OK
+2023/09/09-03:37:10.616 5 Delete type=0 #38

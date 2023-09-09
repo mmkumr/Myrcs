@@ -4,31 +4,19 @@ cp  ~/.i3/ \
     ~/.i3status.conf \
     ~/.commitrc.sh \
     ~/.zshrc \
-    $project_dir/Myrcs/ -r
+    ~/.config \
+    /run/media/mmkumr/MyWorkspace/Myrcs/ -r
 
-cp  ~/.config/xfce4/ \
-    ~/.config/nvim/ \
-    ~/.config/ranger \
-    ~/.config/alacritty \
-    ~/.config/sxhkd \
-    $project_dir/Myrcs/.config/ -r
 #Changing to git directory.
-cd $project_dir/Myrcs
+cd /run/media/mmkumr/MyWorkspace/Myrcs
 git status 
 git status | grep clean
 if [ $? -gt 0 ] 
 then
-    echo -n "Do you want to commit rc files? [Y/n] "
-    read REPLY
-    if test "$REPLY" = "N" -o "$REPLY" = "n"; then
-    echo "Operation canceled"
     sleep 2
-    else
-        git add .
-        git commit -m "Auto commit"
-        git push
-    fi
+    git add .
+    git commit -m "Auto commit"
+    git push
 fi
-
 #netstat -natu | grep 'ESTABLISHED'
 

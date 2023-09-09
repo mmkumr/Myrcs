@@ -1,0 +1,6 @@
+2023/09/09-16:15:58.690 479 Creating DB /home/mmkumr/.config/opera/Default/IndexedDB/https_www.sejda.com_0.indexeddb.leveldb since it was missing.
+2023/09/09-16:15:58.813 479 Reusing MANIFEST /home/mmkumr/.config/opera/Default/IndexedDB/https_www.sejda.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/09-16:16:03.382 479 Level-0 table #5: started
+2023/09/09-16:16:03.422 479 Level-0 table #5: 1555 bytes OK
+2023/09/09-16:16:03.438 479 Delete type=0 #3
+2023/09/09-16:16:03.438 479 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

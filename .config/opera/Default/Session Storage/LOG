@@ -1,0 +1,12 @@
+2023/09/10-01:17:31.055 3 Reusing MANIFEST /home/mmkumr/.config/opera/Default/Session Storage/MANIFEST-000001
+2023/09/10-01:17:31.720 3 Recovering log #9
+2023/09/10-01:17:32.041 3 Level-0 table #12: started
+2023/09/10-01:17:33.054 3 Level-0 table #12: 9349 bytes OK
+2023/09/10-01:17:33.054 3 Recovering log #14
+2023/09/10-01:17:33.411 3 Reusing old log /home/mmkumr/.config/opera/Default/Session Storage/000014.log 
+2023/09/10-01:17:33.713 3 Delete type=2 #15
+2023/09/10-01:17:33.714 3 Delete type=0 #9
+2023/09/10-01:17:33.714 3 Delete type=2 #13
+2023/09/10-01:43:44.214 3 Level-0 table #16: started
+2023/09/10-01:43:45.406 3 Level-0 table #16: 63293 bytes OK
+2023/09/10-01:43:46.485 3 Delete type=0 #14

@@ -31,5 +31,6 @@
     <property name="brightness-level-on-battery" type="uint" value="5"/>
     <property name="brightness-level-on-ac" type="uint" value="5"/>
     <property name="brightness-on-ac" type="uint" value="120"/>
+    <property name="lock-screen-suspend-hibernate" type="bool" value="true"/>
   </property>
 </channel>
