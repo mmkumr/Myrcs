@@ -41,3 +41,4 @@ require('lspconfig')['arduino_language_server'].setup {
 require('lspconfig')['vimls'].setup {
     capabilities = capabilities
 }
+require("telescope").load_extension("flutter")

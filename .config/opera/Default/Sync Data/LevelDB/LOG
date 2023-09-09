@@ -20,3 +20,6 @@
 2023/09/10-01:17:35.550 4c9 Level-0 table #25: started
 2023/09/10-01:17:35.785 4c9 Level-0 table #25: 184312 bytes OK
 2023/09/10-01:17:35.898 4c9 Delete type=0 #22
+2023/09/10-01:59:59.970 4a4 Level-0 table #27: started
+2023/09/10-02:00:00.163 4a4 Level-0 table #27: 191725 bytes OK
+2023/09/10-02:00:00.180 4a4 Delete type=0 #24

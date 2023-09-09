@@ -9,7 +9,6 @@ source ~/.config/nvim/keybind.lua
 luafile ~/.config/nvim/cmp.lua
 luafile ~/.config/nvim/lutils.lua
 luafile ~/.config/nvim/nvim-tree.lua
-luafile ~/.config/nvim/code_action_dart.lua
 " Configuration values
 luafile ~/.config/nvim/defval.lua
 
