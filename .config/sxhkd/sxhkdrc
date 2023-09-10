@@ -52,11 +52,9 @@ XF86AudioPrev
 
 # Recording
 # Take screenshot
-shift + Print
-	i3-scrot -s
-# Pick screenshot type
 Print
-	i3-scrot
+flameshot gui
+
 # Record audio or video
 super + Print
 	peek

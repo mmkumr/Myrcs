@@ -1,0 +1,13 @@
+2023/09/10-21:49:15.038 345b Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2023/09/10-21:50:20.260 3483 Level-0 table #5: started
+2023/09/10-21:50:20.302 3483 Level-0 table #5: 163929 bytes OK
+2023/09/10-21:50:20.304 3483 Delete type=0 #3
+2023/09/10-21:56:25.348 3483 Level-0 table #7: started
+2023/09/10-21:56:25.370 3483 Level-0 table #7: 245561 bytes OK
+2023/09/10-21:56:25.372 3483 Delete type=0 #4
+2023/09/10-21:56:30.655 345b Level-0 table #9: started
+2023/09/10-21:56:30.675 345b Level-0 table #9: 318520 bytes OK
+2023/09/10-21:56:30.677 345b Delete type=0 #6
+2023/09/10-22:11:49.900 345b Level-0 table #11: started
+2023/09/10-22:11:49.912 345b Level-0 table #11: 16549 bytes OK
+2023/09/10-22:11:49.913 345b Delete type=0 #8

@@ -1,3 +1,2 @@
-2023/09/10-01:17:30.071 51c Reusing MANIFEST /home/mmkumr/.config/opera/Default/Service Worker/Database/MANIFEST-000001
-2023/09/10-01:17:30.071 51c Recovering log #3
-2023/09/10-01:17:30.454 51c Reusing old log /home/mmkumr/.config/opera/Default/Service Worker/Database/000003.log 
+2023/09/10-21:55:28.382 4c2 Creating DB /home/mmkumr/.config/opera/Default/Service Worker/Database since it was missing.
+2023/09/10-21:55:28.385 4c2 Reusing MANIFEST /home/mmkumr/.config/opera/Default/Service Worker/Database/MANIFEST-000001

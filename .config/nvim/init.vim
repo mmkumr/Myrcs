@@ -57,6 +57,6 @@ autocmd BufWritePre *.php lua vim.lsp.buf.format(nil, 100)
 
 lua << EOF
     require("flutter-tools").setup{
-        flutter_path = "/home/mmkumr/flutter/bin/flutter"
+        flutter_path = "/opt/flutter/bin/flutter"
     } -- use defaults
 EOF

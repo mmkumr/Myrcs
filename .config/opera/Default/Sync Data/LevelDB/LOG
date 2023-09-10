@@ -7,3 +7,21 @@
 2023/09/10-17:18:59.163 4c2 Level-0 table #14: started
 2023/09/10-17:18:59.178 4c2 Level-0 table #14: 126617 bytes OK
 2023/09/10-17:18:59.179 4c2 Delete type=0 #11
+2023/09/10-21:56:07.629 4c2 Level-0 table #16: started
+2023/09/10-21:56:07.638 4c2 Level-0 table #16: 108319 bytes OK
+2023/09/10-21:56:07.642 4c2 Delete type=0 #13
+2023/09/10-21:56:07.645 4c2 Compacting 4@0 + 1@1 files
+2023/09/10-21:56:07.675 4c2 Generated table #17@0: 1072 keys, 93524 bytes
+2023/09/10-21:56:07.675 4c2 Compacted 4@0 + 1@1 files => 93524 bytes
+2023/09/10-21:56:07.676 4c2 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/09/10-21:56:07.677 4c2 Delete type=2 #9
+2023/09/10-21:56:07.677 4c2 Delete type=2 #14
+2023/09/10-21:56:07.677 4c2 Delete type=2 #16
+2023/09/10-21:56:07.678 4c2 Delete type=2 #12
+2023/09/10-21:56:07.678 4c2 Delete type=2 #7
+2023/09/10-22:41:22.800 4c3 Level-0 table #19: started
+2023/09/10-22:41:22.807 4c3 Level-0 table #19: 168482 bytes OK
+2023/09/10-22:41:22.810 4c3 Delete type=0 #15
+2023/09/10-23:44:23.420 454 Level-0 table #21: started
+2023/09/10-23:44:23.425 454 Level-0 table #21: 150150 bytes OK
+2023/09/10-23:44:23.426 454 Delete type=0 #18
