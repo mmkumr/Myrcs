@@ -23,22 +23,9 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-    $TERMINAL -t powermenu -e rofi -show powermenu -modi powermenu:/home/mmkumr/.config/sxhkd/powermenu
+    rofi -show p -modi p:'rofi-power-menu --symbols-font "Symbols Nerd Font Mono"'
 super + x
     xset dpms force off; /home/mmkumr/.i3/scripts/lock
-
-# XF86AudioRaiseVolume 
-#     pactl set-sink-volume 0 +5% #increase sound volume
-# XF86AudioLowerVolume 
-#     pactl set-sink-volume 0 -5% #decrease sound volume
-# XF86AudioMute 
-#     pactl set-sink-mute 0 toggle # mute sound
-#
-# # Sreen brightness controls
-# XF86MonBrightnessUp 
-#     sudo light -A 2 # increase screen brightness
-# XF86MonBrightnessDown 
-#     sudo light -U 2 # decrease screen brightness
 
 # Media player controls
 XF86AudioPlay 
@@ -53,7 +40,7 @@ XF86AudioPrev
 # Recording
 # Take screenshot
 Print
-flameshot gui
+    flameshot gui
 
 # Record audio or video
 super + Print

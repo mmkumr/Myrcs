@@ -1,2 +1,3 @@
-2023/09/10-16:13:43.590 454 Creating DB /home/mmkumr/.config/opera/Default/IndexedDB/https_cad.onshape.com_0.indexeddb.leveldb since it was missing.
-2023/09/10-16:13:43.593 454 Reusing MANIFEST /home/mmkumr/.config/opera/Default/IndexedDB/https_cad.onshape.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/11-01:32:35.179 43c Reusing MANIFEST /home/mmkumr/.config/opera/Default/IndexedDB/https_cad.onshape.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/11-01:32:35.179 43c Recovering log #3
+2023/09/11-01:32:35.182 43c Reusing old log /home/mmkumr/.config/opera/Default/IndexedDB/https_cad.onshape.com_0.indexeddb.leveldb/000003.log 

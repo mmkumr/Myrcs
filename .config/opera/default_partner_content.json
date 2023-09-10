@@ -1,6 +1,6 @@
-// pMoIdfN+mbw9asa3AZikSySpYh0Dp8bxU64fr1ikC2UuezQqzAIO9tepgo0FSYmeZ2NOlciF7E05NsKfNF+CIzLoEFMIfWJqhrtfpAdnZVFixIifkCKIIhK0YnHVrPpM0C57sZKLZrl5H76Ag066RTQ8Oua6s6qw0ueUV7jJkL7F5xlG/3aEoSic3EvXsWtzZpBnZjrvRJCqgKSOf2s54i5Q7uHz7sKG35ZQedDwFFzBO2OzVNUb+qBfGCjV6+uqoD99XIGfOLNlpCKY79xtgFY7/mxG9+ycJIXojfhhdPC/LoXS9uGqc9W9eIqstvPBIW9uNKA8hWuuddg+0pG3wg==
+// K4gi3jRL6uSebj5dC7wn1ZHMG8IGkjf+f2xgUMJtaG14Oc1Mmcmc4v/hq6CYG5vVXZx93xqhNi0fOYhhCwM3dykEPLlwv3G01LSLJ//5nPGlyJsvx1VImUIZZLIFezHwihENqh2UEr35PBVk8zADzrBWT3xvA97O9OL0Li38K4tw1d6Hkps7nIiUnBeEfiFGRX4G12vKFkxr+thrSWUALHo/KYGO7B++MELL86v3pEPy/Wen9UBIW3ONat5//nBUi/4Df5anH4YNaWPmb6dlOnbCyhNimC/invVZNVwuGW/xQBZOyIF/6bSER7yFckUAVPQjR6UmEKeehTVgpdaSLw==
 {
-  "version": 121,
+  "version": 125,
   "search_engines": {
     "location": {
       "at": {
@@ -2032,6 +2032,7 @@
     },
     "au": {
       "other": [
+        "amazon_au",
         "apple_au",
         "deezer",
         "soundcloud",
@@ -2060,6 +2061,7 @@
     },
     "br": {
       "other": [
+        "amazon_br",
         "apple_br",
         "deezer",
         "spotify",
@@ -2077,6 +2079,7 @@
     },
     "ca": {
       "other": [
+        "amazon_ca",
         "apple_ca",
         "deezer",
         "soundcloud",
@@ -2111,6 +2114,7 @@
     },
     "de": {
       "other": [
+        "amazon_de",
         "apple_de",
         "deezer",
         "soundcloud",
@@ -2139,6 +2143,7 @@
     },
     "es": {
       "other": [
+        "amazon_es",
         "apple_es",
         "deezer",
         "soundcloud",
@@ -2159,6 +2164,7 @@
     },
     "fr": {
       "other": [
+        "amazon_fr",
         "apple_fr",
         "spotify",
         "youtube",
@@ -2169,6 +2175,7 @@
     },
     "gb": {
       "other": [
+        "amazon_gb",
         "apple_gb",
         "spotify",
         "youtube",
@@ -2203,6 +2210,7 @@
     },
     "it": {
       "other": [
+        "amazon_it",
         "apple_it",
         "spotify",
         "youtube",
@@ -2387,6 +2395,7 @@
     },
     "us": {
       "other": [
+        "amazon_us",
         "apple_us",
         "deezer",
         "soundcloud",
@@ -2413,6 +2422,7 @@
     },
     "other": {
       "other": [
+        "amazon_other",
         "apple_other",
         "deezer",
         "soundcloud",
@@ -2432,6 +2442,16 @@
       "name": "Apple Music",
       "webui_icon_url": "chrome://op-resources/images/player_service/apple_music.svg",
       "allowlisted_urls": ["https://appleid.apple.com"]
+    },
+    "amazon": {
+      "banner": "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",
+      "banner_dark": "iVBORw0KGgoAAAANSUhEUgAAAPEAAAAoCAYAAAAv+hzuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASMSURBVHgB7Z2NVdtADMdFXwdgg5oJoBPUnaB0AtwNsgHpBNAJEiYAJoiZAJgg7gRJJ1ClnIwPx87ZNAWf+f/e07N9ls/2e1Gk032Y6B3BzAt2XBMAIC7EcBN+zgkBAOJBjPZQZGkGvCQAQHyYIae6JQAAAGAIHIQUzGtt2o8HBwe5lSWyORU5NrW1yC85X3jXpbL5JnLYptNW/65nEB5Eb107nzbc6850C0/vpNQJ3CsT+WS6v7Weel0ARIP8qE+9ZFDqZXibSAM6y3pCSY6noWRTTSetnZtxOys/dPaea9lyn3O7prEuAmCAfOyg47cfF7bNRR7JebwvIqmVX5v+2nTurPxMJDG5EPlK4XsFUaMj5zXLZ7q1eyfkooSUOiJ16XNNvKJcpLD9xASA+JAfd+Z5o2tuSArxc897Wddhl1BaNXm0XV42pMNVtvmGur3LoskT197xnl1zAYAo+ED9uK23R41Hb/+mrmPHuR3uMzNc1vWvoe6Zt/8dbV8QE32NuI11B50/tH8ebKvt9oxegEUNqR3mMGAQG/sy4rfip23VEGcWXmc9w2E/mfZIAERG1EZs3USaJCusKBGZiagxz17Qtu0SUQAwKGL3xBtDFjkiZ8xXVBliJqJJKoyRBqMmeiMuMWPOZFcN2g+zp4FLC2//EwEQGaMx4hLNhItMqUp6HQf0C6q89ykBEBlDMGK/HboV+lr2+Jj64w/BDPGrvMYGfQAQDV1GbP1vHrz9czEiNbqCnBHqaLCMGvqWLWmlSSwdFZZbsV6n5eUIMaJq1NguLr1rJlK3euQr7zk0zE7Fa38mAGKjNpopa9HpMupqXio0nFtwO0uRSb1+3p7k38SCO46dtvqWuyojAAZIF0+snnJu+3mLjl9etOjc7Dj3nVwCSj3voVfnlSaszBAP/fq1LSvlmpHOyIXbZSi+tmfWa+e1+2jYfNf0HNY2PmL3R6UzohKqxoFv6iMAAAAAAAAAAAAAMBiCy/O8NyyJltDzPutCRAeRPBAAYHiwW7TgPNTFxA3LCwEweNitdDHjka52Ie91wf2YEgADoks/8Q9ya2fpoI+5bH+OZeK8/TFp+Kz9xwW5PuFSlBOTMwIgZhpGM83G6pmbsGikJCMAYsTajfNaaKnGnNKIsPc8rZUtvHdGmxjEDT8fJ+0nfPouizMoeHu97Il3rlypE99wAuOAd08WuI7FoM1wL3h7wfinZWvV8/qRBwEwJswrt30xgc2zTYYSgrILlfUPZtby3Fo2rV3jz6BKCICxYV55zmFW5qUn/ApfJjSDPfGMdhl4vkWTkXKV1IIXBoNkbyO2zACm1K87ppzmp6IfLiusbLNtWai+fk+l/FCaHm8m8FP3z67k5LrN8ob6td57OzzCmtTgXdDDM/dlZd50xfthwYHMOlcfa5sSAO8NdsaccTiMfU30D0C/FZV2fIclw4ABeMoCX/LbGLQa7oxf0J/N6BMGEfDqs5jMMFS+2Tah/VKQa2NvFtDDzCMwdt58KiK7LHVp2Am5xFSZpCLaNnJ/fHNBVUJMJQ8lwwAYG38BAnEUdd2wkpoAAAAASUVORK5CYII=",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VV/TFV1FD/nfO99L2DugSykcIsAc5ROmpaiVCxnDNKiVluvWmUxN1oRFZVtLVyt1pittbKtXIWb5j9iiyAMc1htGcRwUjJHMGQESRE/FPA93v1+T+e+19Mnlq411h++z3Z3z/d+z4/P95xzzxcgjjjimENsYab1B0c3FH/B3n/SIZhD/NAycT0w1quE8Xz4v1DS8lv6hfbxyle+3oyIPUrRGkK6i0gNKoUvElEJWXgPkpqwFZQdKc87nPfB0UeIMK2j7Noa13jVzp41qPDRQ/7sxwo/7ctksN5BwmXiq18hVdkc7NbepPc9CQmV9QVJQ6UHhrO18r7KAHkI8Iti3kSouQgNV7PWTYjqTmDtM8bsMIhttjG3g9HjIcOvuQGZOV8bszbKXgMsBAPFrhwK4Yda62EFMzeI3lMa+VTI9iaLr3uDk9PppS1jmSHl+Uq8jEi8cmIIH8LShkEWTUPVhc3uh8zXv22Tui3ofX75Xnd9zVvtjQr4Dld2tAFSMfnTGjRhWDSsT5KG+WTbav+GjA732231J65my4BkEQKG8wnY/nxtakVsCYiFgLA869PIQcVxFMZoSUJkzSKzNucQiNrahis0Q3A6qAdv2tNfW7i7LxMgILaRfQ6FckX359k9QK5CLAF2DGiOCSJ7xuGIKLpac0x8IeBEdL/x5wx8f1+2H8F7FRvj0x56O2JupDwzru2wHOS8hrSkXnBOPFmjjllrN4XRgGZCxJwl239cYKO6zAmZYrIihJZ/dHQlhE53WF1XDAVz+wbJmOsCAQSUEigSH5Zdz1rVrGv+/RllO3vVjJVqe6xeMo7uMQ4MncmAhh6j+dgZAo75VTIfTp129HaW9DjTMwMzgWCt5KNDynIgrIjoR2/S1FRWd8iEeEVAO2XaS0FJQCtM0URzUcaAZOZuaSS/CVCXVrDrNAcy4JIH+jY3pEy8sX4M5hirvzyRRpOBTTLgCmRQZSPRqAy1VjKneOu8Jxs+Tq5syoS5xETgQbefZe7s046plQGWJP1eHp4iSU80VBFijXT7DmVbb45tLfoJ5gAFu/pT2GMeti2oZVQvE6rVGN1MerpxqdJQJ7N8kdwNx2XA1dpEdcP/kUzBe50pgUTv/crCUpmItyqb9gRG/9iYmJrWiJZqx9kG8yoayxRhNRAulHrJ34XjUrMWmZmdcsEcQbKOJ14+1dVTURKMtXPv/t3vHk5XBnKltkvEeY4cZh0pWuz6kXevsujZ1gcWfbZKpqQibrM9eCP+Le0tTMkn9z0k0ktiLA2DQOFHCEXfKvKOPOgGgL8Cnd0XWcgftC17W/vGxXVymvDUWvlJ7+NScjzkz9qGF0uhr7Ihy/LYfjG+Wa7rWySY94IkFI2IXotc5d/pGd7ZXbVi5DynzBglc1ECs5Hywn5fggVLJfp8+ZV8YCk5C06SMseSbV9/53PLpiCOOOL4F/gTKuL2aKALNJUAAAAASUVORK5CYII=",
+      "icon_dark": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACa0lEQVRYhe2WS0hVURSGv3szHASpERkFea1ACkPUIKKooAgaVCRCOHMgDQosJCIILGcNoshGUZKTGjS4A6OiQhpIkEFNDBESrCR7kvSCHuDXYO/qIBqXTJ3cBYdz9llr7f3vf+3zr5NSmU1Lz+rqeQB5ANMNoLW1NQ3sBAonDVKn86o12JbJYlIzoAOLgVeTOdPAUaAeOAM8Be4Bm4CTwCDwEKiO8Y3AkUT+BqAjPmeAa8BzoAdYB5QA7cCSGLMCuAL0A7eBDOpdtU/drlapj9UhtU6tULvVG5Gy8+qtBIV71ZH43K1eVEvVGnW1Wh5LUKNm4rzt6mZ1m5opiMhuRkQAD4BSIBvH14FdOVD9EVgAzAEexXflCf96YC7QnEya6Cv410PRDHwDXgCdhJIkbRXwZHzS//wMh4EGoAwoAs6O878mHMgpAfgArCSUqAzYkfCtI1A8QmBh/rjcLmAZ0EJgpxYoThNO+kgicBAYSIxf8oe6C8AYYbedhFp3R18D8AX4AawFmggl6Y3Ah4G6GNcPXAaWzoQO/NVmvRcUEMRidAbWWgTsAzYSBOk90JtSOwhMtBGUcLqsBZgHfIr3BqDil6IdVsfUS2rlNDanEvWQWqyeVu//OgOngCqCtvcBQ8BxoPI/7LwEOADcAd4RFPE7ob/0TISySR32j42qWfWEuketVgvH57W1taXVJepW9aB6Th1IzDOo7o7xGfWNmpmMqrTaGJOmanfV+mw2m0rMv189oOb0Q7JcPWbogl9zWPCtetVQ64UTzdnV1fUbzL8IURGwhtD5ioAU8Jmgns8Iapiz5ZUwDyAP4CcIydV4Aw+sZAAAAABJRU5ErkJggg==",
+      "default_width": 400,
+      "name": "Amazon Music",
+      "webui_icon_url": "chrome://op-resources/images/player_service/amazon_music.svg",
+      "allowlisted_urls": ["https://www.amazon.fr/ap/signin"]
     },
     "deezer": {
       "banner": "iVBORw0KGgoAAAANSUhEUgAAAPAAAAAoCAMAAAD35ofiAAABpFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAql1Ap1wrRJsrEoIkLpH/kQUAAAC9GFj6sQgqUJT9fAI7qF3/gQA0j3jMJkvyWB4rS3YpSpQmPpMyp18ypl7RIksuXpcnPJOwF1v+vAU8En05qVz4tQcoIIn9dhr7kRI1knVNEHqOFGX/kAD/eAAvY5YsU5UlM5UlMpRnFHCgF2DncBwzp1+uF1q2GFnRI03VMjDXOy39ax3+eRr+khH+oA7/rwn/vgb+hBUqTZVTE3VtE2+IFmfaQyrhXyLqexrxlRDUKzQyaJdaFHR0Fmw0dJmPFmThXCLpeBrxlRKoF1v9yALaRSklOo8yl21AE3wqQJX6ZSA4j3gAAABAq100mW6AFWozpV9hFHIzVaUwTKAsRJwpO5hBE3ueF2DaMzzjRy7tWh72bQ7/lwD/kgD/jgD/iQD/hAAybZguW5b+hhX+lRH/owz6rQolM5RFE3pNFHiVF2PcSyjfVSXkZyD9eBnrgxfujBTynQ4hS23NAAAAZnRSTlMAQL/fnyBgEO+AoH/PcDCQr49Q30Aff2AgH9+Af39gYEAfHxD+/t/f35+fmIB/UEhAQEA/Hx8fEP7+/v7+/v7f39/f39/f39/f39+/n5+fn5+fn5+PgICAf39/f39wcG9gYFAwMCDo1A+TAAADIklEQVRo3u2XZ3vTMBCAT1ZkyXGcBbSlLaW7dNFN2XvvvfcwlLLKhhYoe/1pcpJq2W0fvsYUvfmiky568lqXUwIWi8VisVj+BbJhGDrwH2GFlzpWeKljhZcMbcsRE/M8yc8TZgSnDJwQwkFCEnC9A+abdYY7cEgLTXcR0LhOWEFkeCTMfREiGQYKPydjx8VHESZYiYqOzKcqH4dumWI+g3QQF2aoK6FFLVwWkY4vU2gUlxYT9qOA5rWwr+OUGK9dhoCEhgYlTORAKOsg8hXKeKGwH1sWDIUNBUgb8tMKj+RdqoU5DnIEgBVxiUMGj4pwYB4mEO5p5BsoZ1KMAxBZxUpYEGACl6FaXD14YP++Q3Mn3LWtq7MTEGoKr6iEXakBiEBBKaQysvEz83XNOvhlBySPMxxCPRHgAKpF3+yH9+/26qDpPgKgy9cFCRcoLAVKRIJDz8NZFZfw7OO+OQZc7kAkuEEe5AT60wpQLRoqvj/26ODGPQTmToEn7uEwScZJxjTuy/GRJXG1cLWpGx4eGrqtgzsjI83NzTjyjIIMFgoX5gnnkr5QDpOQlAgPNFy+dPEaXLlw7mz/4K3GxsYz5/8i7GQiyihMTRwkfLVw0ayzlAj3zf7a+m03bP8yMfmp5npH+8z6aZx24yWt7mEqLyMFnyt0E0e+RRUwdTeZ9ZQIN/z++f3rLtgxNbH5c39tR/uGmemosXpgPrqTEKQ5lwfqepVkqM+0bxY0Ir5DsZwW4YFTJ08cPw29vceOHrk52NNzuLvb/O4IzO8pR3UhHxBfugrZjqOeTkrGF/GiHXgOD77qwnXrKq/x8dbW1pYWaBkbGx1ta1uBgKppqRm4JaFGALJL0VLgyUEBAhlndEzndSmXqwflBSWRji798tXrN29Xr3rx/NnTNVA/NTH5pKb24+NHDx+Yu8iAwmgQQTlAIRYL5s4ThryIN/Xql/RiwhuNsNFxCkoYeNb4M1m1IvbvYIEwMGp8U9C0YsI7oX6LFN4khTUsmxMhdVx9LSGs4IhQ0AyZS3Edin+nXA4LhSsQ3ELkPJaeLm2xWCwWi6UK/AHM3nlzOmzCLgAAAABJRU5ErkJggg==",
@@ -2495,6 +2515,46 @@
     }
   },
   "player_service_items_flat": {
+    "amazon_au": {
+      "id": "amazon",
+      "url": "https://music.amazon.com.au"
+    },
+    "amazon_br": {
+      "id": "amazon",
+      "url": "https://music.amazon.com.br"
+    },
+    "amazon_ca": {
+      "id": "amazon",
+      "url": "https://music.amazon.ca"
+    },
+    "amazon_de": {
+      "id": "amazon",
+      "url": "https://music.amazon.de"
+    },
+    "amazon_es": {
+      "id": "amazon",
+      "url": "https://music.amazon.es"
+    },
+    "amazon_fr": {
+      "id": "amazon",
+      "url": "https://music.amazon.fr"
+    },
+    "amazon_gb": {
+      "id": "amazon",
+      "url": "https://music.amazon.co.uk"
+    },
+    "amazon_it": {
+      "id": "amazon",
+      "url": "https://music.amazon.it"
+    },
+    "amazon_us": {
+      "id": "amazon",
+      "url": "https://music.amazon.com"
+    },
+    "amazon_other": {
+      "id": "amazon",
+      "url": "https://music.amazon.com"
+    },
     "apple_at": {
       "id": "apple",
       "url": "https://music.apple.com/at/browse"

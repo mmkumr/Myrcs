@@ -1,0 +1,6 @@
+2023/09/11-00:28:28.190 454 Creating DB /home/mmkumr/.config/opera/Default/IndexedDB/https_usersurvey.dropbox.com_0.indexeddb.leveldb since it was missing.
+2023/09/11-00:28:28.193 454 Reusing MANIFEST /home/mmkumr/.config/opera/Default/IndexedDB/https_usersurvey.dropbox.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/11-00:28:31.795 4c2 Level-0 table #5: started
+2023/09/11-00:28:31.796 4c2 Level-0 table #5: 3119 bytes OK
+2023/09/11-00:28:31.797 4c2 Delete type=0 #3
+2023/09/11-00:28:31.797 4c2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

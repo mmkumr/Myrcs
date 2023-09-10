@@ -1,7 +1,3 @@
-2023/09/10-16:03:46.318 454 Log #3: dropping 3847 bytes; Corruption: bad record length
-2023/09/10-16:03:46.318 454 Log #3: dropping 516 bytes; Corruption: missing start of fragmented record(2)
-2023/09/10-16:03:46.324 454 Log #3: 194 ops saved to Table #4 OK
-2023/09/10-16:03:46.324 454 Archiving /home/mmkumr/.config/opera/Default/Local Extension Settings/ebongfbmlegepmkkdjlnlmdcmckedlal/000003.log: OK
-2023/09/10-16:03:46.324 454 Table #4: 194 entries OK
-2023/09/10-16:03:46.325 454 Archiving /home/mmkumr/.config/opera/Default/Local Extension Settings/ebongfbmlegepmkkdjlnlmdcmckedlal/MANIFEST-000001: OK
-2023/09/10-16:03:46.327 454 **** Repaired leveldb /home/mmkumr/.config/opera/Default/Local Extension Settings/ebongfbmlegepmkkdjlnlmdcmckedlal; recovered 1 files; 28829 bytes. Some data may have been lost. ****
+2023/09/11-01:32:26.873 43a Reusing MANIFEST /home/mmkumr/.config/opera/Default/Local Extension Settings/ebongfbmlegepmkkdjlnlmdcmckedlal/MANIFEST-000001
+2023/09/11-01:32:26.873 43a Recovering log #6
+2023/09/11-01:32:26.877 43a Reusing old log /home/mmkumr/.config/opera/Default/Local Extension Settings/ebongfbmlegepmkkdjlnlmdcmckedlal/000006.log 
