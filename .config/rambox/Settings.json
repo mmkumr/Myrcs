@@ -15,14 +15,14 @@
 		"rules": ""
 	},
 	"window": {
-		"x": 12,
+		"x": 687,
 		"y": 41,
 		"maximized": false,
 		"alwaysOnTop": false,
 		"autoHideMenu": true,
 		"displayBehaviour": "taskbar",
 		"closeBehaviour": "traytaskbar",
-		"width": 1342,
+		"width": 667,
 		"height": 680
 	},
 	"hardwareAcceleration": true,
@@ -52,7 +52,7 @@
 		"zoomWheel": true
 	},
 	"downloadFolder": "/home/mmkumr/Downloads",
-	"theme": "dark",
-	"deviceId": "ml9rw77LPX7ke3t6VDst",
+	"theme": "light",
+	"deviceId": "uwXGbAQKGnPgsklzRhBB",
 	"defaultSpellChecker": "en-GB"
 }

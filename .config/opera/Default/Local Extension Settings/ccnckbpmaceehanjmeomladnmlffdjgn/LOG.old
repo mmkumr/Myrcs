@@ -1,10 +1,6 @@
-2023/09/10-01:17:38.396 4a4 Log #7: 1 ops saved to Table #9 OK
-2023/09/10-01:17:38.396 4a4 Archiving /home/mmkumr/.config/opera/Default/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000007.log: OK
-2023/09/10-01:17:38.831 4a4 Log #4: 30 ops saved to Table #10 OK
-2023/09/10-01:17:38.831 4a4 Archiving /home/mmkumr/.config/opera/Default/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000004.log: OK
-2023/09/10-01:17:39.525 4a4 Table #8: 75 entries OK
-2023/09/10-01:17:40.643 4a4 Table #5: 119 entries OK
-2023/09/10-01:17:40.644 4a4 Table #9: 1 entries OK
-2023/09/10-01:17:40.646 4a4 Table #10: 30 entries OK
-2023/09/10-01:17:40.646 4a4 Archiving /home/mmkumr/.config/opera/Default/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/MANIFEST-000001: OK
-2023/09/10-01:17:40.742 4a4 **** Repaired leveldb /home/mmkumr/.config/opera/Default/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn; recovered 4 files; 6340345 bytes. Some data may have been lost. ****
+2023/09/08-19:11:57.157 1295 Reusing MANIFEST /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/MANIFEST-000001
+2023/09/08-19:11:57.157 1295 Recovering log #3
+2023/09/08-19:11:57.163 1295 Reusing old log /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000003.log 
+2023/09/08-19:17:03.715 129e Level-0 table #5: started
+2023/09/08-19:17:03.801 129e Level-0 table #5: 2676151 bytes OK
+2023/09/08-19:17:03.819 129e Delete type=0 #3

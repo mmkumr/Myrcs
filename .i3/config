@@ -1,7 +1,6 @@
 set $TERMINAL alacritty
 # Startup apps
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
-exec $TERMINAL -e "sh /home/mmkumr/.commitrc.sh"
 #for disabling screen timeout
 exec setxkbmap -option caps:swapescape 
 exec $TERMINAL  
@@ -145,6 +144,7 @@ bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
 bindsym $mod+Tab		workspace next
+bindsym $mod+Shift+Tab	exec rofi -show-icons -sidebar-mode -show window
  
 bindsym $mod+XF86Back		workspace prev
 bindsym $mod+Shift+XF86Back	move container to workspace prev
@@ -218,6 +218,7 @@ for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 #file chooser window properties.
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
@@ -226,6 +227,8 @@ for_window [window_role="GtkFileChooserDialog"] floatng enable
 #moving windows to specific workspace.
 for_window [class="Opera"] move workspace $ws2
 for_window [class="Franz"] move workspace $ws3
+for_window [title="powermenu"] move workspace $ws10
+for_window [class="photoshop.exe"] floating enable
 
 # #---Function Buttons---# #
 bindsym $mod+F2	restart

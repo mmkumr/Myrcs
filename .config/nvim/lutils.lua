@@ -38,7 +38,6 @@ require('lspconfig')['bashls'].setup {
 require('lspconfig')['arduino_language_server'].setup {
     capabilities = capabilities
 }
-require('lspconfig')['vimls'].setup {
+require('lspconfig')['dartls'].setup {
     capabilities = capabilities
 }
-require("telescope").load_extension("flutter")

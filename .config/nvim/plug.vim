@@ -12,12 +12,15 @@ Plug 'kyazdani42/nvim-web-devicons'
 " Utility
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'vim-airline/vim-airline'
+Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 " Generic Programming Support
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'kylechui/nvim-surround'

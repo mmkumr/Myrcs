@@ -23,7 +23,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + shift + x
-    rofi -show power-menu -modi power-menu:rofi-power-menu
+    $TERMINAL -t powermenu -e rofi -show powermenu -modi powermenu:/home/mmkumr/.config/sxhkd/powermenu
 super + x
     xset dpms force off; /home/mmkumr/.i3/scripts/lock
 
