@@ -1,6 +1,0 @@
-2023/09/11-01:32:25.012 496 Reusing MANIFEST /home/mmkumr/.config/opera/Default/Sync Data/LevelDB/MANIFEST-000001
-2023/09/11-01:32:25.013 496 Recovering log #26
-2023/09/11-01:32:25.019 496 Reusing old log /home/mmkumr/.config/opera/Default/Sync Data/LevelDB/000026.log 
-2023/09/11-01:32:38.623 43c Level-0 table #31: started
-2023/09/11-01:32:38.629 43c Level-0 table #31: 202512 bytes OK
-2023/09/11-01:32:38.630 43c Delete type=0 #26
