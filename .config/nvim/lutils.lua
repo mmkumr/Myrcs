@@ -41,3 +41,6 @@ require('lspconfig')['arduino_language_server'].setup {
 require('lspconfig')['dartls'].setup {
     capabilities = capabilities
 }
+require('lspconfig')['vimls'].setup {
+    capabilities = capabilities
+}

@@ -112,7 +112,6 @@ export PATH="/usr/sbin:$PATH"
 export PATH="/snap/bin/:$PATH"
 export PATH="$HOME/.local/bin/:$PATH"
 export PATH="$HOME/.composer/vendor/bin/:$PATH"
-export PATH="$PATH:/opt/dart-sdk/bin"
 export PATH="$PATH:/opt/flutter/bin"
 export EDITOR=vim
 export PATH="/usr/share/rofi/themes/:$PATH"

@@ -1,0 +1,6 @@
+2023/09/13-19:13:01.842 39b Creating DB /home/mmkumr/.config/opera/IndexedDB/https_app.grammarly.com_0.indexeddb.leveldb since it was missing.
+2023/09/13-19:13:01.856 39b Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_app.grammarly.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/13-19:13:03.874 39d Level-0 table #5: started
+2023/09/13-19:13:03.875 39d Level-0 table #5: 413 bytes OK
+2023/09/13-19:13:03.876 39d Delete type=0 #3
+2023/09/13-19:13:03.877 39d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

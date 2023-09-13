@@ -1,0 +1,15 @@
+2023/09/14-00:31:29.195 21cbe Reusing MANIFEST /home/mmkumr/.config/opera/Sync Data/LevelDB/MANIFEST-000001
+2023/09/14-00:31:29.196 21cbe Recovering log #14
+2023/09/14-00:31:29.196 21cbe Reusing old log /home/mmkumr/.config/opera/Sync Data/LevelDB/000014.log 
+2023/09/14-00:31:41.254 21c9d Level-0 table #18: started
+2023/09/14-00:31:41.263 21c9d Level-0 table #18: 241578 bytes OK
+2023/09/14-00:31:41.272 21c9d Delete type=0 #14
+2023/09/14-00:31:41.272 21cbd Compacting 4@0 + 1@1 files
+2023/09/14-00:31:41.298 21cbd Generated table #19@0: 1284 keys, 234568 bytes
+2023/09/14-00:31:41.298 21cbd Compacted 4@0 + 1@1 files => 234568 bytes
+2023/09/14-00:31:41.300 21cbd compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/09/14-00:31:41.301 21cbd Delete type=2 #15
+2023/09/14-00:31:41.302 21cbd Delete type=2 #18
+2023/09/14-00:31:41.302 21cbd Delete type=2 #7
+2023/09/14-00:31:41.302 21cbd Delete type=2 #10
+2023/09/14-00:31:41.302 21cbd Delete type=2 #13
