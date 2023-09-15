@@ -40,7 +40,8 @@ vim.cmd "nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>"
 vim.cmd "nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"
 vim.cmd "nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>"
 -- For toogle nerdtree with ctrl + n
+require("telescope").load_extension("flutter")
 vim.cmd "map N :NvimTreeToggle<CR>" 
-vim.cmd "map t :Telescope<CR>"
-vim.cmd "map tc :lua require('lsp-fastaction').code_action()<CR>"
+vim.cmd "map t :terminal<CR>"
+vim.cmd "map ca :lua vim.lsp.buf.code_action()<CR>"
 vim.cmd "map tf :Telescope flutter<CR>"

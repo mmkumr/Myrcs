@@ -1,0 +1,6 @@
+2023/09/14-01:44:53.407 21c14 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_e1f63e566e0ddd8bea174390564c2346.safeframe.googlesyndication.com_0.indexeddb.leveldb since it was missing.
+2023/09/14-01:44:53.410 21c14 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_e1f63e566e0ddd8bea174390564c2346.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/14-01:44:56.149 21c99 Level-0 table #5: started
+2023/09/14-01:44:56.151 21c99 Level-0 table #5: 480 bytes OK
+2023/09/14-01:44:56.161 21c99 Delete type=0 #3
+2023/09/14-01:44:56.161 21c99 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

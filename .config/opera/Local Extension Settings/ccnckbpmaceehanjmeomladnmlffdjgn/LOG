@@ -1,3 +1,12 @@
 2023/09/14-00:31:34.404 21c99 Reusing MANIFEST /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/MANIFEST-000001
 2023/09/14-00:31:34.405 21c99 Recovering log #4
 2023/09/14-00:31:34.412 21c99 Reusing old log /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000004.log 
+2023/09/14-23:14:09.285 21c99 Level-0 table #8: started
+2023/09/14-23:14:09.331 21c99 Level-0 table #8: 2754374 bytes OK
+2023/09/14-23:14:09.334 21c99 Delete type=0 #4
+2023/09/14-23:34:23.621 21c99 Compacting 1@1 + 1@2 files
+2023/09/14-23:34:23.644 21c99 Generated table #9@1: 6 keys, 76312 bytes
+2023/09/14-23:34:23.644 21c99 Compacted 1@1 + 1@2 files => 76312 bytes
+2023/09/14-23:34:23.646 21c99 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/09/14-23:34:23.646 21c99 Delete type=2 #8
+2023/09/14-23:34:23.646 21c99 Delete type=2 #5

@@ -1,0 +1,14 @@
+2023/09/15-01:20:05.383 21c14 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/15-01:20:05.384 21c14 Recovering log #24
+2023/09/15-01:20:05.384 21c14 Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/000024.log 
+2023/09/15-01:20:05.385 21c14 Delete type=2 #22
+2023/09/15-01:20:05.772 21c14 Level-0 table #29: started
+2023/09/15-01:20:05.775 21c14 Level-0 table #29: 1853 bytes OK
+2023/09/15-01:20:05.777 21c14 Delete type=0 #24
+2023/09/15-01:20:05.777 21c14 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 527 : 1
+2023/09/15-01:20:05.777 21c14 Compacting 1@0 + 1@1 files
+2023/09/15-01:20:05.781 21c14 Generated table #30@0: 42 keys, 1772 bytes
+2023/09/15-01:20:05.781 21c14 Compacted 1@0 + 1@1 files => 1772 bytes
+2023/09/15-01:20:05.784 21c14 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/09/15-01:20:05.784 21c14 Delete type=2 #29
+2023/09/15-01:20:05.786 21c14 Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 527 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)

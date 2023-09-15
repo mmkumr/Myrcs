@@ -16,6 +16,7 @@ Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
 
 " Generic Programming Support
 Plug 'hrsh7th/vim-vsnip'

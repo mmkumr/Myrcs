@@ -1,5 +1,7 @@
 {
   "enable-web": false,
   "android-sdk": "/opt/android-sdk/",
-  "android-studio-dir": "/opt/android-studio"
+  "android-studio-dir": "/opt/android-studio",
+  "enable-windows-desktop": false,
+  "enable-linux-desktop": false
 }

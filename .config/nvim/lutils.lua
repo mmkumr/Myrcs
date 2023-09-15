@@ -44,3 +44,5 @@ require('lspconfig')['dartls'].setup {
 require('lspconfig')['vimls'].setup {
     capabilities = capabilities
 }
+require("telescope").load_extension("ui-select")
+require("telescope").load_extension("flutter")
