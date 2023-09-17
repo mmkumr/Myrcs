@@ -4,6 +4,7 @@
 (dynamics "Dynamics Off")
 (palette "Color History")
 (brush-size 51)
+(brush-spacing 0.080000000000000002)
 (brush-hardness 0.5)
 
 # end of gimp-dodge-burn-tool options

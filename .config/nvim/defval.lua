@@ -20,3 +20,7 @@ vim.cmd("set backspace=indent,eol,start")
 vim.cmd("filetype plugin indent on")
 vim.cmd[[colorscheme material]]
 vim.g.material_style = "oceanic"
+require("indent_blankline").setup {
+    show_current_context = true,
+    show_current_context_start = true,
+}

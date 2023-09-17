@@ -1,3 +1,9 @@
-2023/09/14-00:24:40.340 20d00 Reusing MANIFEST /home/mmkumr/.config/opera/Extension State/MANIFEST-000001
-2023/09/14-00:24:40.340 20d00 Recovering log #3
-2023/09/14-00:24:40.355 20d00 Reusing old log /home/mmkumr/.config/opera/Extension State/000003.log 
+2023/09/16-13:31:33.400 4fe5a Reusing MANIFEST /home/mmkumr/.config/opera/Extension State/MANIFEST-000001
+2023/09/16-13:31:33.400 4fe5a Recovering log #6
+2023/09/16-13:31:33.455 4fe5a Reusing old log /home/mmkumr/.config/opera/Extension State/000006.log 
+2023/09/16-13:37:26.479 4fe5a Level-0 table #10: started
+2023/09/16-13:37:26.530 4fe5a Level-0 table #10: 2405947 bytes OK
+2023/09/16-13:37:26.533 4fe5a Delete type=0 #6
+2023/09/17-09:24:27.379 4fe5a Level-0 table #12: started
+2023/09/17-09:24:27.452 4fe5a Level-0 table #12: 2418523 bytes OK
+2023/09/17-09:24:27.462 4fe5a Delete type=0 #9

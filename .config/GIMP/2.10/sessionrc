@@ -7,16 +7,16 @@
 
 (session-info "toplevel"
     (factory-entry "gimp-empty-image-window")
-    (position 200 100)
-    (size 640 480))
+    (position 0 0)
+    (size 1366 745))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 459 39)
-    (size 444 680)
+    (position 10 42)
+    (size 1342 671)
     (open-on-exit)
     (aux-info
-        (left-docks-width "184")
-        (right-docks-width "209")
+        (left-docks-width "127")
+        (right-docks-width "205")
         (maximized "no"))
     (gimp-toolbox
         (side left)
@@ -25,41 +25,10 @@
             (dockable "gimp-tool-options"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-device-status"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-undo-history"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-image-list"
-                (tab-style automatic)
-                (aux-info
                     (show-button-bar "true")))))
     (gimp-dock
         (side right)
         (book
-            (current-page 0)
-            (dockable "gimp-brush-grid"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-pattern-grid"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-font-list"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-document-list"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true"))))
-        (book
-            (position 336)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -74,6 +43,25 @@
             (dockable "gimp-vectors-list"
                 (tab-style automatic)
                 (preview-size 32)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-undo-history"
+                (tab-style automatic)
+                (aux-info
+                    (show-button-bar "true"))))
+        (book
+            (position 369)
+            (current-page 0)
+            (dockable "gimp-brush-grid"
+                (tab-style automatic)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-pattern-grid"
+                (tab-style automatic)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-gradient-list"
+                (tab-style automatic)
                 (aux-info
                     (show-button-bar "true"))))))
 

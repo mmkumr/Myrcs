@@ -1,12 +1,15 @@
-2023/09/14-00:31:34.404 21c99 Reusing MANIFEST /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/MANIFEST-000001
-2023/09/14-00:31:34.405 21c99 Recovering log #4
-2023/09/14-00:31:34.412 21c99 Reusing old log /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000004.log 
-2023/09/14-23:14:09.285 21c99 Level-0 table #8: started
-2023/09/14-23:14:09.331 21c99 Level-0 table #8: 2754374 bytes OK
-2023/09/14-23:14:09.334 21c99 Delete type=0 #4
-2023/09/14-23:34:23.621 21c99 Compacting 1@1 + 1@2 files
-2023/09/14-23:34:23.644 21c99 Generated table #9@1: 6 keys, 76312 bytes
-2023/09/14-23:34:23.644 21c99 Compacted 1@1 + 1@2 files => 76312 bytes
-2023/09/14-23:34:23.646 21c99 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/09/14-23:34:23.646 21c99 Delete type=2 #8
-2023/09/14-23:34:23.646 21c99 Delete type=2 #5
+2023/09/17-09:29:17.002 45b Reusing MANIFEST /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/MANIFEST-000001
+2023/09/17-09:29:17.003 45b Recovering log #20
+2023/09/17-09:29:17.070 45b Reusing old log /home/mmkumr/.config/opera/Local Extension Settings/ccnckbpmaceehanjmeomladnmlffdjgn/000020.log 
+2023/09/17-11:07:28.526 45c Level-0 table #25: started
+2023/09/17-11:07:28.545 45c Level-0 table #25: 2683940 bytes OK
+2023/09/17-11:07:28.550 45c Delete type=0 #20
+2023/09/17-12:51:09.697 45b Compacting 1@1 + 1@2 files
+2023/09/17-12:51:09.709 45b Generated table #26@1: 6 keys, 76404 bytes
+2023/09/17-12:51:09.709 45b Compacted 1@1 + 1@2 files => 76404 bytes
+2023/09/17-12:51:09.712 45b compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/09/17-13:34:36.319 45b Level-0 table #28: started
+2023/09/17-13:34:36.347 45b Level-0 table #28: 2685531 bytes OK
+2023/09/17-13:34:36.351 45b Delete type=0 #24
+2023/09/17-13:34:36.351 45b Delete type=2 #22
+2023/09/17-13:34:36.351 45b Delete type=2 #25

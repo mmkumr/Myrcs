@@ -1,7 +1,6 @@
 "plug installation manager.
 call plug#begin('~/.vim/plugged')
 " Utility
-Plug 'dart-lang/dart-vim-plugin'
 Plug 'majutsushi/tagbar'
 
 "Ricing
@@ -17,6 +16,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Generic Programming Support
 Plug 'hrsh7th/vim-vsnip'
@@ -27,9 +27,6 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'kylechui/nvim-surround'
 
 "Dart/Flutter
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'natebosch/vim-lsc'
-Plug 'natebosch/vim-lsc-dart'
 Plug 'akinsho/flutter-tools.nvim'
 
 "Nvim lsp
