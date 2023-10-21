@@ -1,0 +1,55 @@
+/* mediaGallery */
+body:hover .tukmaf4q /*media preview in gallery*/,
+body:hover ._1Pr6q /*media preview in send media*/,
+
+/* mediaPreview */
+body:hover .jciay5ix /*image preview*/,
+body:hover ._3V9pc * /*gif preview*/,
+body:hover .sfeitywo .s4eafire /*video preview*/,
+body:hover .kknmh /*media reply thumb*/,
+body:hover .-YT7w /*image send preview*/,
+body:hover .fe3aadhc /*file preview*/,
+body:hover .M6sU5 /*link preview*/,
+body:hover ._1pmNo /*Sticker*/,
+body:hover ._3o1Tf /*sticker contact*/,
+
+/* messages */
+body:hover ._27K43 /*normal message*/,
+body:hover .NQl4z > .ItfyB /*blue info bar*/,
+body:hover .ocd2b0bc /*image, video*/,
+body:hover .rku33uoa /*file*/,
+body:hover ._1AUaQ /*voice message*/,
+body:hover ._2FdHA /*position*/,
+body:hover .AgrIP /*contact share*/,
+body:hover .atp9n7ve /*multiple contact share*/,
+body:hover ._3Hka4 /*GIF*/,
+body:hover ._1pmNo /*Sticker*/,
+body:hover ._3o1Tf /*sticker contact*/,
+
+/* messagesPreview */
+body:hover .vQ0w7 /*message preview*/,
+
+/* name */
+body:hover ._21S-L /*List user/group name*/,
+body:hover ._21nHd /*Top user/group name*/,
+body:hover .pm5hny62 /*Top group user preview*/,
+body:hover .qfejxiq4 /*Details username*/,
+body:hover .cw3vfol9 /*Details username */,
+body:hover ._1ux8Y /*Details username ~nickname*/,
+body:hover ._2l_N5 /*Starred messages username*/,
+body:hover.selectable-text ._10kwi /*About user phone number*/,
+body:hover ._3IzYj._1yJoL /*Message in chat*/,
+
+/* profilePic */
+body:hover ._3g4Pn /*profile pic*/,
+body:hover ._3yg5l /*Details group/self profile pic*/
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0s;
+}
+
+/* textInput */
+body:hover .to2l77zo /*textarea*/
+{
+  filter: grayscale(0) opacity(1);
+}

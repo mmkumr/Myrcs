@@ -5,12 +5,9 @@ exec sxhkd -c ~/.config/sxhkd/sxhkdrc
 exec setxkbmap -option caps:swapescape 
 exec $TERMINAL  
 #for swaping escape with capslock.
-exec sh /home/mmkumr/.swapescape.sh
 exec dropbox
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.i3/scripts/lock
 exec opera
-exec franz
-exec --no-startup-id pa-applet
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /home/mmkumr/.i3/scripts/start_conky_maia
 exec --no-startup-id blueman-applet
@@ -23,24 +20,21 @@ exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id setcursor
 exec --no-startup-id xfce4-panel
-
 font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Brands Regular,Font Awesome 5 Free Solid
 #font xft:URWGothic-Book 11
-
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	status_command i3status
+    status_command i3status
 	position top
     
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+    bindsym button4 nop
+    bindsym button5 nop
+    strip_workspace_numbers yes
 
     colors {
         background #222D31
@@ -56,6 +50,7 @@ bar {
     }
 }
 
+exec --no-startup-id volumeicon
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
 gaps inner 5
@@ -98,8 +93,6 @@ bindsym $mod+Shift+s	    gaps inner current minus 5
 bindsym $mod+Shift+d	    gaps inner current set 0; gaps outer current set 0
 
 set $freeze Distraction-free mode (super+shift+f to reactivate bindings)
-mode "$freeze" { bindsym $mod+Shift+f mode "default"
-}
 
 bindsym $mod+f			    fullscreen toggle
 bindsym $mod+Shift+f	    mode "$freeze" ;; exec --no-startup-id notify-send "Distraction-free mode activated." "Press Super+Shift+f to return."
@@ -216,7 +209,6 @@ for_window [class="Qtconfig-qt4"] floating enable border normal
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable

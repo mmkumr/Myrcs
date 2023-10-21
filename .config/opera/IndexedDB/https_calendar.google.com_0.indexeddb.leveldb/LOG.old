@@ -1,0 +1,7 @@
+2023/10/06-21:41:40.713 4e1 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/06-21:41:40.714 4e1 Recovering log #3
+2023/10/06-21:41:40.714 4e1 Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/000003.log 
+2023/10/06-21:41:42.851 4e1 Level-0 table #5: started
+2023/10/06-21:41:42.852 4e1 Level-0 table #5: 2496 bytes OK
+2023/10/06-21:41:42.853 4e1 Delete type=0 #3
+2023/10/06-21:41:42.854 4e1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

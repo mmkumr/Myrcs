@@ -1,8 +1,38 @@
-// K4gi3jRL6uSebj5dC7wn1ZHMG8IGkjf+f2xgUMJtaG14Oc1Mmcmc4v/hq6CYG5vVXZx93xqhNi0fOYhhCwM3dykEPLlwv3G01LSLJ//5nPGlyJsvx1VImUIZZLIFezHwihENqh2UEr35PBVk8zADzrBWT3xvA97O9OL0Li38K4tw1d6Hkps7nIiUnBeEfiFGRX4G12vKFkxr+thrSWUALHo/KYGO7B++MELL86v3pEPy/Wen9UBIW3ONat5//nBUi/4Df5anH4YNaWPmb6dlOnbCyhNimC/invVZNVwuGW/xQBZOyIF/6bSER7yFckUAVPQjR6UmEKeehTVgpdaSLw==
+// sAkosCATT/bvl5q1a2s7a5msTFseQk7MQSAFVlJjcl/eBvQhzuwvJdDoJFjDq8X9FwZerzz9feKfk+cPIYFxUu3ZAYJOP8J1oVoDhl1VmYt/tBgACQ/JqzR+6UbI0dkJs6lxoYag8zqxT3vsbxtdHF6xSgWE9Bto8BuxWQkh4Rg2VUh9BSgY1250balnYg+r3nx192CgRmHpXKaurEnGYviEqQdhJZ52HGlHd5Yozh3bRAmBkDx3pjerSvjzoZsouWjQd9ED6IrZyqlSx8C7Gj68vRF8Wn3rmxfnpDLjgtMymNgEoqnnbSsupBuhhBomKHro1gVuSJkL1rpCKK1Nsg==
 {
-  "version": 125,
+  "version": 128,
   "search_engines": {
     "location": {
+      "ad": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "al": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
       "at": {
         "other": {
           "list": [
@@ -10,7 +40,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_de",
             "booking_com",
             "google_maps"
@@ -25,7 +55,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com",
             "google_maps"
@@ -48,6 +78,21 @@
           "speed_dial_index_list": [0]
         }
       },
+      "ba": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
       "be": {
         "fr": {
           "list": [
@@ -55,7 +100,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_fr",
             "booking_com",
             "google_maps"
@@ -68,7 +113,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_nl",
             "booking_com",
             "google_maps"
@@ -81,7 +126,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com",
             "google_maps"
@@ -96,7 +141,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_bg",
             "google_maps"
@@ -111,7 +156,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_pt",
             "booking_com_br",
             "google_maps"
@@ -154,7 +199,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_fr",
             "booking_com_ca",
             "google_maps"
@@ -167,7 +212,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_ca",
             "google_maps"
@@ -182,7 +227,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_de",
             "booking_com_ch",
             "google_maps"
@@ -195,7 +240,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_fr",
             "booking_com_ch",
             "google_maps"
@@ -208,7 +253,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_it",
             "booking_com_ch",
             "google_maps"
@@ -221,9 +266,24 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_ch",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "cl": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
             "google_maps"
           ],
           "speed_dial_index_list": [0]
@@ -232,10 +292,40 @@
       "cn": {
         "other": {
           "list": [
-            "baidu",
             "qihoo_360",
+            "baidu",
             "wiki_cn",
             "google_cn"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "co": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "cy": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
           ],
           "speed_dial_index_list": [0]
         }
@@ -247,7 +337,7 @@
             "yahoo",
             "duckduckgo",
             "seznam",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_cs",
             "booking_com_cz",
             "google_maps"
@@ -262,7 +352,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_de",
             "booking_com_de",
             "google_maps"
@@ -277,7 +367,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_da",
             "booking_com",
             "google_maps"
@@ -307,7 +397,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_es",
             "booking_com_es",
             "google_maps"
@@ -322,7 +412,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_fi",
             "booking_com",
             "google_maps"
@@ -337,7 +427,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_fr",
             "booking_com_fr",
             "google_maps",
@@ -353,7 +443,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_gb",
             "google_maps"
@@ -383,8 +473,23 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_zh",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "hr": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
             "booking_com",
             "google_maps"
           ],
@@ -398,7 +503,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_hu",
             "booking_com_hu",
             "google_maps"
@@ -413,7 +518,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_id",
             "google_maps"
@@ -428,7 +533,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com",
             "google_maps"
@@ -458,9 +563,24 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_in",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "is": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
             "google_maps"
           ],
           "speed_dial_index_list": [0]
@@ -473,7 +593,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_it",
             "booking_com_it",
             "google_maps"
@@ -488,7 +608,7 @@
             "yahoo_jp",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_ja",
             "booking_com_jp",
             "google_maps"
@@ -539,6 +659,51 @@
           "speed_dial_index_list": [1]
         }
       },
+      "li": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "lt": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "lu": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
       "lv": {
         "other": {
           "list": [
@@ -546,7 +711,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_lv",
             "booking_com",
             "google_maps"
@@ -569,6 +734,81 @@
           "speed_dial_index_list": [0]
         }
       },
+      "mc": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "me": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "mk": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "mt": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "my": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
       "mx": {
         "other": {
           "list": [
@@ -576,7 +816,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_es",
             "booking_com_mx",
             "google_maps"
@@ -591,7 +831,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki_nl",
             "booking_com_nl",
             "google_maps"
@@ -606,7 +846,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_nn",
             "booking_com_no",
             "google_maps"
@@ -619,7 +859,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_no",
             "booking_com_no",
             "google_maps"
@@ -634,7 +874,22 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "pe": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com",
             "google_maps"
@@ -649,7 +904,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_ph",
             "google_maps"
@@ -663,7 +918,7 @@
             "google_com",
             "yahoo",
             "duckduckgo",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_pl",
             "booking_com_pl",
             "google_maps"
@@ -678,7 +933,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_pt",
             "booking_com",
             "google_maps"
@@ -693,7 +948,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_ro",
             "booking_com_ro",
             "google_maps"
@@ -708,7 +963,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_sr",
             "booking_com_rs",
             "google_maps"
@@ -753,7 +1008,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_sv",
             "booking_com_se",
             "google_maps"
@@ -768,9 +1023,24 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_sea",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "si": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
             "google_maps"
           ],
           "speed_dial_index_list": [0]
@@ -783,9 +1053,24 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_sk",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "sm": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
             "google_maps"
           ],
           "speed_dial_index_list": [0]
@@ -798,7 +1083,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_th",
             "booking_com_sea",
             "google_maps"
@@ -813,7 +1098,7 @@
             "yandex_tr",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_tr",
             "booking_com_tr",
             "google_maps"
@@ -828,7 +1113,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_zh",
             "booking_com",
             "google_maps"
@@ -888,9 +1173,54 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing_attributed",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com_us",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "va": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "ve": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
+            "google_maps"
+          ],
+          "speed_dial_index_list": [0]
+        }
+      },
+      "vn": {
+        "other": {
+          "list": [
+            "google_com",
+            "yahoo",
+            "duckduckgo",
+            "amazon",
+            "bing_attributed_ysrcunow",
+            "wiki",
+            "booking_com",
             "google_maps"
           ],
           "speed_dial_index_list": [0]
@@ -903,7 +1233,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki",
             "booking_com",
             "google_maps"
@@ -946,7 +1276,7 @@
             "yahoo",
             "duckduckgo",
             "amazon",
-            "bing",
+            "bing_attributed_ysrcunow",
             "wiki_ar",
             "booking_com_ar",
             "google_maps"
@@ -1103,12 +1433,12 @@
       "encoding": "UTF-8",
       "uuid": "1AF2CDD0-8BF3-11E2-9E96-0800200C9A66"
     },
-    "bing_attributed": {
+    "bing_attributed_ysrcunow": {
       "name": "Bing",
       "keyword": "b",
       "favicon_url": "https://www.bing.com/s/a/bing_p.ico",
-      "search_url": "https://www.bing.com/search?q={searchTerms}&form=OSASSB&pc=OSAS",
-      "suggest_url": "https://api.bing.com/osjson.aspx?query={searchTerms}&language={language}&FORM=OPERAS",
+      "search_url": "https://ysrcunow.com/results.aspx?gd=RD1003896&searchsource=58&q={searchTerms}",
+      "suggest_url": "https://suggest.findit-all.com/suggestionfeed/suggestion?format=json&q={searchTerms}&gd=RD1003896",
       "post": false,
       "encoding": "UTF-8",
       "uuid": "48B659F0-181C-483F-B0D7-CF781F49C965"
@@ -1888,7 +2218,7 @@
       "name": "Yahoo!",
       "keyword": "y",
       "favicon_url": "https://www.yahoo.co.jp/favicon.ico",
-      "search_url": "https://search.yahoo.co.jp/search?ei={inputEncoding}&fr=oprsd&p={searchTerms}",
+      "search_url": "https://search.yahoo.co.jp/search?ei={inputEncoding}&p={searchTerms}",
       "suggest_url": "https://ff.search.yahoo.com/gossip?output=fxjson&command={searchTerms}",
       "post": false,
       "encoding": "UTF-8",

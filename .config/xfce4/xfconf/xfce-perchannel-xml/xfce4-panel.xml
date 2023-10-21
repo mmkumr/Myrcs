@@ -36,6 +36,7 @@
       <property name="recent" type="array">
         <value type="string" value="lxappearance.desktop"/>
       </property>
+      <property name="view-mode" type="int" value="1"/>
     </property>
   </property>
 </channel>

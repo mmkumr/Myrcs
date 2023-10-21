@@ -1,21 +1,28 @@
-2023/09/16-13:31:30.732 3 Reusing MANIFEST /home/mmkumr/.config/opera/Local Storage/leveldb/MANIFEST-000001
-2023/09/16-13:31:30.733 3 Recovering log #122
-2023/09/16-13:31:30.735 3 Reusing old log /home/mmkumr/.config/opera/Local Storage/leveldb/000122.log 
-2023/09/16-15:18:22.347 5 Level-0 table #126: started
-2023/09/16-15:18:22.361 5 Level-0 table #126: 28184 bytes OK
-2023/09/16-15:18:22.365 5 Delete type=0 #122
-2023/09/16-23:47:04.003 3 Level-0 table #128: started
-2023/09/16-23:47:04.008 3 Level-0 table #128: 16026 bytes OK
-2023/09/16-23:47:04.011 3 Delete type=0 #125
-2023/09/16-23:47:04.015 3 Compacting 4@0 + 1@1 files
-2023/09/16-23:47:04.049 3 Generated table #129@0: 809 keys, 1105604 bytes
-2023/09/16-23:47:04.049 3 Compacted 4@0 + 1@1 files => 1105604 bytes
-2023/09/16-23:47:04.051 3 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/09/16-23:47:04.053 3 Delete type=2 #123
-2023/09/16-23:47:04.053 3 Delete type=2 #119
-2023/09/16-23:47:04.053 3 Delete type=2 #121
-2023/09/16-23:47:04.053 3 Delete type=2 #126
-2023/09/16-23:47:04.053 3 Delete type=2 #128
-2023/09/17-00:15:35.725 5 Level-0 table #131: started
-2023/09/17-00:15:35.742 5 Level-0 table #131: 83598 bytes OK
-2023/09/17-00:15:35.746 5 Delete type=0 #127
+2023/10/18-23:14:49.914 3 Reusing MANIFEST /home/mmkumr/.config/opera/Local Storage/leveldb/MANIFEST-000001
+2023/10/18-23:14:49.917 3 Recovering log #1078
+2023/10/18-23:14:49.918 3 Reusing old log /home/mmkumr/.config/opera/Local Storage/leveldb/001078.log 
+2023/10/19-11:12:29.344 3 Level-0 table #1085: started
+2023/10/19-11:12:29.348 3 Level-0 table #1085: 19060 bytes OK
+2023/10/19-11:12:29.352 3 Delete type=0 #1078
+2023/10/19-11:34:23.849 3 Level-0 table #1087: started
+2023/10/19-11:34:23.853 3 Level-0 table #1087: 23575 bytes OK
+2023/10/19-11:34:23.857 3 Delete type=0 #1084
+2023/10/20-10:46:38.082 3 Level-0 table #1089: started
+2023/10/20-10:46:38.085 3 Level-0 table #1089: 33321 bytes OK
+2023/10/20-10:46:38.088 3 Delete type=0 #1086
+2023/10/20-10:57:24.449 3 Level-0 table #1091: started
+2023/10/20-10:57:24.485 3 Level-0 table #1091: 39763 bytes OK
+2023/10/20-10:57:24.487 3 Delete type=0 #1088
+2023/10/20-10:57:24.488 3 Compacting 4@0 + 3@1 files
+2023/10/20-10:57:24.531 3 Generated table #1092@0: 2113 keys, 2310610 bytes
+2023/10/20-10:57:24.569 3 Generated table #1093@0: 5985 keys, 2231070 bytes
+2023/10/20-10:57:24.577 3 Generated table #1094@0: 334 keys, 384858 bytes
+2023/10/20-10:57:24.578 3 Compacted 4@0 + 3@1 files => 4926538 bytes
+2023/10/20-10:57:24.580 3 compacted to: files[ 0 4 1 0 0 0 0 ]
+2023/10/20-10:57:24.581 3 Delete type=2 #1080
+2023/10/20-10:57:24.582 3 Delete type=2 #1085
+2023/10/20-10:57:24.582 3 Delete type=2 #1082
+2023/10/20-10:57:24.582 3 Delete type=2 #1091
+2023/10/20-10:57:24.582 3 Delete type=2 #1081
+2023/10/20-10:57:24.582 3 Delete type=2 #1087
+2023/10/20-10:57:24.582 3 Delete type=2 #1089

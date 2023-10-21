@@ -1,14 +1,14 @@
-2023/09/17-00:54:07.333 4fe5a Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/09/17-00:54:07.333 4fe5a Recovering log #63
-2023/09/17-00:54:07.333 4fe5a Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/000063.log 
-2023/09/17-00:54:07.334 4fe5a Delete type=2 #62
-2023/09/17-00:54:07.386 4fe64 Level-0 table #68: started
-2023/09/17-00:54:07.387 4fe64 Level-0 table #68: 1981 bytes OK
-2023/09/17-00:54:07.389 4fe64 Delete type=0 #63
-2023/09/17-00:54:07.389 4fe59 Manual compaction at level-0 from '\x00\x13\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at '\x00\x13\x00\x00\x05' @ 995 : 1
-2023/09/17-00:54:07.390 4fe59 Compacting 1@0 + 1@1 files
-2023/09/17-00:54:07.391 4fe59 Generated table #69@0: 30 keys, 1463 bytes
-2023/09/17-00:54:07.391 4fe59 Compacted 1@0 + 1@1 files => 1463 bytes
-2023/09/17-00:54:07.392 4fe59 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/09/17-00:54:07.392 4fe59 Delete type=2 #68
-2023/09/17-00:54:07.393 4fe64 Manual compaction at level-0 from '\x00\x13\x00\x00\x05' @ 995 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/09/23-16:30:06.033 34ca Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/23-16:30:06.033 34ca Recovering log #95
+2023/09/23-16:30:06.035 34ca Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/000095.log 
+2023/09/23-16:30:06.035 34ca Delete type=2 #93
+2023/09/23-16:30:06.118 34ca Level-0 table #100: started
+2023/09/23-16:30:06.121 34ca Level-0 table #100: 1853 bytes OK
+2023/09/23-16:30:06.122 34ca Delete type=0 #95
+2023/09/23-16:30:06.122 34ca Manual compaction at level-0 from '\x00\x1b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1b\x00\x00\x05' @ 1519 : 1
+2023/09/23-16:30:06.122 34ca Compacting 1@0 + 1@1 files
+2023/09/23-16:30:06.124 34ca Generated table #101@0: 58 keys, 1922 bytes
+2023/09/23-16:30:06.124 34ca Compacted 1@0 + 1@1 files => 1922 bytes
+2023/09/23-16:30:06.125 34ca compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/09/23-16:30:06.125 34ca Delete type=2 #100
+2023/09/23-16:30:06.125 34ca Manual compaction at level-0 from '\x00\x1b\x00\x00\x05' @ 1519 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at (end)

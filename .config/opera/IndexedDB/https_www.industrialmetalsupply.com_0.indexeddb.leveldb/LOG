@@ -1,0 +1,6 @@
+2023/10/11-17:45:16.613 424 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_www.industrialmetalsupply.com_0.indexeddb.leveldb since it was missing.
+2023/10/11-17:45:16.620 424 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.industrialmetalsupply.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/11-17:45:33.130 4df Level-0 table #5: started
+2023/10/11-17:45:33.132 4df Level-0 table #5: 7196 bytes OK
+2023/10/11-17:45:33.134 4df Delete type=0 #3
+2023/10/11-17:45:33.134 4df Manual compaction at level-0 from (begin) .. (end); will stop at (end)

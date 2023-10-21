@@ -37,6 +37,15 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
+#Volume Control
+#It is handled by volumeicon package
+# XF86AudioLowerVolume
+# 	amixer set Master 5%-
+# XF86AudioRaiseVolume
+# 	amixer set Master 5%+
+# XF86AudioMute
+#     amixer set Master toggle
+
 # Recording
 # Take screenshot
 Print

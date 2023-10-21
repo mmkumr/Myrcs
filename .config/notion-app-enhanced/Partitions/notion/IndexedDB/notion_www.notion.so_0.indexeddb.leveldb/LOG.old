@@ -1,1 +1,48 @@
-2023/09/10-21:49:22.248 345b Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/16-17:16:03.590 469f Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/16-17:16:03.590 469f Recovering log #16
+2023/10/16-17:16:03.666 469f Reusing old log /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000016.log 
+2023/10/16-17:22:42.071 4e87 Level-0 table #21: started
+2023/10/16-17:22:42.098 4e87 Level-0 table #21: 1082613 bytes OK
+2023/10/16-17:22:42.102 4e87 Delete type=0 #16
+2023/10/16-17:22:43.895 4e87 Compacting 1@1 + 1@2 files
+2023/10/16-17:22:43.928 4e87 Generated table #22@1: 13520 keys, 489559 bytes
+2023/10/16-17:22:43.928 4e87 Compacted 1@1 + 1@2 files => 489559 bytes
+2023/10/16-17:22:43.929 4e87 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/16-17:22:43.929 4e87 Delete type=2 #18
+2023/10/16-17:22:43.929 4e87 Delete type=2 #21
+2023/10/16-18:46:05.501 d59b Level-0 table #24: started
+2023/10/16-18:46:05.534 d59b Level-0 table #24: 1078511 bytes OK
+2023/10/16-18:46:05.537 d59b Delete type=0 #20
+2023/10/16-18:47:17.867 9e9e Compacting 1@1 + 1@2 files
+2023/10/16-18:47:17.909 9e9e Generated table #25@1: 15894 keys, 575424 bytes
+2023/10/16-18:47:17.909 9e9e Compacted 1@1 + 1@2 files => 575424 bytes
+2023/10/16-18:47:17.910 9e9e compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/16-18:47:17.911 9e9e Delete type=2 #24
+2023/10/16-18:47:17.911 9e9e Delete type=2 #22
+2023/10/16-19:40:07.773 ff69 Level-0 table #27: started
+2023/10/16-19:40:07.795 ff69 Level-0 table #27: 1076993 bytes OK
+2023/10/16-19:40:07.797 ff69 Delete type=0 #23
+2023/10/16-19:40:17.606 ff69 Compacting 1@1 + 1@2 files
+2023/10/16-19:40:17.641 ff69 Generated table #28@1: 18356 keys, 663468 bytes
+2023/10/16-19:40:17.641 ff69 Compacted 1@1 + 1@2 files => 663468 bytes
+2023/10/16-19:40:17.642 ff69 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/16-19:40:17.642 ff69 Delete type=2 #27
+2023/10/16-19:40:17.642 ff69 Delete type=2 #25
+2023/10/17-12:09:33.832 2190d Level-0 table #30: started
+2023/10/17-12:09:33.886 2190d Level-0 table #30: 1080986 bytes OK
+2023/10/17-12:09:33.893 2190d Delete type=0 #26
+2023/10/17-12:09:36.730 1fe0d Compacting 1@1 + 1@2 files
+2023/10/17-12:09:36.820 1fe0d Generated table #31@1: 20683 keys, 747094 bytes
+2023/10/17-12:09:36.820 1fe0d Compacted 1@1 + 1@2 files => 747094 bytes
+2023/10/17-12:09:36.822 1fe0d compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/17-12:09:36.822 1fe0d Delete type=2 #30
+2023/10/17-12:09:36.822 1fe0d Delete type=2 #28
+2023/10/17-23:24:51.297 30f1e Level-0 table #33: started
+2023/10/17-23:24:51.359 30f1e Level-0 table #33: 1118945 bytes OK
+2023/10/17-23:24:51.363 30f1e Delete type=0 #29
+2023/10/17-23:25:23.023 30f1e Compacting 1@1 + 1@2 files
+2023/10/17-23:25:23.071 30f1e Generated table #34@1: 22592 keys, 815462 bytes
+2023/10/17-23:25:23.071 30f1e Compacted 1@1 + 1@2 files => 815462 bytes
+2023/10/17-23:25:23.078 30f1e compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/17-23:25:23.078 30f1e Delete type=2 #33
+2023/10/17-23:25:23.078 30f1e Delete type=2 #31

@@ -1,0 +1,6 @@
+2023/10/15-19:15:20.398 10252 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_www.cnet.com_0.indexeddb.leveldb since it was missing.
+2023/10/15-19:15:20.403 10252 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.cnet.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/15-19:15:53.210 10254 Level-0 table #5: started
+2023/10/15-19:15:53.212 10254 Level-0 table #5: 1967 bytes OK
+2023/10/15-19:15:53.213 10254 Delete type=0 #3
+2023/10/15-19:15:53.213 10254 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

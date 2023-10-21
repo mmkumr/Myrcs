@@ -1,0 +1,14 @@
+2023/10/18-23:14:53.528 407 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/18-23:14:53.529 407 Recovering log #71
+2023/10/18-23:14:53.529 407 Reusing old log /home/mmkumr/.config/opera/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/000071.log 
+2023/10/18-23:14:53.529 407 Delete type=2 #69
+2023/10/18-23:14:53.541 4b6 Level-0 table #76: started
+2023/10/18-23:14:53.542 4b6 Level-0 table #76: 651 bytes OK
+2023/10/18-23:14:53.544 4b6 Delete type=0 #71
+2023/10/18-23:14:53.544 4b6 Manual compaction at level-0 from '\x00\x16\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at '\x00\x16\x00\x00\x05' @ 593 : 1
+2023/10/18-23:14:53.544 4b6 Compacting 1@0 + 1@1 files
+2023/10/18-23:14:53.545 4b6 Generated table #77@0: 55 keys, 1576 bytes
+2023/10/18-23:14:53.546 4b6 Compacted 1@0 + 1@1 files => 1576 bytes
+2023/10/18-23:14:53.547 4b6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/10/18-23:14:53.547 4b6 Delete type=2 #76
+2023/10/18-23:14:53.548 4b8 Manual compaction at level-0 from '\x00\x16\x00\x00\x05' @ 593 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at (end)

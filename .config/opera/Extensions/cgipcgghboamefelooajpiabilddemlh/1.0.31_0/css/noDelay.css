@@ -1,0 +1,55 @@
+/* mediaGallery */
+.tukmaf4q:hover /*media preview in gallery*/,
+._1Pr6q:hover /*media preview in send media*/,
+
+/* mediaPreview */
+.jciay5ix:hover /*image preview*/,
+._3V9pc:hover * /*gif preview*/,
+.sfeitywo:hover .s4eafire /*video preview*/,
+.kknmh:hover /*media reply thumb*/,
+.-YT7w:hover /*image send preview*/,
+.fe3aadhc:hover /*file preview*/,
+.M6sU5:hover /*link preview*/,
+._1pmNo:hover /*Sticker*/,
+._3o1Tf:hover /*sticker contact*/,
+
+/* messages */
+._27K43:hover /*normal message*/,
+.NQl4z > .ItfyB:hover /*blue info bar*/,
+.ocd2b0bc:hover /*image, video*/,
+.rku33uoa:hover /*file*/,
+._1AUaQ:hover /*voice message*/,
+._2FdHA:hover /*position*/,
+.AgrIP:hover /*contact share*/,
+.atp9n7ve:hover /*multiple contact share*/,
+._3Hka4:hover /*GIF*/,
+._1pmNo:hover /*Sticker*/,
+._3o1Tf:hover /*sticker contact*/,
+
+/* messagesPreview */
+.vQ0w7:hover /*message preview*/,
+
+/* name */
+._21S-L:hover /*List user/group name*/,
+._21nHd:hover /*Top user/group name*/,
+.pm5hny62:hover /*Top group user preview*/,
+.qfejxiq4:hover /*Details username*/,
+.cw3vfol9:hover /*Details username */,
+._1ux8Y:hover /*Details username ~nickname*/,
+._2l_N5:hover /*Starred messages username*/,
+.selectable-text ._10kwi:hover /*About user phone number*/,
+._3IzYj._1yJoL:hover /*Message in chat*/,
+
+/* profilePic */
+._3g4Pn:hover /*profile pic*/,
+._3yg5l:hover /*Details group/self profile pic*/,
+
+/* textInput */
+.to2l77zo:hover /*textarea*/
+{
+  transition-delay: 0.04s !important;
+  -webkit-transition-duration: 0s !important;
+  -moz-transition-duration: 0s !important;
+  -o-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+}

@@ -1,0 +1,15 @@
+2023/10/05-12:53:46.545 4e1 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.industrybuying.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/05-12:53:46.545 4e1 Recovering log #4
+2023/10/05-12:53:46.545 4e1 Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_www.industrybuying.com_0.indexeddb.leveldb/000004.log 
+2023/10/05-12:54:40.709 4e1 Level-0 table #8: started
+2023/10/05-12:54:40.711 4e1 Level-0 table #8: 523 bytes OK
+2023/10/05-12:54:40.712 4e1 Delete type=0 #4
+2023/10/05-12:54:40.712 4e1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/10/05-12:54:40.712 4e1 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x001\x001\x003\x002\x005\x009\x000\x006\x004' @ 65 : 1
+2023/10/05-12:54:40.712 4e1 Compacting 1@1 + 1@2 files
+2023/10/05-12:54:40.713 4e1 Generated table #9@1: 19 keys, 578 bytes
+2023/10/05-12:54:40.713 4e1 Compacted 1@1 + 1@2 files => 578 bytes
+2023/10/05-12:54:40.714 4e1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/05-12:54:40.714 4e1 Delete type=2 #8
+2023/10/05-12:54:40.714 4e1 Delete type=2 #5
+2023/10/05-12:54:40.714 4e1 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x001\x001\x003\x002\x005\x009\x000\x006\x004' @ 65 : 1 .. (end); will stop at (end)

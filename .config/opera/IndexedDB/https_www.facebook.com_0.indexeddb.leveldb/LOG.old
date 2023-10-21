@@ -1,0 +1,15 @@
+2023/09/30-11:42:04.703 3c7ab Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/30-11:42:04.703 3c7ab Recovering log #7
+2023/09/30-11:42:04.703 3c7ab Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000007.log 
+2023/09/30-12:00:16.895 3c7ad Level-0 table #12: started
+2023/09/30-12:00:16.896 3c7ad Level-0 table #12: 17254 bytes OK
+2023/09/30-12:00:16.905 3c7ad Delete type=0 #7
+2023/09/30-12:00:16.906 3c7ad Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/09/30-12:00:16.906 3c7ad Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x1b\x02\x01\x17\x00s\x00y\x00n\x00c\x00d\x00S\x00y\x00n\x00c\x00A\x00l\x00l\x00C\x00o\x00l\x00l\x00e\x00c\x00t\x00i\x00o\x00n\x00s' @ 10656 : 1
+2023/09/30-12:00:16.906 3c7ad Compacting 1@1 + 1@2 files
+2023/09/30-12:00:16.909 3c7ad Generated table #13@1: 2548 keys, 116945 bytes
+2023/09/30-12:00:16.909 3c7ad Compacted 1@1 + 1@2 files => 116945 bytes
+2023/09/30-12:00:16.910 3c7ad compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/09/30-12:00:16.910 3c7ad Delete type=2 #9
+2023/09/30-12:00:16.910 3c7ad Delete type=2 #12
+2023/09/30-12:00:16.910 3c7ad Manual compaction at level-1 from '\x00\x04\x1b\x02\x01\x17\x00s\x00y\x00n\x00c\x00d\x00S\x00y\x00n\x00c\x00A\x00l\x00l\x00C\x00o\x00l\x00l\x00e\x00c\x00t\x00i\x00o\x00n\x00s' @ 10656 : 1 .. (end); will stop at (end)

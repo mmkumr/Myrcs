@@ -1,2 +1,15 @@
-2023/09/13-16:22:22.520 656 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_prebid.a-mo.net_0.indexeddb.leveldb since it was missing.
-2023/09/13-16:22:22.523 656 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_prebid.a-mo.net_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/07-23:28:49.872 4e1 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_prebid.a-mo.net_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/07-23:28:49.873 4e1 Recovering log #11
+2023/10/07-23:28:49.873 4e1 Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_prebid.a-mo.net_0.indexeddb.leveldb/000011.log 
+2023/10/07-23:28:52.089 4e2 Level-0 table #16: started
+2023/10/07-23:28:52.097 4e2 Level-0 table #16: 678 bytes OK
+2023/10/07-23:28:52.101 4e2 Delete type=0 #11
+2023/10/07-23:28:52.102 4e2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/10/07-23:28:52.102 4e2 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x1d\x00_\x00_\x00/\x001\x00/\x00a\x00m\x00x\x00/\x00M\x00j\x00I\x00y\x00M\x00j\x00E\x00w\x00M\x00j\x00I\x00z\x00M\x00j\x00E\x00z\x00N\x00j\x00I\x004' @ 199 : 1
+2023/10/07-23:28:52.102 4e2 Compacting 1@1 + 1@2 files
+2023/10/07-23:28:52.104 4e2 Generated table #17@1: 23 keys, 837 bytes
+2023/10/07-23:28:52.104 4e2 Compacted 1@1 + 1@2 files => 837 bytes
+2023/10/07-23:28:52.105 4e2 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/07-23:28:52.106 4e2 Delete type=2 #16
+2023/10/07-23:28:52.106 4e2 Delete type=2 #13
+2023/10/07-23:28:52.106 4e2 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x1d\x00_\x00_\x00/\x001\x00/\x00a\x00m\x00x\x00/\x00M\x00j\x00I\x00y\x00M\x00j\x00E\x00w\x00M\x00j\x00I\x00z\x00M\x00j\x00E\x00z\x00N\x00j\x00I\x004' @ 199 : 1 .. (end); will stop at (end)

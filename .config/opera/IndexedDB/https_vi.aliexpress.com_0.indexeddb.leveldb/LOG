@@ -1,0 +1,6 @@
+2023/10/15-20:30:38.003 10254 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_vi.aliexpress.com_0.indexeddb.leveldb since it was missing.
+2023/10/15-20:30:38.006 10254 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_vi.aliexpress.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/15-20:31:34.837 1025d Level-0 table #5: started
+2023/10/15-20:31:34.838 1025d Level-0 table #5: 838 bytes OK
+2023/10/15-20:31:34.840 1025d Delete type=0 #3
+2023/10/15-20:31:34.840 1025d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

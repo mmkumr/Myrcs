@@ -1,0 +1,7 @@
+2023/10/16-18:13:38.813 40a Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_danielec.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/16-18:13:38.813 40a Recovering log #6
+2023/10/16-18:13:38.813 40a Reusing old log /home/mmkumr/.config/opera/IndexedDB/https_danielec.notion.site_0.indexeddb.leveldb/000006.log 
+2023/10/16-18:13:41.084 4be Level-0 table #11: started
+2023/10/16-18:13:41.085 4be Level-0 table #11: 527 bytes OK
+2023/10/16-18:13:41.087 4be Delete type=0 #6
+2023/10/16-18:13:41.089 40a Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
