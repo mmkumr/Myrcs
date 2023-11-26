@@ -34,6 +34,7 @@
       </property>
       <property name="button-icon" type="string" value="pop-cosmic-applications"/>
       <property name="recent" type="array">
+        <value type="string" value="lf.desktop"/>
         <value type="string" value="lxappearance.desktop"/>
       </property>
       <property name="view-mode" type="int" value="1"/>

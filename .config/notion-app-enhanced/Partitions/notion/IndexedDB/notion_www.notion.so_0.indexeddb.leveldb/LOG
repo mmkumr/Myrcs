@@ -1,3 +1,15 @@
-2023/10/18-10:30:22.753 389f5 Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
-2023/10/18-10:30:22.754 389f5 Recovering log #32
-2023/10/18-10:30:22.771 389f5 Reusing old log /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000032.log 
+2023/11/01-14:37:14.510 1110a Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/01-14:37:14.511 1110a Recovering log #32
+2023/11/01-14:37:14.547 1110a Reusing old log /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000032.log 
+2023/11/01-16:53:24.369 112d7 Level-0 table #37: started
+2023/11/01-16:53:24.383 112d7 Level-0 table #37: 448758 bytes OK
+2023/11/01-16:53:24.385 112d7 Delete type=0 #32
+2023/11/01-16:53:24.385 112d7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/11/01-16:53:24.386 112d7 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x02"\x01$\x00d\x005\x009\x000\x007\x006\x006\x00d\x00-\x00a\x003\x00b\x008\x00-\x004\x003\x008\x00b\x00-\x00a\x00e\x00f\x00a\x00-\x009\x003\x00d\x00d\x00a\x000\x007\x00b\x006\x000\x00e\x00a\x00\x03\x00\x00\x00\x00\x00J\xbe@' @ 405020 : 1
+2023/11/01-16:53:24.386 112d7 Compacting 1@1 + 1@2 files
+2023/11/01-16:53:24.427 112d7 Generated table #38@1: 23333 keys, 841692 bytes
+2023/11/01-16:53:24.427 112d7 Compacted 1@1 + 1@2 files => 841692 bytes
+2023/11/01-16:53:24.428 112d7 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/01-16:53:24.428 112d7 Delete type=2 #34
+2023/11/01-16:53:24.428 112d7 Delete type=2 #37
+2023/11/01-16:53:24.429 112d7 Manual compaction at level-1 from '\x00\x01\x02"\x01$\x00d\x005\x009\x000\x007\x006\x006\x00d\x00-\x00a\x003\x00b\x008\x00-\x004\x003\x008\x00b\x00-\x00a\x00e\x00f\x00a\x00-\x009\x003\x00d\x00d\x00a\x000\x007\x00b\x006\x000\x00e\x00a\x00\x03\x00\x00\x00\x00\x00J\xbe@' @ 405020 : 1 .. (end); will stop at (end)

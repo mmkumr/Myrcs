@@ -123,3 +123,4 @@ if [[ $TERM == xterm-termite ]]; then
   __vte_osc7
 fi
 bindkey -v
+TERM=xterm-256color

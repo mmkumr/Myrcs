@@ -1,6 +1,0 @@
-2023/09/28-12:35:56.425 8acd Creating DB /home/mmkumr/.config/opera/IndexedDB/https_www.industrybuying.com_0.indexeddb.leveldb since it was missing.
-2023/09/28-12:35:56.451 8acd Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.industrybuying.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/09/28-12:36:33.277 8b71 Level-0 table #5: started
-2023/09/28-12:36:33.278 8b71 Level-0 table #5: 1147 bytes OK
-2023/09/28-12:36:33.280 8b71 Delete type=0 #3
-2023/09/28-12:36:33.280 8b71 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

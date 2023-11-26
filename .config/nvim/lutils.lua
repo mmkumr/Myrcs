@@ -35,8 +35,16 @@ require('lspconfig')['clangd'].setup {
 require('lspconfig')['bashls'].setup {
     capabilities = capabilities
 }
+
+local MY_FQBN = "esp32:esp32:esp32doit-devkit-v1"
+
 require('lspconfig')['arduino_language_server'].setup {
-    capabilities = capabilities
+    cmd = {
+        "arduino-language-server",
+        "-cli-config", "~/.arduinoIDE/arduino-cli.yaml",
+        "-fqbn",
+        MY_FQBN
+    }
 }
 require('lspconfig')['dartls'].setup {
     capabilities = capabilities

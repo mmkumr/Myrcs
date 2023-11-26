@@ -1,6 +1,0 @@
-2023/10/04-20:29:21.814 420 Creating DB /home/mmkumr/.config/opera/IndexedDB/https_www.flipkart.com_0.indexeddb.leveldb since it was missing.
-2023/10/04-20:29:21.826 420 Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_www.flipkart.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/10/04-22:11:34.474 4e1 Level-0 table #5: started
-2023/10/04-22:11:34.477 4e1 Level-0 table #5: 9885 bytes OK
-2023/10/04-22:11:34.480 4e1 Delete type=0 #3
-2023/10/04-22:11:34.480 4e1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

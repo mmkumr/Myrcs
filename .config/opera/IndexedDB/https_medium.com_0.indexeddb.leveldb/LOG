@@ -1,6 +1,0 @@
-2023/09/17-18:10:08.311 3cf Creating DB /home/mmkumr/.config/opera/IndexedDB/https_medium.com_0.indexeddb.leveldb since it was missing.
-2023/09/17-18:10:08.316 3cf Reusing MANIFEST /home/mmkumr/.config/opera/IndexedDB/https_medium.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/09/17-18:13:15.959 45b Level-0 table #5: started
-2023/09/17-18:13:15.960 45b Level-0 table #5: 3099 bytes OK
-2023/09/17-18:13:15.961 45b Delete type=0 #3
-2023/09/17-18:13:15.962 45b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

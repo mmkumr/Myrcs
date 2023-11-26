@@ -3,6 +3,7 @@ set $TERMINAL alacritty
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 #for disabling screen timeout
 exec setxkbmap -option caps:swapescape 
+exec udiskie -s
 exec $TERMINAL  
 #for swaping escape with capslock.
 exec dropbox
