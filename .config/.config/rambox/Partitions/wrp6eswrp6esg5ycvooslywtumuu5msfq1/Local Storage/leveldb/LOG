@@ -1,5 +1,0 @@
-2023/09/09-03:43:47.167 429b Creating DB /home/mmkumr/.config/rambox/Partitions/wrp6eswrp6esg5ycvooslywtumuu5msfq1/Local Storage/leveldb since it was missing.
-2023/09/09-03:43:47.243 429b Reusing MANIFEST /home/mmkumr/.config/rambox/Partitions/wrp6eswrp6esg5ycvooslywtumuu5msfq1/Local Storage/leveldb/MANIFEST-000001
-2023/09/09-03:49:14.120 4187 Level-0 table #5: started
-2023/09/09-03:49:14.132 4187 Level-0 table #5: 25096 bytes OK
-2023/09/09-03:49:14.150 4187 Delete type=0 #3

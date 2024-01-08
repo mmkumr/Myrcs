@@ -1,6 +1,0 @@
-2023/09/11-00:24:23.895 13c43 Reusing MANIFEST /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
-2023/09/11-00:24:23.895 13c43 Recovering log #10
-2023/09/11-00:24:23.896 13c43 Reusing old log /home/mmkumr/.config/notion-app-enhanced/Partitions/notion/Local Storage/leveldb/000010.log 
-2023/09/11-00:24:40.154 13c1c Level-0 table #14: started
-2023/09/11-00:24:40.171 13c1c Level-0 table #14: 409143 bytes OK
-2023/09/11-00:24:40.172 13c1c Delete type=0 #10
