@@ -1,0 +1,79 @@
+#Set environment variables.
+# Basic binds
+super + Return
+	$TERMINAL
+super + d
+	rofi -modi drun,window,run,keys,ssh -show drun -show-icons -sidebar-mode
+super + n
+    alacritty -e  ~/.config/lf/lf
+super + e
+	$TERMINAL -e neomutt
+super + m
+    simple-mtpfs --device 1 /mnt/Android -o allow_other & notify-send "Android device mounted"
+super + shift + m
+    fusermount -u /mnt/Android & notify-send "Android device unmounted"
+super + w
+	opera
+super + shift + g
+	gimp
+
+# Et cetera...
+super + Scroll_Lock
+	killall screenkey || screenkey
+super + Insert
+	showclip
+super + shift + x
+    rofi -show p -modi p:'rofi-power-menu --symbols-font "Symbols Nerd Font Mono"'
+super + x
+    xset dpms force off; /home/mmkumr/.i3/scripts/lock
+
+# Media player controls
+XF86AudioPlay 
+    playerctl play-pause
+XF86AudioPause 
+    playerctl pause
+XF86AudioNext 
+    playerctl next
+XF86AudioPrev
+    playerctl previous
+
+#Volume Control
+#It is handled by volumeicon package
+# XF86AudioLowerVolume
+# 	amixer set Master 5%-
+# XF86AudioRaiseVolume
+# 	amixer set Master 5%+
+# XF86AudioMute
+#     amixer set Master toggle
+
+# Recording
+# Take screenshot
+Print
+    flameshot gui
+
+# Record audio or video
+super + Print
+	peek
+
+# Function keys
+# F2 is restart in i3 right now.
+# Change display
+super + F3
+	displayselect
+
+super + F5
+	sudo -A systemctl restart NetworkManager
+# sync email
+super + F8
+	mailsync
+# Mount a USB drive or Android device
+super + F9
+	dmenumount
+# Unmount a USB drive or Android device
+super + F10
+	dmenuumount
+# Network Manager interface
+super + F12
+	$TERMINAL -e sudo -A nmtui
+
+

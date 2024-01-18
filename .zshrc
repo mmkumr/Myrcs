@@ -106,6 +106,7 @@ alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
 alias docker_clean="sudo docker-compose exec php php /var/www/html/artisan cache:clear && sudo docker-compose exec php php /var/www/html/artisan config:clear"
 alias flutter_release_install="flutter build apk && adb install build/app/outputs/apk/release/app-release.apk"
 alias ssh="TERM=xterm-256color && ssh"
+alias lf="~/.config/lf/lf"
 #path varibles.
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
