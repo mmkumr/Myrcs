@@ -7,6 +7,7 @@ Plug 'majutsushi/tagbar'
 Plug 'tomasiser/vim-code-dark'
 Plug 'marko-cerovac/material.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'olimorris/onedarkpro.nvim'
 
 " Utility
 Plug 'jeetsukumaran/vim-buffergator'

@@ -5,7 +5,6 @@ vim.opt.tabstop=4
 vim.opt.shiftwidth=4
 vim.opt.expandtab = true
 vim.opt.ruler = true
-vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.showmatch = true
 vim.opt.autoindent = true
@@ -18,8 +17,7 @@ vim.cmd("set wildmode=longest:full,full")
 vim.cmd("syntax enable") -- Turn on syntax highlighting
 vim.cmd("set backspace=indent,eol,start")
 vim.cmd("filetype plugin indent on")
-vim.cmd[[colorscheme material]]
-vim.g.material_style = "oceanic"
+vim.cmd[[colorscheme onedark]]
 vim.g["arduino_dir"] = '/usr/share/arduino/'
 require('leap').add_default_mappings()
 require("ibl").setup {}

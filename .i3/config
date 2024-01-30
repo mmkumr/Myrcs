@@ -137,8 +137,8 @@ bindsym $mod+Prior		workspace prev
 bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
-bindsym $mod+Tab		workspace next
-bindsym $mod+Shift+Tab	exec rofi -show-icons -sidebar-mode -show window
+bindsym $mod+h	workspace prev
+bindsym $mod+k	workspace next
  
 bindsym $mod+XF86Back		workspace prev
 bindsym $mod+Shift+XF86Back	move container to workspace prev
