@@ -1,14 +1,8 @@
 return {
     'RishabhRD/popfix',
-    'https://github.com/airblade/vim-gitgutter.git',
-    'tomtom/tcomment_vim',
-    'jtratner/vim-flavored-markdown',
-    {
-        'jeetsukumaran/vim-buffergator',
-        config = function()
-            vim.cmd "nnoremap <tab> :BuffergatorMruCycleNext<CR>"
-        end,
-    },
+    'https://github.com/airblade/vim-gitgutter.git', -- For git status symbols.
+    'tomtom/tcomment_vim',                           -- For comment/uncomment.
+    'jtratner/vim-flavored-markdown',                -- For markdown files
     {
         "akinsho/bufferline.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
