@@ -22,3 +22,14 @@ vim.g["arduino_dir"] = '/usr/share/arduino/'
 require('leap').add_default_mappings()
 require("ibl").setup {}
 require("codeium").setup({})
+vim.opt.termguicolors = true
+require("bufferline").setup{
+    options = {
+        separator_style = "slant",
+    }
+}
+require("flutter-tools").setup{
+    flutter_path = "/opt/flutter/bin/flutter"
+}
+require("telescope").load_extension("ui-select")
+require("telescope").load_extension("flutter")

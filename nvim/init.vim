@@ -9,10 +9,10 @@ source ~/.config/nvim/keybind.lua
 luafile ~/.config/nvim/cmp.lua
 luafile ~/.config/nvim/lutils.lua
 luafile ~/.config/nvim/nvim-tree.lua
+luafile ~/.config/nvim/lualine.lua
 " Configuration values
 luafile ~/.config/nvim/defval.lua
 
-"hi Normal ctermbg=none
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
 
@@ -20,18 +20,11 @@ hi vertsplit ctermbg=black ctermfg=black
 set completeopt-=preview
 highlight Search cterm=underline
 
-" Vim-Airline Configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:hybrid_custom_term_colors = 1
-let g:airline_theme = 'codedark'
-let g:hybrid_reduced_contrast = 1
-let g:airline#extensions#tabline#enabled = 1
-
 augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+
 "For coping selected text in vim visual mode to global clipboard
 if has('clipboard')
     if has('unnamedplus')  " When possible use + register for copy-paste
@@ -50,13 +43,8 @@ autocmd BufWritePost init.vim source %
 
 " auto-format
 autocmd BufWritePre *.js lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.vim lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.py lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.ino lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.dart lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.php lua vim.lsp.buf.format(nil, 100)
-
-lua << EOF
-    require("flutter-tools").setup{
-        flutter_path = "/opt/flutter/bin/flutter"
-    } -- use defaults
-EOF

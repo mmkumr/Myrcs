@@ -10,8 +10,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'olimorris/onedarkpro.nvim'
 
 " Utility
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
