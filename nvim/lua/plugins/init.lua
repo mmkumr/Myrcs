@@ -6,7 +6,7 @@ return {
     {
         'jeetsukumaran/vim-buffergator',
         config = function()
-            vim.cmd "nmap <tab> :BuffergatorMruCycleNext<CR>"
+            vim.cmd "nnoremap <tab> :BuffergatorMruCycleNext<CR>"
         end,
     },
     {
@@ -70,6 +70,10 @@ return {
             'stevearc/dressing.nvim', -- optional for vim.ui.select
             'Neevash/awesome-flutter-snippets'
         },
-        config = true,
+        config = function()
+            require("flutter-tools").setup {
+                flutter_path = "/opt/flutter/bin/flutter"
+            }
+        end,
     }
 }

@@ -75,5 +75,6 @@ return {
         vim.cmd "nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"
         vim.cmd "nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>"
         vim.cmd "nnoremap ca :lua vim.lsp.buf.code_action()<CR>"
+        vim.cmd "map R <cmd>lua vim.lsp.buf.rename()<CR>"
     end,
 }

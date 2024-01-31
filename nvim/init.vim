@@ -9,6 +9,7 @@ luafile ~/.config/nvim/keybind.lua
 
 " Configuration values
 luafile ~/.config/nvim/defval.lua
+" Configure file of lazy nvim
 luafile ~/.config/nvim/lazy.lua
 
 
