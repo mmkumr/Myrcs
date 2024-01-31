@@ -5,13 +5,12 @@ set nowrap
 " Plugins for nvim.
 source ~/.config/nvim/plug.vim
 " Default keybindings.
-source ~/.config/nvim/keybind.lua
-luafile ~/.config/nvim/cmp.lua
-luafile ~/.config/nvim/lutils.lua
-luafile ~/.config/nvim/nvim-tree.lua
-luafile ~/.config/nvim/lualine.lua
+luafile ~/.config/nvim/keybind.lua
+
 " Configuration values
 luafile ~/.config/nvim/defval.lua
+luafile ~/.config/nvim/lazy.lua
+
 
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
@@ -48,3 +47,4 @@ autocmd BufWritePre *.py lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.ino lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.dart lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.php lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.lua lua vim.lsp.buf.format(nil, 100)

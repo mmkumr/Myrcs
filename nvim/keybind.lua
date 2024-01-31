@@ -29,7 +29,6 @@ vim.cmd "imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'       
 vim.cmd "imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'"
 vim.cmd "smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'"
 -- auto resizing debug window while flutter development
-vim.cmd "map F :split <bar> :wincmd h <bar> :q <bar> :bnext <bar> :resize 22<cr>"
 -- LSP config (the mappings used in the default file don't quite work right)
 vim.cmd "nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>"
 vim.cmd "nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>"
@@ -40,7 +39,6 @@ vim.cmd "nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>"
 vim.cmd "nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"
 vim.cmd "nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>"
 -- For toogle nerdtree with ctrl + n
-vim.cmd "map N :NvimTreeToggle<CR>" 
 vim.cmd "map T :terminal<CR>"
 vim.cmd "map ca :lua vim.lsp.buf.code_action()<CR>"
 vim.cmd "map tf :Telescope flutter<CR>"

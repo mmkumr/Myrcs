@@ -1,14 +1,9 @@
 "plug installation manager.
 call plug#begin('~/.vim/plugged')
-" Utility
-Plug 'majutsushi/tagbar'
 
 "Ricing
-Plug 'tomasiser/vim-code-dark'
-Plug 'marko-cerovac/material.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'olimorris/onedarkpro.nvim'
-
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 " Utility
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 Plug 'jeetsukumaran/vim-buffergator'
@@ -35,11 +30,11 @@ Plug 'akinsho/flutter-tools.nvim'
 
 "Nvim lsp
 Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'RishabhRD/popfix'
 Plug 'RishabhRD/nvim-lsputils'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'windwp/lsp-fastaction.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
