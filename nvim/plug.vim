@@ -1,6 +1,5 @@
 "plug installation manager.
 call plug#begin('~/.vim/plugged')
-
 "Ricing
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }

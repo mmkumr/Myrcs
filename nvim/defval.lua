@@ -12,8 +12,7 @@ vim.opt.copyindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.cursorline = true
-vim.opt.wrap = true -- wrapping the lines vetically
-vim.cmd [[colorscheme nightfly]]
+vim.opt.wrap = true      -- wrapping the lines vetically
 vim.cmd("set wildmode=longest:full,full")
 vim.cmd("syntax enable") -- Turn on syntax highlighting
 vim.cmd("set backspace=indent,eol,start")

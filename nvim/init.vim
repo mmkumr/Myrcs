@@ -2,16 +2,12 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set nowrap
 
-" Plugins for nvim.
-source ~/.config/nvim/plug.vim
-" Default keybindings.
-luafile ~/.config/nvim/keybind.lua
-
-" Configuration values
-luafile ~/.config/nvim/defval.lua
 " Configure file of lazy nvim
 luafile ~/.config/nvim/lazy.lua
-
+" Default keybindings.
+luafile ~/.config/nvim/keybind.lua
+" Configuration values
+luafile ~/.config/nvim/defval.lua
 
 "For ignoring vsplit bar colour
 hi vertsplit ctermbg=black ctermfg=black
