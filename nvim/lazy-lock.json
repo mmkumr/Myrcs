@@ -35,7 +35,6 @@
   "telescope.nvim": { "branch": "master", "commit": "e54fbf4ab2b64640b639b75c006c23b4bc51c86f" },
   "ultisnips": { "branch": "master", "commit": "b393ba65386d47664421e1f8b246a87a6e8b218c" },
   "vim-arduino": { "branch": "master", "commit": "2ded67cdf09bb07c4805d9e93d478095ed3d8606" },
-  "vim-buffergator": { "branch": "master", "commit": "0514af606a3b41bbe82c33875179b53300a3cb86" },
   "vim-flavored-markdown": { "branch": "master", "commit": "fbcd6f36bdb18ce5780d69187ac8d802ead02c7e" },
   "vim-gitgutter": { "branch": "main", "commit": "67ef116100b40f9ca128196504a2e0bc0a2753b0" },
   "vim-vsnip": { "branch": "master", "commit": "02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9" },
