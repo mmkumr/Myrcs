@@ -30,7 +30,6 @@ return {
                 'pylsp',
                 'pyright',
                 'intelephense',
-                'grammarly',
                 'lua_ls',
                 'cssls',
                 'cmake',

@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set nowrap
 
+lua vim.g.mapleader = ';'
 " Configure file of lazy nvim
 luafile ~/.config/nvim/lazy.lua
 " Default keybindings.

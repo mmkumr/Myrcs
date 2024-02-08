@@ -1,8 +1,13 @@
 return {
     'RishabhRD/popfix',
-    'https://github.com/airblade/vim-gitgutter.git', -- For git status symbols.
-    'tomtom/tcomment_vim',                           -- For comment/uncomment.
-    'jtratner/vim-flavored-markdown',                -- For markdown files
+    'jtratner/vim-flavored-markdown', -- For markdown files
+    {
+        'numToStr/Comment.nvim',
+        event = { "BufReadPre", "BufNewFile" },
+        config = function()
+            require('Comment').setup()
+        end,
+    },
     {
         "akinsho/bufferline.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -51,14 +56,8 @@ return {
         end
     },
     {
-        "kylechui/nvim-surround",
-        event = { "BufReadPre", "BufNewFile" },
-        version = "*", -- Use for stability; omit to use `main` branch for the latest features
-        config = true,
-    },
-    {
         'akinsho/flutter-tools.nvim',
-        lazy = false,
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = {
             'nvim-lua/plenary.nvim',
             'stevearc/dressing.nvim', -- optional for vim.ui.select
@@ -69,5 +68,5 @@ return {
                 flutter_path = "/opt/flutter/bin/flutter"
             }
         end,
-    }
+    },
 }

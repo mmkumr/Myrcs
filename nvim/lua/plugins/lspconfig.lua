@@ -29,9 +29,6 @@ return {
         require('lspconfig')['intelephense'].setup {
             capabilities = capabilities
         }
-        require('lspconfig')['grammarly'].setup {
-            capabilities = capabilities
-        }
         require('lspconfig')['lua_ls'].setup {
             capabilities = capabilities
         }

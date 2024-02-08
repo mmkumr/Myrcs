@@ -1,27 +1,39 @@
 [colors.bright]
-black = "0x6D7070"
-blue = "0x1BA6FA"
-cyan = "0x73FBF1"
-green = "0xB8E466"
-magenta = "0xA578EA"
-red = "0xFF4352"
-white = "0xFEFEF8"
-yellow = "0xFFD750"
+black = "#6D7070"
+blue = "#1BA6FA"
+cyan = "#73FBF1"
+green = "#B8E466"
+magenta = "#A578EA"
+red = "#FF4352"
+white = "#FEFEF8"
+yellow = "#FFD750"
 
 [colors.cursor]
-cursor = "0xFF261E"
-text = "0xEBEBEB"
+cursor = "#FF261E"
+text = "#FF261E"
 
 [colors.normal]
-black = "0x0d0d0d"
-blue = "0x1BA6FA"
-cyan = "0x21DEEF"
-green = "0xA0E521"
-magenta = "0x8763B8"
-red = "0xFF301B"
-white = "0xEBEBEB"
-yellow = "0xFFC620"
+black = "#0d0d0d"
+blue = "#1BA6FA"
+cyan = "#21DEEF"
+green = "#A0E521"
+magenta = "#8763B8"
+red = "#FF301B"
+white = "#EBEBEB"
+yellow = "#FFC620"
 
 [colors.primary]
-background = "0x292C3E"
-foreground = "0xEBEBEB"
+background = "#292C3E"
+foreground = "#EBEBEB"
+
+[env]
+LANG = "en_US.UTF-8"
+LC_CTYPE = "en_US.UTF-8"
+TERM = "alacritty"
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "monospace"
+style = "Regular"

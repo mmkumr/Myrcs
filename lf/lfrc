@@ -21,7 +21,7 @@ set icons
 set period 1
 #set relativenumber
 #set number
-set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
+set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run*.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
 
@@ -275,6 +275,7 @@ map ra $lf -remote "send $id select \"$(rgfzf -dp --rg=rga --depth 1 -s 0.3)\""
 map rA $lf -remote "send $id select \"$(rgfzf -dp --rg=rga -s 0.8)\""  # Can be very CPU intensive, use with care
 
 # Main maps
+map <c-l> clear
 map Km maps  # List normal mode mappings
 map Kc cmaps  # List command mode mappings
 map d
