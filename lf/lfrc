@@ -248,7 +248,7 @@ map } half-down
 map <c-n> down
 map <c-p> up
 map H set hidden!
-map B bookmark
+map B gsh_i
 
 # File name search
 # Dependency: my 'ffd' script which uses:

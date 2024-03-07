@@ -1,18 +1,27 @@
-cmd bookmark ${{
-	clear; tput cup $(($(tput lines)/3)); tput bold
-	set -f
-	printf "Bookmarks\n"
-	printf "1)~/\n"
-    printf "2)~/Dropbox/\n"
-	printf "3)~/Dropbox/Focalpreneur/\n"
-	printf "4)/run/media/mmkumr/\n"
-	printf "5)/run/media/mmkumr/MyWorkspace/Projects\n"
-	read ans
-	case $ans in
-	    '1') lf -remote "send ${id} cd ~/" ;;
-        '2') lf -remote "send ${id} cd ~/Dropbox/" ;;
-        '3') lf -remote "send ${id} cd ~/Dropbox/Focalpreneur/" ;;
-        '4') lf -remote "send ${id} cd /run/media/mmkumr/" ;;
-        '5') lf -remote "send ${id} cd /run/media/mmkumr/MyWorkspace/Projects" ;;
-	esac
+cmd gsh %{{
+	lf -remote "send ${id} cd \"$(g.sh -x $*)\""
 }}
+
+cmd gsh_fuzzy %{{
+	lf -remote "send ${id} cd \"$(_GS_GREP='fzf -f' g.sh -l $* | awk 'NR==1{print $2}')\""
+}}
+
+cmd gsh_i ${{
+	path=$(g.sh -l "$@" \
+		| fzf --nth 2.. --tac +s -e \
+		--header "Bookmarked paths" --header-first \
+		| awk '{print substr($0, index($0,$2))}'
+	)
+	if [ -d "$path" ]; then
+		lf -remote "send ${id} cd \"${path}\""
+	elif [ -e "$path" ]; then
+		lf -remote "send ${id} select \"${path}\""
+	else
+		>&2 printf "Could not select %s\n" "${path}"
+	fi
+}}
+
+map g<space> push :gsh<space>
+map gf push :gsh_fuzzy<space>
+map go gsh_i
+
