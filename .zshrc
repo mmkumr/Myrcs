@@ -126,3 +126,4 @@ fi
 bindkey -v
 TERM=xterm-256color
 git config --global oh-my-zsh.hide-info 1   # git_prompt_info
+source /usr/share/g/g_source.sh

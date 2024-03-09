@@ -4,6 +4,7 @@ cd ~/
 cp  ~/.commitrc.sh ~/.i3status.conf ~/.i3/ ~/.muttrc ~/.zshrc ~/.zsh_history \
     ~/.config/lf/ ~/.config/mpv/ ~/.config/nvim/ ~/.config/rofi/ ~/.config/sxhkd/ ~/.config/xfce4/ ~/.config/zathura/ ~/.config/alacritty/ \
     /etc/environment \
+    ~/.local/share/g/ \
     ~/Myrcs/ -r 
 
 
@@ -18,5 +19,3 @@ then
     git commit -m "Auto commit"
     git push
 fi
-#netstat -natu | grep 'ESTABLISHED'
-
