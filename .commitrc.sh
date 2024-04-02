@@ -9,7 +9,7 @@ cp  ~/.commitrc.sh ~/.i3status.conf ~/.i3/ ~/.muttrc ~/.zshrc ~/.zsh_history /et
 #Changing to git directory.
 cd ~/Myrcs
 git status 
-git status | grep nothing to commit
+git status | grep "nothing to commit"
 if [ $? -gt 0 ] 
 then
     sleep 2
