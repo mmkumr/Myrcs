@@ -3,7 +3,7 @@
 cd ~/
 cp  ~/.config/lf/ ~/.config/mpv/ ~/.config/nvim/ ~/.config/rofi/ ~/.config/sxhkd/ ~/.config/xfce4/ ~/.config/zathura/ ~/.config/alacritty/ \
     ~/Myrcs/.config/ -r
-cp  ~/.commitrc.sh ~/.i3status.conf ~/.i3/ ~/.muttrc ~/.zshrc ~/.zsh_history /etc/environment ~/.local/share/g/ \
+cp  ~/.commitrc.sh ~/.i3status.conf ~/.i3/ ~/.zshrc ~/.zsh_history /etc/environment ~/.local/share/g/ \
     ~/Myrcs/ -r 
 
 #Changing to git directory.
