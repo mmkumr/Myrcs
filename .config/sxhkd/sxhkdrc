@@ -3,11 +3,11 @@
 super + Return
 	$TERMINAL
 super + d
-	rofi -modi drun,window,run,keys,ssh -show drun -show-icons -sidebar-mode
+	rofi -modi drun,emoji -show drun -show-icons p:'--symbols-font "Symbols Nerd Font Symbols"'
 super + n
     alacritty -e  ~/.config/lf/lf
 super + e
-	$TERMINAL -e neomutt
+	rofi -modi emoji -show emoji -show-icons -sidebar-mode
 super + m
     simple-mtpfs --device 1 /mnt/Android -o allow_other & notify-send "Android device mounted"
 super + shift + m

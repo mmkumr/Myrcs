@@ -56,12 +56,11 @@ return {
                 "-fqbn", Mega_FQBN
             }
         }
-        require('lspconfig')['dartls'].setup {
-            capabilities = capabilities
-        }
+
         require('lspconfig')['vimls'].setup {
             capabilities = capabilities
         }
+
         -- keybindings
         vim.cmd "nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>"
         vim.cmd "nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>"

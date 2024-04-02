@@ -21,7 +21,3 @@ cmd gsh_i ${{
 	fi
 }}
 
-map g<space> push :gsh<space>
-map gf push :gsh_fuzzy<space>
-map go gsh_i
-
