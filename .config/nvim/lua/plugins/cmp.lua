@@ -6,7 +6,6 @@ return {
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-path',
         'hrsh7th/cmp-cmdline',
-        'hrsh7th/nvim-cmp',
         'hrsh7th/cmp-vsnip',
         'saadparwaiz1/cmp_luasnip',
         'quangnguyen30192/cmp-nvim-ultisnips',
@@ -47,6 +46,20 @@ return {
                     end
                 end, { "i", "s", "c", }),
             }),
+            formatting = {
+                format = function(entry, item)
+                    item.menu = ({
+                        buffer = "[Buffer]",
+                        nvim_lsp = "[LSP]",
+                        luasnip = "[LuaSnip]",
+                        vsnip = "[Vsnip]",
+                        ultisnips = "[Ultisnips]",
+                        path = "[File]"
+                    })[entry.source.name]
+
+                    return item
+                end,
+            },
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
                 { name = 'vsnip' },     -- For vsnip users.
