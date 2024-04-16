@@ -65,7 +65,7 @@ return {
         },
         config = function()
             require("flutter-tools").setup {
-                flutter_path = "/opt/flutter/bin/flutter"
+                flutter_path = "/usr/lib/flutter/bin/flutter"
             }
         end,
     },
