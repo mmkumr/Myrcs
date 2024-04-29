@@ -3,7 +3,7 @@
 super + Return
 	$TERMINAL
 super + d
-	rofi -modi drun,emoji -show drun -show-icons p:'--symbols-font "Symbols Nerd Font Symbols"'
+	rofi -modi drun -show drun -show-icons -sidebar-mode p:'--symbols-font "Symbols Nerd Font Symbols"'
 super + n
     alacritty -e  ~/.config/lf/lf
 super + e

@@ -9,7 +9,7 @@ exec $TERMINAL
 #for swaping escape with capslock.
 exec dropbox
 exec xss-lock --transfer-sleep-lock -- ~/.i3/scripts/lock
-# exec opera
+exec opera
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /home/mmkumr/.i3/scripts/start_conky_maia
 exec --no-startup-id blueman-applet

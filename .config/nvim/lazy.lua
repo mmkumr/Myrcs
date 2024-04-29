@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {
     install = {
-        colorscheme = { "nightfly" },
+        colorscheme = { "tokyonight" },
     },
     checker = {
         enabled = true,

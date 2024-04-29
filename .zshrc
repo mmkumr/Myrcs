@@ -100,7 +100,7 @@ alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
 alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
-export project_dir="/run/media/mmkumr/MyWorkspace/Projects"
+export project_dir="/mnt/MyWorkspace/Projects"
 alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
 alias docker_clean="sudo docker-compose exec php php /var/www/html/artisan cache:clear && sudo docker-compose exec php php /var/www/html/artisan config:clear"
@@ -114,6 +114,7 @@ export PATH="/snap/bin/:$PATH"
 export PATH="$HOME/.local/bin/:$PATH"
 export PATH="$HOME/.composer/vendor/bin/:$PATH"
 export PATH="$PATH:/usr/lib/flutter/bin/"
+export PATH="$PATH:$HOME/.pub-cache/bin"
 export EDITOR=vim
 export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
@@ -127,3 +128,12 @@ bindkey -v
 TERM=xterm-256color
 git config --global oh-my-zsh.hide-info 1   # git_prompt_info
 source /usr/share/g/g_source.sh
+eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+--color=fg:#c0caf5,bg:#24283b,hl:#ff9e64 \
+--color=fg+:#c0caf5,bg+:#292e42,hl+:#ff9e64 \
+--color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff \
+--color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
+# ---- Zoxide (better cd) ----
+eval "$(zoxide init zsh)"
+alias cd="z"

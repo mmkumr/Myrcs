@@ -14,6 +14,7 @@ return {
         'hrsh7th/vim-vsnip-integ',
         'SirVer/ultisnips',
         'L3MON4D3/LuaSnip',
+        "rafamadriz/friendly-snippets",
     },
     config = function()
         local cmp = require 'cmp'
@@ -23,7 +24,7 @@ return {
                 expand = function(args)
                     vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
                     --require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-                    vim.fn["UltiSnips#Anon"](args.body)  -- For `ultisnips` users.
+                    --vim.fn["UltiSnips#Anon"](args.body)  -- For `ultisnips` users.
                 end,
             },
             window = {

@@ -1,39 +1,42 @@
-[colors.bright]
-black = "#6D7070"
-blue = "#1BA6FA"
-cyan = "#73FBF1"
-green = "#B8E466"
-magenta = "#A578EA"
-red = "#FF4352"
-white = "#FEFEF8"
-yellow = "#FFD750"
 
-[colors.cursor]
-cursor = "#FF261E"
-text = "#FF261E"
-
-[colors.normal]
-black = "#0d0d0d"
-blue = "#1BA6FA"
-cyan = "#21DEEF"
-green = "#A0E521"
-magenta = "#8763B8"
-red = "#FF301B"
-white = "#EBEBEB"
-yellow = "#FFC620"
-
+# TokyoNight Alacritty Colors
+# Default colors
 [colors.primary]
-background = "#292C3E"
-foreground = "#EBEBEB"
+background = '#24283b'
+foreground = '#c0caf5'
 
-[env]
-LANG = "en_US.UTF-8"
-LC_CTYPE = "en_US.UTF-8"
-TERM = "alacritty"
+#[colors.cursor]
+#cursor = '#c0caf5'
+#text = '#24283b'
 
-[font]
-size = 11.0
+# Normal colors
+[colors.normal]
+black = '#1d202f'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#5432f3'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#a9b1d6'
 
-[font.normal]
-family = "monospace"
-style = "Regular"
+# Bright colors
+[colors.bright]
+black = '#414868'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#5432f3'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#c0caf5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff9e64'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#db4b4b'
+
