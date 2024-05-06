@@ -62,6 +62,8 @@ plugins=(
   adb
   command-not-found
   extract
+  virtualenv
+  flutter
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -75,7 +77,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
+    export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 fi
@@ -99,7 +101,9 @@ alias define='sdcv'
 alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
-alias adb_wireless="sh /home/mmkumr/.wireless_adb.sh"
+alias adb_wireless="sh /home/mmkumr/.commands/wireless_adb.sh"
+alias adb_wireless_qr="sh /home/mmkumr/.commands/adb_pair_qr.py"
+alias commitrc="sh /home/mmkumr/.commands/commitrc.sh"
 export project_dir="/mnt/MyWorkspace/Projects"
 alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
@@ -127,6 +131,7 @@ fi
 bindkey -v
 TERM=xterm-256color
 git config --global oh-my-zsh.hide-info 1   # git_prompt_info
+
 source /usr/share/g/g_source.sh
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \

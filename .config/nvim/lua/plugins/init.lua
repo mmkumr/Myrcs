@@ -1,6 +1,7 @@
 return {
     'RishabhRD/popfix',
     'jtratner/vim-flavored-markdown', -- For markdown files
+    'mfussenegger/nvim-lint',
     {
         'numToStr/Comment.nvim',
         event = { "BufReadPre", "BufNewFile" },
@@ -68,5 +69,22 @@ return {
                 flutter_path = "/usr/lib/flutter/bin/flutter"
             }
         end,
+    },
+    {
+        "christoomey/vim-tmux-navigator",
+        cmd = {
+            "TmuxNavigateLeft",
+            "TmuxNavigateDown",
+            "TmuxNavigateUp",
+            "TmuxNavigateRight",
+            "TmuxNavigatePrevious",
+        },
+        keys = {
+            { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+            { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+        },
     },
 }

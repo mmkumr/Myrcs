@@ -24,19 +24,27 @@ return {
         mason_lspconfig.setup({
             -- list of servers for mason to install
             ensure_installed = {
-                'html',
-                'quick_lint_js',
-                'marksman',
-                'pylsp',
-                'pyright',
-                'intelephense',
-                'lua_ls',
-                'cssls',
-                'cmake',
-                'clangd',
-                'bashls',
-                'arduino_language_server',
-                'vimls',
+                lsp = {
+                    'html',
+                    'quick_lint_js',
+                    'marksman',
+                    'pyright',
+                    'intelephense',
+                    'lua_ls',
+                    'cssls',
+                    'cmake',
+                    'clangd',
+                    'bashls',
+                    'arduino_language_server',
+                    'vimls',
+                },
+                dap = {
+                    "debugpy"
+                },
+                linter = {
+                    "pylint",
+                    "cpplint"
+                }
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed

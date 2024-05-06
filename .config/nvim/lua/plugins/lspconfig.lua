@@ -20,11 +20,21 @@ return {
         require('lspconfig')['marksman'].setup {
             capabilities = capabilities
         }
-        require('lspconfig')['pylsp'].setup {
-            capabilities = capabilities
-        }
         require('lspconfig')['pyright'].setup {
             capabilities = capabilities
+        }
+        require('lspconfig')['pylsp'].setup {
+            capabilities = capabilities,
+            settings = {
+                -- configure plugins in pylsp
+                pylsp = {
+                    plugins = {
+                        pyflakes = { enabled = false },
+                        pylint = { enabled = false },
+                        flake8 = { enabled = false }
+                    },
+                },
+            },
         }
         require('lspconfig')['intelephense'].setup {
             capabilities = capabilities

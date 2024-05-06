@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
-cp  .commitrc.sh .i3status.conf .i3/ .muttrc .zshrc .zsh_history ~/ -r 
+cp  ./.zshrc ./.zsh_history ./.i3status.conf ./.commands ./.tmux.conf ./.tmux/ ~/ -r 
 
-cp .config/* ~/.config/ -r
+cp ./config/* ~/.config/ -r
 
 sudo cp environment /etc/environment
 cp g  ~/.local/share/ -r
