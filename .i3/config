@@ -3,11 +3,11 @@ set $TERMINAL alacritty
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 #for disabling screen timeout
 exec setxkbmap -option caps:swapescape 
-exec --no-startup-id volumeicon
 exec udiskie -s
 exec $TERMINAL  
 #for swaping escape with capslock.
 exec dropbox
+exec volumeicon
 exec xss-lock --transfer-sleep-lock -- ~/.i3/scripts/lock
 exec opera
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
@@ -30,10 +30,6 @@ bar {
     status_command i3status
 	position top
     
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
     bindsym button4 nop
     bindsym button5 nop
     strip_workspace_numbers yes
