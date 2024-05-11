@@ -1,3 +1,2 @@
-.config/xfce4/xfconf/xfce-perchannel-xml/*
-.config/opera
-.config/notion-app
+./.tmux/plugins/
+!./.tmux/plugins/tpm/
