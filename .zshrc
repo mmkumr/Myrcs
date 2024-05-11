@@ -101,9 +101,6 @@ alias define='sdcv'
 alias wifi="nmtui"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias vmware="sudo vmware"
-alias adb_wireless="sh /home/mmkumr/.commands/wireless_adb.sh"
-alias adb_wireless_qr="sh /home/mmkumr/.commands/adb_pair_qr.py"
-alias commitrc="sh /home/mmkumr/.commands/commitrc.sh"
 export project_dir="/mnt/MyWorkspace/Projects"
 alias xilinx="/opt/Xilinx/Xilinx/14.7/ISE_DS/common/app_launcher.sh ise"
 alias docker_run="sudo docker-compose build && sudo docker-compose up -d"
@@ -112,6 +109,7 @@ alias flutter_release_install="flutter build apk && adb install build/app/output
 alias ssh="TERM=xterm-256color && ssh"
 alias lf="~/.config/lf/lf"
 #path varibles.
+export PATH="$HOME/.commands:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/sbin:$PATH"
 export PATH="/snap/bin/:$PATH"

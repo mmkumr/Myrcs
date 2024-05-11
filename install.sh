@@ -7,4 +7,4 @@ sudo wget -qO- https://storage.googleapis.com/flutter_infra_release/releases/sta
     tar -xvzf -C /usr/lib/ \
     sudo chown mmkumr:mmkumr /usr/lib/flutter/ -R \
     flutter upgrade
-
+sudo chmod +x ~/.i3/scripts/ -R
