@@ -120,7 +120,7 @@ export PATH="$PATH:$HOME/.pub-cache/bin"
 export EDITOR=vim
 export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
-export bl_device=/sys/class/backlight/intel_backlight/brightness
+export bl_device=/sys/class/backlight/intel_backlight/brightnesspublished
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh

@@ -2,28 +2,26 @@
 # Basic binds
 super + Return
 	$TERMINAL
-super + d
-	rofi -modi drun -show drun -show-icons -sidebar-mode p:'--symbols-font "Symbols Nerd Font Symbols"'
 super + n
     alacritty -e  ~/.config/lf/lf
+super + d
+	rofi -modi drun,emoji -show drun
 super + e
 	rofi -modi emoji -show emoji -show-icons -sidebar-mode
+super + shift + x
+    rofi -show p -modi p:'rofi-power-menu'
 super + m
     simple-mtpfs --device 1 /mnt/Android -o allow_other & notify-send "Android device mounted"
 super + shift + m
     fusermount -u /mnt/Android & notify-send "Android device unmounted"
 super + w
 	opera
-super + shift + g
-	gimp
 
 # Et cetera...
 super + Scroll_Lock
 	killall screenkey || screenkey
 super + Insert
 	showclip
-super + shift + x
-    rofi -show p -modi p:'rofi-power-menu --symbols-font "Symbols Nerd Font Mono"'
 super + x
     xset dpms force off; /home/mmkumr/.i3/scripts/lock
 
@@ -37,8 +35,8 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
-#Volume Control
-#It is handled by volumeicon package
+# Volume Control
+# It is handled by volumeicon package
 # XF86AudioLowerVolume
 # 	amixer set Master 5%-
 # XF86AudioRaiseVolume

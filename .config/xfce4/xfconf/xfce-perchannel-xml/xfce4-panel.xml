@@ -19,7 +19,6 @@
         <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="11"/>
-        <value type="int" value="12"/>
         <value type="int" value="13"/>
       </property>
     </property>
@@ -45,6 +44,44 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1950"/>
+        <value type="string" value="dropbox-client-6499"/>
+        <value type="string" value="dropbox-client-4259"/>
+        <value type="string" value="dropbox-client-2021"/>
+        <value type="string" value="dropbox-client-2023"/>
+        <value type="string" value="dropbox-client-2047"/>
+        <value type="string" value="dropbox-client-8152"/>
+        <value type="string" value="dropbox-client-1897"/>
+        <value type="string" value="dropbox-client-2288"/>
+        <value type="string" value="dropbox-client-1945"/>
+        <value type="string" value="dropbox-client-2010"/>
+        <value type="string" value="dropbox-client-2073"/>
+        <value type="string" value="dropbox-client-1959"/>
+        <value type="string" value="dropbox-client-1975"/>
+        <value type="string" value="dropbox-client-1920"/>
+        <value type="string" value="dropbox-client-1928"/>
+        <value type="string" value="dropbox-client-2030"/>
+        <value type="string" value="dropbox-client-2079"/>
+        <value type="string" value="dropbox-client-2101"/>
+        <value type="string" value="dropbox-client-2012"/>
+        <value type="string" value="dropbox-client-13076"/>
+        <value type="string" value="dropbox-client-798"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="dropbox-client-1805"/>
+        <value type="string" value="dropbox-client-1903"/>
+        <value type="string" value="dropbox-client-1865"/>
+        <value type="string" value="dropbox-client-1832"/>
+        <value type="string" value="dropbox-client-1900"/>
+        <value type="string" value="dropbox-client-2579"/>
+        <value type="string" value="dropbox-client-2105"/>
+        <value type="string" value="dropbox-client-1819"/>
+        <value type="string" value="dropbox-client-1853"/>
+        <value type="string" value="dropbox-client-4042"/>
+        <value type="string" value="dropbox-client-1830"/>
+        <value type="string" value="dropbox-client-1919"/>
+        <value type="string" value="dropbox-client-1890"/>
+        <value type="string" value="dropbox-client-61146"/>
+        <value type="string" value="dropbox-client-1926"/>
         <value type="string" value="dropbox-client-1929"/>
         <value type="string" value="dropbox-client-1804"/>
         <value type="string" value="flameshot"/>
@@ -88,6 +125,10 @@
         <value type="string" value="dropbox-client-131003"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="blueman"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="anydesk"/>
+        <value type="string" value="dropbox"/>
         <value type="string" value="wi-fi network connection “connectndenjoy” active: connectndenjoy (72%)"/>
         <value type="string" value="pamac-tray"/>
         <value type="string" value="clipit"/>
@@ -98,14 +139,6 @@
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-12" type="string" value="clock">
-      <property name="digital-time-format" type="string" value="%l:%M:%S %P"/>
-      <property name="digital-date-font" type="string" value="Sans 10"/>
-      <property name="digital-time-font" type="string" value="Sans 10"/>
-      <property name="digital-layout" type="uint" value="1"/>
-      <property name="digital-date-format" type="string" value="%a, %b %d, %Y"/>
-      <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
