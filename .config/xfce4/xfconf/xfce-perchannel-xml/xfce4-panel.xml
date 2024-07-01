@@ -44,6 +44,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-13634"/>
+        <value type="string" value="dropbox-client-11174"/>
         <value type="string" value="dropbox-client-1950"/>
         <value type="string" value="dropbox-client-6499"/>
         <value type="string" value="dropbox-client-4259"/>

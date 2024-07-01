@@ -5,9 +5,11 @@ super + Return
 super + n
     alacritty -e  ~/.config/lf/lf
 super + d
-	rofi -modi drun,emoji -show drun
+	rofi -modi drun,window -show drun
 super + e
 	rofi -modi emoji -show emoji -show-icons -sidebar-mode
+super + C
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 super + shift + x
     rofi -show p -modi p:'rofi-power-menu'
 super + m
