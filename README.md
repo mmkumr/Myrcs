@@ -1,11 +1,11 @@
 **Folders are structured regarding GNU stow**\
 # Folder Structure\
-🏠 Home folder contains:\
+## 🏠 Home folder contains:\
     - 📁 configs\
     - 📁 dot file in home folder.\
-📦 g folder contains:\
+## 📦 g folder contains:\
     - 📁 Bookmarks data used by [g.sh package](https://codeberg.org/tplasdio/g.sh/raw/branch/master/packaging/PKGBUILD-git)\
-🖥️ environment folder contains:\
+## 🖥️ environment folder contains:\
     - 📁 file that contains all system wide environment variables.
 # Restoring configs\
 git clone git@github.com:mmkumr/Myrcs.git\
