@@ -1,1 +1,0 @@
-Myrcs/home/.zshrc
