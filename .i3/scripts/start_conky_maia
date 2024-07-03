@@ -1,7 +1,1 @@
-#!/bin/bash
-
-conky -c /home/mmkumr/.i3/scripts/conky/conky_shortcuts_live_maia &&
-conky -c /home/mmkumr/.i3/scripts/conky/conky_maia &&
-conky -c /home/mmkumr/.i3/scripts/conky/conky_calendar &&
-conky -c /home/mmkumr/.i3/scripts/conky/conky_network &&
-exit 0
+../../Myrcs/home/.i3/scripts/start_conky_maia
