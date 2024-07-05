@@ -140,3 +140,4 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 alias cd="z"
+
