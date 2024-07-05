@@ -131,6 +131,9 @@ TERM=xterm-256color
 git config --global oh-my-zsh.hide-info 1   # git_prompt_info
 
 source /usr/share/g/g_source.sh
+# fzf shortcuts
+# CTRL-t	Look for files and directories
+# CTRL-r	Look through command history
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 --color=fg:#c0caf5,bg:#24283b,hl:#ff9e64 \
