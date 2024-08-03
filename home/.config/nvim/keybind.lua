@@ -20,3 +20,4 @@ vim.cmd "nnoremap <tab> :BufferLineCycleNext<CR>"
 vim.cmd "map <esc> :noh<cr>"
 vim.cmd "map T :terminal<CR>"
 vim.cmd "nnoremap L :Lazy<CR>"
+vim.keymap.set("n", "<c-t>", ":Telescope find_files<CR>")

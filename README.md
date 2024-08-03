@@ -10,5 +10,4 @@
 # Restoring configs
 git clone git@github.com:mmkumr/Myrcs.git\
 cd Myrcs\
-stow --adopt home g\
-sudo stow -t / --adopt environment
+sudo chmod +x install.sh

@@ -1,8 +1,8 @@
 set $TERMINAL alacritty
 # Startup apps
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
-#for disabling screen timeout
-exec setxkbmap -option caps:swapescape 
+# for disabling screen timeout
+# exec setxkbmap -option caps:swapescape 
 exec udiskie -s
 exec $TERMINAL  
 #for swaping escape with capslock.
@@ -11,6 +11,7 @@ exec volumeicon
 exec greenclip daemon
 exec xss-lock --transfer-sleep-lock -- ~/.i3/scripts/lock
 exec opera
+exec --no-startup-id libinput-gestures
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /home/mmkumr/.i3/scripts/start_conky_maia
 exec --no-startup-id blueman-applet

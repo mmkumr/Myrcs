@@ -5,3 +5,11 @@
 #
 FILE=lf
 TERMINAL=alacritty
+EDITOR="nvim"
+#
+#
+#
+#
+#
+#
+#

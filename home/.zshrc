@@ -59,7 +59,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  adb
   command-not-found
   extract
   virtualenv
@@ -117,7 +116,6 @@ export PATH="$HOME/.local/bin/:$PATH"
 export PATH="$HOME/.composer/vendor/bin/:$PATH"
 export PATH="$PATH:/usr/lib/flutter/bin/"
 export PATH="$PATH:$HOME/.pub-cache/bin"
-export EDITOR=vim
 export PATH="/usr/share/rofi/themes/:$PATH"
 export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
 export bl_device=/sys/class/backlight/intel_backlight/brightnesspublished

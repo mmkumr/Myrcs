@@ -58,17 +58,23 @@ return {
         local ESP_FQBN = "esp32:esp32:esp32doit-devkit-v1"
         local Mega_FQBN = "arduino:avr:mega"
         local Uno_FQBN = "arduino:avr:uno"
-
         require('lspconfig')['arduino_language_server'].setup {
+            capabilities = capabilities,
             cmd = {
                 "arduino-language-server",
-                "-cli-config", "~/.arduinoIDE/arduino-cli.yaml",
-                "-fqbn", Mega_FQBN
+                "-cli-config",
+                "/home/mmkumr/.arduino15/arduino-cli.yaml",
+                "-cli",
+                "arduino-cli",
+                "-clangd",
+                "clangd",
+                "-fqbn",
+                Mega_FQBN,
             }
         }
 
         require('lspconfig')['vimls'].setup {
-            capabilities = capabilities
+            capabilities = capabilities,
         }
 
         -- keybindings
