@@ -38,6 +38,7 @@ autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 autocmd BufWritePost init.vim source %
 
 
+
 " auto-format
 autocmd BufWritePre *.js lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.vim lua vim.lsp.buf.format(nil, 100)
