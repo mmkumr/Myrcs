@@ -62,14 +62,9 @@ return {
             capabilities = capabilities,
             cmd = {
                 "arduino-language-server",
-                "-cli-config",
-                "/home/mmkumr/.arduino15/arduino-cli.yaml",
-                "-cli",
-                "arduino-cli",
-                "-clangd",
-                "clangd",
+                "-cli-config", "/home/mmkumr/.arduino15/arduino-cli.yaml",
                 "-fqbn",
-                Mega_FQBN,
+                Uno_FQBN
             }
         }
 
