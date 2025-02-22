@@ -1,11 +1,11 @@
 #!/usr/bin/zsh
-#Changing to git directory.
+#Changing to configs git dir.
 cd ~/Myrcs
 git status | grep "nothing to commit"
-if [ $? -gt 0 ] 
+if [ $? -gt 0 ] # checking grep's exit status(previous command)
 then
     sleep 2
     git add .
-    git commit -m "Auto commit"
+    git commit -pm '`git status -s` Edit# `git log | grep commit | wc -l`'; git push
     git push
 fi
