@@ -72,6 +72,7 @@ return {
             capabilities = capabilities,
         }
 
+
         -- keybindings
         vim.cmd "nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>"
         vim.cmd "nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>"

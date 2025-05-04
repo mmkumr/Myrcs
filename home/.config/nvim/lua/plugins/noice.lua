@@ -4,12 +4,12 @@ return {
         event = "VeryLazy",
         config = function()
             require("noice").setup({
-                messages = {
-                    enabled = false,
-                },
-                notify = {
-                    enabled = false,
-                }
+                -- messages = {
+                --     enabled = false,
+                -- },
+                -- notify = {
+                --     enabled = false,
+                -- }
             })
         end,
         dependencies = {

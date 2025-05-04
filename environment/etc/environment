@@ -3,7 +3,7 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
-FILE=lf
+FILE=nautilus
 TERMINAL=alacritty
 EDITOR="nvim"
 #

@@ -3,7 +3,7 @@
 super + Return
 	$TERMINAL
 super + n
-    alacritty -e  ~/.config/lf/lf
+    $FILE
 super + d
 	rofi -modi drun,window -show drun
 super + e
