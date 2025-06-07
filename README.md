@@ -1,5 +1,5 @@
 **Folders are structured as per GNU stow**
-# For adding files.
+# For adding new files/folders.
 > stow [name of the parent] --adopt
 # Folder Structure
 ## 🏠 Home folder contains:
