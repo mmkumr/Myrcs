@@ -1,4 +1,6 @@
 **Folders are structured as per GNU stow**
+# For adding files.
+> stow [name of the parent] --adopt
 # Folder Structure
 ## 🏠 Home folder contains:
 * 📁 configs

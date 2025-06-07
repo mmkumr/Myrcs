@@ -10,6 +10,7 @@ return {
     config = function()
         -- Set up lspconfig.
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        vim.diagnostic.config({ virtual_text = true })
         -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
         require('lspconfig')['html'].setup {
             capabilities = capabilities
@@ -48,13 +49,17 @@ return {
         require('lspconfig')['cmake'].setup {
             capabilities = capabilities
         }
-        require('lspconfig')['clangd'].setup {
-            capabilities = capabilities
-        }
+        require('lspconfig').clangd.setup({
+            capabilities = capabilities,
+            cmd = { "clangd", "--compile-commands-dir=." },
+            filetypes = { "c", "cpp", "objc", "objcpp" },
+        })
         require('lspconfig')['bashls'].setup {
             capabilities = capabilities
         }
-
+        require('lspconfig')['jsonls'].setup {
+            capabilities = capabilities
+        }
         local ESP_FQBN = "esp32:esp32:esp32doit-devkit-v1"
         local Mega_FQBN = "arduino:avr:mega"
         local Uno_FQBN = "arduino:avr:uno"
