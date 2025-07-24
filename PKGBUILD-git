@@ -1,0 +1,38 @@
+# Contributor: <tplasdio cat codeberg dog com>
+
+pkgname=g.sh-git
+_pkgname=g.sh
+pkgdesc="CLI tool to navigate to aliased/bookmarked paths"
+pkgver=1.3.2.r261.38d9175
+pkgrel=1
+license=(MIT)
+url='https://codeberg.org/tplasdio/g.sh'
+depends=(
+ awk
+ sed
+ grep
+)
+makedepends=(
+ sed
+ git
+)
+optdepends=(
+ 'fzf: for interactive selection'
+)
+arch=(any)
+source=("git+$url")
+md5sums=('SKIP')
+
+pkgver() {
+	cd -- "$_pkgname"
+	printf "%s.r%s.%s" \
+		"$(git describe --abbrev=0 --tags | tr -d v)" \
+		"$(git rev-list --count HEAD)" \
+		"$(git rev-parse --short HEAD)"
+}
+
+package() {
+	cd -- "$_pkgname" || exit 1
+
+	DESTDIR="$pkgdir" PREFIX=/usr ZIP_MAN=1 VERSION="$pkgver" ./make.sh
+}

@@ -1887,5 +1887,322 @@
             "module_exit(${5:my_exit});"
         ],
         "description": "Linux kernel module for DMA memcpy using completion"
+    },
+    "ld_mmap driver": {
+        "prefix": "ld_mmap",
+        "body": [
+            "#include <linux/module.h>",
+            "#include <linux/slab.h>",
+            "#include <linux/fs.h>",
+            "#include <linux/mm.h>",
+            "#include <asm/page.h>",
+            "#include <asm/io.h>",
+            "",
+            "MODULE_LICENSE(\"GPL\");",
+            "MODULE_AUTHOR(\"${1:Author Name}\");",
+            "MODULE_DESCRIPTION(\"${2:A simple mmap example}\");",
+            "",
+            "#define MYMAJOR ${3:64}",
+            "#define DEVNAME \"${4:mydev}\"",
+            "",
+            "static void *my_data;",
+            "",
+            "static ssize_t my_read(struct file *file, char __user *user_buffer, size_t len, loff_t *offs) {",
+            "  int not_copied, to_copy = (len > PAGE_SIZE) ? PAGE_SIZE : len;",
+            "  not_copied = copy_to_user(user_buffer, my_data, to_copy);",
+            "  return to_copy - not_copied;",
+            "}",
+            "",
+            "static ssize_t my_write(struct file *file, const char __user *user_buffer, size_t len, loff_t *offs) {",
+            "  int not_copied, to_copy = (len > PAGE_SIZE) ? PAGE_SIZE : len;",
+            "  not_copied = copy_from_user(my_data, user_buffer, to_copy);",
+            "  return to_copy - not_copied;",
+            "}",
+            "",
+            "static int my_mmap(struct file *file, struct vm_area_struct *vma) {",
+            "  int status;",
+            "  vma->vm_pgoff = virt_to_phys(my_data) >> PAGE_SHIFT;",
+            "  status = remap_pfn_range(vma, vma->vm_start, vma->vm_pgoff,",
+            "                           vma->vm_end - vma->vm_start, vma->vm_page_prot);",
+            "  if (status) {",
+            "    printk(\"my_mmap - Error remap_pfn_range: %d\\n\", status);",
+            "    return -EAGAIN;",
+            "  }",
+            "  return 0;",
+            "}",
+            "",
+            "static struct file_operations fops = {",
+            "  .owner = THIS_MODULE,",
+            "  .read = my_read,",
+            "  .write = my_write,",
+            "  .mmap = my_mmap,",
+            "};",
+            "",
+            "static int __init my_init(void) {",
+            "  int status;",
+            "  printk(\"my_mmap - Init\\n\");",
+            "  my_data = kzalloc(PAGE_SIZE, GFP_DMA);",
+            "  if (!my_data) return -ENOMEM;",
+            "",
+            "  status = register_chrdev(MYMAJOR, DEVNAME, &fops);",
+            "  if (status < 0) {",
+            "    printk(\"my_mmap - Error registering device!\\n\");",
+            "    kfree(my_data);",
+            "    return status;",
+            "  }",
+            "  return 0;",
+            "}",
+            "",
+            "static void __exit my_exit(void) {",
+            "  if (my_data) kfree(my_data);",
+            "  unregister_chrdev(MYMAJOR, DEVNAME);",
+            "  printk(\"my_mmap - Exit\\n\");",
+            "}",
+            "",
+            "module_init(my_init);",
+            "module_exit(my_exit);"
+        ],
+        "description": "A simple mmap kernel module with read/write interface"
+    },
+    "user mmap test program": {
+        "prefix": "ld_userspace_mmap",
+        "body": [
+            "#include <stdio.h>",
+            "#include <unistd.h>",
+            "#include <stdlib.h>",
+            "#include <string.h>",
+            "#include <fcntl.h>",
+            "#include <sys/mman.h>",
+            "",
+            "#define DEVNAME \"${1:/dev/mydev}\"",
+            "",
+            "int main(int argc, char **argv) {",
+            "  int fd, status, offset;",
+            "  char text[4096];",
+            "  void *ptr;",
+            "",
+            "  if(argc < 2) {",
+            "    printf(\"Usage: %s [m,r,w,p] {data}\\n\", argv[0]);",
+            "    return 0;",
+            "  }",
+            "",
+            "  fd = open(DEVNAME, O_RDWR);",
+            "  if(fd < 0) { perror(\"open\"); return 1; }",
+            "",
+            "  switch(argv[1][0]) {",
+            "    case 'r':",
+            "      status = read(fd, text, 4096);",
+            "      printf(\"READ: I got %d bytes with '%s'\\n\", status, text);",
+            "      break;",
+            "",
+            "    case 'w':",
+            "      if(argc < 3) { printf(\"Usage: %s w [data]\\n\", argv[0]); break; }",
+            "      memset(text, 0, 4096);",
+            "      strcpy(text, argv[2]);",
+            "      status = write(fd, text, 4096);",
+            "      printf(\"Wrote %d bytes\\n\", status);",
+            "      break;",
+            "",
+            "    case 'm':",
+            "      ptr = mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);",
+            "      if(ptr == MAP_FAILED) { perror(\"mmap\"); break; }",
+            "",
+            "      if(argc > 2) {",
+            "        memset(text, 0, 4096);",
+            "        strcpy(text, argv[2]);",
+            "        memcpy(ptr, text, 4096);",
+            "      }",
+            "",
+            "      memset(text, 0, 4096);",
+            "      memcpy(text, ptr, 4096);",
+            "      printf(\"MMAP: I got '%s'\\n\", text);",
+            "      munmap(ptr, 4096);",
+            "      break;",
+            "",
+            "    case 'p':",
+            "      if(argc < 3) { printf(\"Usage: %s p [offset]\\n\", argv[0]); break; }",
+            "      offset = atoi(argv[2]);",
+            "      ptr = mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);",
+            "      if(ptr == MAP_FAILED) { perror(\"mmap\"); break; }",
+            "      printf(\"MMAP: Byte on Offset %d: *(ptr + %d) = '%c'\\n\", offset, offset, *((char *)ptr + offset));",
+            "      munmap(ptr, 4096);",
+            "      break;",
+            "",
+            "    default:",
+            "      printf(\"'%c' is invalid.\\n\", argv[1][0]);",
+            "      break;",
+            "  }",
+            "  close(fd);",
+            "}"
+        ],
+        "description": "User space test program for mmap kernel module"
+    },
+    "printk log default": {
+        "prefix": "printk",
+        "body": [
+            "printk(\"${1:message}\\n\");"
+        ],
+        "description": "Basic printk"
+    },
+    "printk log info": {
+        "prefix": "printk_info",
+        "body": [
+            "printk(KERN_INFO \"${1:info message}\\n\");"
+        ],
+        "description": "Print an info message"
+    },
+    "printk log warning": {
+        "prefix": "printk_warn",
+        "body": [
+            "printk(KERN_WARNING \"${1:warning message}\\n\");"
+        ],
+        "description": "Print a warning message"
+    },
+    "printk log error": {
+        "prefix": "printk_err",
+        "body": [
+            "printk(KERN_ERR \"${1:error message}\\n\");"
+        ],
+        "description": "Print an error message"
+    },
+    "printk log debug": {
+        "prefix": "printk_dbg",
+        "body": [
+            "printk(KERN_DEBUG \"${1:debug message}\\n\");"
+        ],
+        "description": "Print a debug message"
+    },
+    "printk log alert": {
+        "prefix": "printk_alert",
+        "body": [
+            "printk(KERN_ALERT \"${1:alert message}\\n\");"
+        ],
+        "description": "Print an alert message"
+    },
+    "printk log emergency": {
+        "prefix": "printk_emerg",
+        "body": [
+            "printk(KERN_EMERG \"${1:emergency message}\\n\");"
+        ],
+        "description": "Print an emergency message"
+    },
+    "Embedded start main loop": {
+        "prefix": "main",
+        "body": [
+            "#include <stdint.h>",
+            "#include <stdbool.h>",
+            "",
+            "int main(void) {",
+            "    ${1:// Initialization}",
+            "",
+            "    while (1) {",
+            "        ${2:// Main loop code}",
+            "    }",
+            "}"
+        ],
+        "description": "Embedded C main loop"
+    },
+    "ISR Template": {
+        "prefix": "isr",
+        "body": [
+            "void __attribute__((interrupt)) ${1:ISR_Handler}(void) {",
+            "    ${2:// ISR body}",
+            "}"
+        ],
+        "description": "Interrupt Service Routine (ISR) template"
+    },
+    "Bit Set": {
+        "prefix": "bit_set",
+        "body": [
+            "${1:REG} |= (1 << ${2:BIT});"
+        ],
+        "description": "Set a bit in a register"
+    },
+    "Bit Clear": {
+        "prefix": "bit_clear",
+        "body": [
+            "${1:REG} &= ~(1 << ${2:BIT});"
+        ],
+        "description": "Clear a bit in a register"
+    },
+    "Bit Toggle": {
+        "prefix": "bit_toggle",
+        "body": [
+            "${1:REG} ^= (1 << ${2:BIT});"
+        ],
+        "description": "Toggle a bit in a register"
+    },
+    "Bit Check": {
+        "prefix": "bit_read",
+        "body": [
+            "if (${1:REG} & (1 << ${2:BIT})) {",
+            "    ${3:// bit is set}",
+            "}"
+        ],
+        "description": "Check if a bit is set"
+    },
+    "Define register": {
+        "prefix": "reg",
+        "body": [
+            "#define ${1:REG_NAME} (*(volatile ${2:uint8_t}*)${3:0x40000000})"
+        ],
+        "description": "Define memory-mapped register"
+    },
+    "Delay macro": {
+        "prefix": "delay",
+        "body": [
+            "for (volatile int ${1:i} = 0; $1 < ${2:10000}; ++$1);"
+        ],
+        "description": "Busy-wait delay loop"
+    },
+    "Header guard": {
+        "prefix": "header_guard",
+        "body": [
+            "#ifndef ${1:HEADER_NAME}_H",
+            "#define $1_H",
+            "",
+            "${2:// Your code here}",
+            "",
+            "#endif /* $1_H */"
+        ],
+        "description": "C header file guard"
+    },
+    "Interrupt Vector Stub (AVR)": {
+        "prefix": "vector",
+        "body": [
+            "#include <avr/interrupt.h>",
+            "",
+            "ISR(${1:TIMER1_COMPA_vect}) {",
+            "    ${2:// ISR code here}",
+            "}"
+        ],
+        "description": "AVR ISR Vector definition"
+    },
+    "set pin as output": {
+        "prefix": "pin_out",
+        "body": [
+            "${1:DDRx} |= (1 << ${2:PINx}); // Set pin as output"
+        ],
+        "description": "Set GPIO pin as output"
+    },
+    "set pin as input": {
+        "prefix": "pin_in",
+        "body": [
+            "${1:DDRx} &= ~(1 << ${2:PINx}); // Set pin as input"
+        ],
+        "description": "Set GPIO pin as input"
+    },
+    "strtok loop": {
+        "prefix": "strtok_loop",
+        "body": [
+            "char ${1:str}[] = \"${2:Mukesh Kumar}\";",
+            "char *${3:token};",
+            "char *${4:rest} = $1;",
+            "",
+            "while (($3 = strtok_r($4, \"${5: }\", &$4))) {",
+            "  printf(\"%s\\n\", $3);",
+            "}"
+        ],
+        "description": "strtok loop for splitting a string by delimiter"
     }
 }

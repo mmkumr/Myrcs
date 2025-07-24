@@ -1,0 +1,59 @@
+!~ $_GS_SCRIPT || _GS_SCRIPT = '/usr/bin/g.sh'
+!~ $_GS_SHARE  || _GS_SHARE = '/usr/share/g'
+!~ $_GS_CMD    || _GS_CMD = 'g'
+
+fn $_GS_CMD { gdest=() arg_mode=() cdflag=() {
+	if (~ $#* 0) {
+		$_GS_SCRIPT -l
+		return $status
+	}
+
+	while (!~ $#* 0) {
+		switch ($1) {
+		case '-r' '--register'; arg_mode = 'r'
+		case '-u' '--unregister'; arg_mode = 'u'
+		case '-l' '--list'; arg_mode = 'l'
+		case '-x' '--expand'; arg_mode = 'x'
+		case '-c' '--cleanup'; arg_mode = 'c'
+		case '-I' '--fzf'; arg_mode = 'I'
+		case '-h' '--help'; arg_mode = 'h'
+		case '-V' '--version'; arg_mode = 'V'
+		case *; break
+		}
+		shift
+	}
+
+	switch ($arg_mode) {
+	case [hV]
+		$_GS_SCRIPT '-'$arg_mode
+	case 'l'
+		$_GS_SCRIPT '-l' $*
+	case [ruxc]
+		$_GS_SCRIPT '-'$arg_mode $*
+	case 'I'
+		cdflag = 1
+		gdest = `{$_GS_SCRIPT -I $*}
+	case ()
+		cdflag = 1
+		gdest = `{$_GS_SCRIPT -x $*}
+	}
+
+	if (!~ $cdflag && !~ $gdest) {
+		if (test -d $gdest) {
+			if (!~ $_GS_CD) {
+				$_GS_CD $gdest
+			} else {
+				cd $gdest
+			}
+			if (!~ $_GS_ECHO) pwd
+		} else {
+			if (!~ $_GS_OPENER) {
+				$_GS_OPENER $gdest
+			} else if (!~ $_OPENER) {
+				$OPENER $gdest
+			} else {
+				xdg-open $gdest
+			}
+		}
+	}
+}}

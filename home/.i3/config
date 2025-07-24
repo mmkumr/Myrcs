@@ -1,13 +1,13 @@
 set $TERMINAL alacritty
 # Startup apps
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
-# for disabling screen timeout
-# exec setxkbmap -option caps:swapescape 
+#for swaping escape with capslock.
+exec setxkbmap -option caps:swapescape 
 exec udiskie -s
 exec $TERMINAL  
-#for swaping escape with capslock.
 exec dropbox
 exec greenclip daemon
+# for disabling screen timeout
 exec xset -dpms && xset s off
 exec xss-lock --transfer-sleep-lock -- ~/.i3/scripts/lock
 exec opera

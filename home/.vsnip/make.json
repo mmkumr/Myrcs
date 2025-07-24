@@ -1,0 +1,35 @@
+{
+    "ld_makefile": {
+        "prefix": "ld_makefile",
+        "body": [
+            "obj-m += ${1:name}.o",
+            "",
+            "all:",
+            "\tmake -C /lib/modules/\\$(shell uname -r)/build M=\\$(PWD) modules",
+            "",
+            "clean:",
+            "\tmake -C /lib/modules/\\$(shell uname -r)/build M=\\$(PWD) clean"
+        ],
+        "description": "Makefile for building Linux kernel module."
+    },
+    "ld_makefile_dt": {
+        "prefix": "ld_makefile_dt",
+        "body": [
+            "obj-m += ${1:name}.o",
+            "",
+            "all: module dt",
+            "\techo Builded Device Tree Overlay and kernel module",
+            "",
+            "module:",
+            "\tmake -C /lib/modules/\\$(shell uname -r)/build M=\\$(PWD) modules",
+            "",
+            "dt: ${2:testoverlay.dts}",
+            "\tdtc -@ -I dts -O dtb -o ${3:testoverlay.dtbo} ${2:testoverlay.dts}",
+            "",
+            "clean:",
+            "\tmake -C /lib/modules/\\$(shell uname -r)/build M=\\$(PWD) clean",
+            "\trm -rf ${3:testoverlay.dtbo}"
+        ],
+        "description": "Makefile snippet for building kernel module and device tree overlay"
+    }
+}

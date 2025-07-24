@@ -49,4 +49,5 @@ autocmd BufWritePre *.php lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.lua lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.c lua vim.lsp.buf.format(nil, 100)
 autocmd BufWritePre *.json lua vim.lsp.buf.format(nil, 100)
+autocmd BufWritePre *.cpp lua vim.lsp.buf.format(nil, 100)
 
