@@ -125,7 +125,7 @@ if [[ $TERM == xterm-termite ]]; then
   __vte_osc7
 fi
 bindkey -v
-TERM=xterm-256color
+# TERM=xterm-256color
 git config --global oh-my-zsh.hide-info 1   # git_prompt_info
 
 source /usr/share/g/g_source.sh
@@ -141,3 +141,4 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 alias cd="z"
+alias tmux='tmux -u'
