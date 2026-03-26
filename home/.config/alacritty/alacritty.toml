@@ -8,6 +8,7 @@ blur = true
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
+size = 15.0
 
 [general]
 import = [

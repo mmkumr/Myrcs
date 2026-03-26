@@ -19,6 +19,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xfce4-power-manager
+exec sleep 5 && setxkbmap -option caps:swapescape
+exec sleep 5 && xrandr --output eDP-1 --scale 0.8x0.8
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id setcursor
 exec --no-startup-id xfce4-panel

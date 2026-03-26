@@ -60,5 +60,4 @@ sudo systemctl start docker.service
 sudo usermod -aG docker $USER
 
 chsh -s /bin/zsh
-echo -e "\nsetxkbmap -option caps:swapescape\nxrandr --output eDP-1 --scale 0.8x0.8" >> ~/.xinitrc
 # End
