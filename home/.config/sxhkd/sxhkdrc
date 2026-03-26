@@ -28,6 +28,24 @@ super + x
     xset dpms force off; /home/mmkumr/.i3/scripts/lock
 
 # Media player controls
+# Volume Up with Dunst Notification
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5% && \
+    notify-send -h string:x-canonical-private-synchronous:vol "Volume" -h int:value:$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)
+
+# Volume Down with Dunst Notification
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5% && \
+    notify-send -h string:x-canonical-private-synchronous:vol "Volume" -h int:value:$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)
+
+# Brightness Up (5% steps)
+XF86MonBrightnessUp
+    brightnessctl set +5%
+
+# Brightness Down (5% steps)
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
 XF86AudioPlay 
     playerctl play-pause
 XF86AudioPause 
