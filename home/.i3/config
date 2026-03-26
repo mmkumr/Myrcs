@@ -31,6 +31,7 @@ font xft:URWGothic-Book 15
 bar {
 	i3bar_command i3bar
     status_command i3status
+    tray_output none
 	position top
     
     bindsym button4 nop
