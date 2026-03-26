@@ -2,7 +2,6 @@ set $TERMINAL alacritty
 # Startup apps
 exec sxhkd -c ~/.config/sxhkd/sxhkdrc 
 #for swaping escape with capslock.
-exec setxkbmap -option caps:swapescape 
 exec udiskie -s
 exec $TERMINAL  
 exec dropbox
@@ -25,7 +24,7 @@ exec_always --no-startup-id setcursor
 exec --no-startup-id xfce4-panel
 exec --no-startup-id sleep 5 && volumeicon
 font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Brands Regular,Font Awesome 5 Free Solid
-#font xft:URWGothic-Book 11
+font xft:URWGothic-Book 15
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
