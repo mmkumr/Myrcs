@@ -30,13 +30,11 @@ super + x
 # Media player controls
 # Volume Up with Dunst Notification
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +5% && \
-    notify-send -h string:x-canonical-private-synchronous:vol "Volume" -h int:value:$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)
+    bash -c 'curr=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po "[0-9]+(?=%)" | head -1); if [ "$curr" -lt 100 ]; then pactl set-sink-volume @DEFAULT_SINK@ +5%; else pactl set-sink-volume @DEFAULT_SINK@ 100%; fi'
 
 # Volume Down with Dunst Notification
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -5% && \
-    notify-send -h string:x-canonical-private-synchronous:vol "Volume" -h int:value:$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)
+    pactl set-sink-volume @DEFAULT_SINK@ -5% 
 
 # Brightness Up (5% steps)
 XF86MonBrightnessUp
