@@ -55,12 +55,14 @@ return {
                         luasnip = "[LuaSnip]",
                         vsnip = "[Vsnip]",
                         ultisnips = "[Ultisnips]",
-                        path = "[File]"
+                        path = "[File]",
+                        Copilot = "[Copilot]"
                     })[entry.source.name]
 
                     return item
                 end,
             },
+
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
                 { name = 'vsnip' },     -- For vsnip users.
@@ -68,7 +70,7 @@ return {
                 { name = 'ultisnips' }, -- For ultisnips users.
                 -- { name = 'snippy' }, -- For snippy users.
             }, {
-                { name = "codeium" },
+                { name = "copilot" },
                 { name = 'buffer' },
                 { name = 'path' }
             })

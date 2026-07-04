@@ -5,29 +5,32 @@ return {
         "hrsh7th/cmp-nvim-lsp",
         'RishabhRD/nvim-lsputils',
         'windwp/lsp-fastaction.nvim',
-        'neovim/nvim-lspconfig',
     },
     config = function()
-        -- Set up lspconfig.
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         vim.diagnostic.config({ virtual_text = true })
-        -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-        require('lspconfig')['html'].setup {
+
+        -- 1. Apply global capabilities to all language servers natively
+        vim.lsp.config('*', {
             capabilities = capabilities
+        })
+
+        -- 2. List servers that only need default settings
+        local basic_servers = {
+            'html', 'quick_lint_js', 'marksman', 'pyright',
+            'intelephense', 'lua_ls', 'cssls', 'cmake',
+            'bashls', 'jsonls', 'vimls'
         }
-        require('lspconfig')['quick_lint_js'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['marksman'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['pyright'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['pylsp'].setup {
-            capabilities = capabilities,
+
+        for _, server in ipairs(basic_servers) do
+            vim.lsp.enable(server)
+        end
+
+        -- 3. Configure and enable servers with unique settings
+
+        -- Pylsp
+        vim.lsp.config('pylsp', {
             settings = {
-                -- configure plugins in pylsp
                 pylsp = {
                     plugins = {
                         pyflakes = { enabled = false },
@@ -36,58 +39,45 @@ return {
                     },
                 },
             },
-        }
-        require('lspconfig')['intelephense'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['lua_ls'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['cssls'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['cmake'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig').clangd.setup({
-            capabilities = capabilities,
+        })
+        vim.lsp.enable('pylsp')
+
+        -- Clangd
+        vim.lsp.config('clangd', {
             cmd = { "clangd", "--compile-commands-dir=." },
             filetypes = { "c", "cpp", "objc", "objcpp" },
         })
-        require('lspconfig')['bashls'].setup {
-            capabilities = capabilities
-        }
-        require('lspconfig')['jsonls'].setup {
-            capabilities = capabilities
-        }
+        vim.lsp.enable('clangd')
+
+        -- Arduino Language Server
         local ESP_FQBN = "esp32:esp32:esp32doit-devkit-v1"
         local Mega_FQBN = "arduino:avr:mega"
         local Uno_FQBN = "arduino:avr:uno"
-        require('lspconfig')['arduino_language_server'].setup {
-            capabilities = capabilities,
+
+        vim.lsp.config('arduino_language_server', {
             cmd = {
                 "arduino-language-server",
                 "-cli-config", "/home/mmkumr/.arduino15/arduino-cli.yaml",
                 "-fqbn",
                 Uno_FQBN
             }
-        }
+        })
+        vim.lsp.enable('arduino_language_server')
 
-        require('lspconfig')['vimls'].setup {
-            capabilities = capabilities,
-        }
+        -- 4. Keybindings (Updated to modern vim.keymap.set API)
+        local opts = { silent = true }
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+        vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+        vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
 
+        -- Diagnostic mappings (Updated for modern nvim API)
+        vim.keymap.set('n', '<C-n>', vim.diagnostic.goto_prev, opts)
+        vim.keymap.set('n', '<C-p>', vim.diagnostic.goto_next, opts)
 
-        -- keybindings
-        vim.cmd "nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>"
-        vim.cmd "nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>"
-        vim.cmd "nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>"
-        vim.cmd "nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>"
-        vim.cmd "nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>"
-        vim.cmd "nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>"
-        vim.cmd "nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"
-        vim.cmd "nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>"
-        vim.cmd "nnoremap ca :lua vim.lsp.buf.code_action()<CR>"
-        vim.cmd "map R <cmd>lua vim.lsp.buf.rename()<CR>"
+        vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, opts)
+        vim.keymap.set('n', 'R', vim.lsp.buf.rename, opts)
     end,
 }

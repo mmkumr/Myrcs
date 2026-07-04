@@ -142,3 +142,4 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 eval "$(zoxide init zsh)"
 alias cd="z"
 alias tmux='tmux -u'
+export ANTHROPIC_API_KEY="sk-ant-api03-..."

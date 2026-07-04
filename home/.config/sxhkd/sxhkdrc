@@ -34,15 +34,15 @@ XF86AudioRaiseVolume
 
 # Volume Down with Dunst Notification
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -5% 
+    bash -c 'curr=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po "[0-9]+(?=%)" | head -1); if [ "$curr" -lt 100 ]; then pactl set-sink-volume @DEFAULT_SINK@ -5%; else pactl set-sink-volume @DEFAULT_SINK@ 0%; fi' 
 
-# Brightness Up (5% steps)
+# Brightness Up
 XF86MonBrightnessUp
-    brightnessctl set +5%
+    bash -c 'brightnessctl set +5%; b=$(brightnessctl -m | cut -d, -f4 | tr -d "%"); dunstify -h int:value:$b -r 9993 -u low "Brightness" "$b%"'
 
-# Brightness Down (5% steps)
+# Brightness Down
 XF86MonBrightnessDown
-    brightnessctl set 5%-
+    bash -c 'brightnessctl set 5%-; b=$(brightnessctl -m | cut -d, -f4 | tr -d "%"); dunstify -h int:value:$b -r 9993 -u low "Brightness" "$b%"'
 
 XF86AudioPlay 
     playerctl play-pause

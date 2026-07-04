@@ -1,146 +1,316 @@
 return {
-    -- HACK: docs @ https://github.com/folke/snacks.nvim/blob/main/docs
     {
         "folke/snacks.nvim",
         priority = 1000,
-        lazy = true,
-        -- NOTE: Options
+        lazy = false,
+        ---@type snacks.Config
         opts = {
-            -- Styling for each Item of Snacks
+            bigfile = { enabled = true },
+            dashboard = { enabled = true },
+            explorer = { enabled = true },
+            indent = { enabled = true },
+            input = { enabled = true },
+            notifier = {
+                enabled = true,
+                timeout = 3000,
+            },
+            picker = { enabled = true },
+            quickfile = { enabled = true },
+            scope = { enabled = true },
+            scroll = { enabled = true },
+            statuscolumn = { enabled = true },
+            words = { enabled = true },
             styles = {
-                input = {
-                    keys = {
-                        n_esc = { "<C-c>", { "cmp_close", "cancel" }, mode = "n", expr = true },
-                        i_esc = { "<C-c>", { "cmp_close", "stopinsert" }, mode = "i", expr = true },
-                    },
+                notification = {
+                    -- wo = { wrap = true } -- Wrap notifications
                 }
+            }
+        },
+        keys = {
+            -- Top Pickers & Explorer
+            {
+                "<leader>/",
+                function() Snacks.picker.grep() end,
+                desc = "Grep"
             },
-            -- Snacks Modules
-            input = {
-                enabled = true,
+            {
+                "<leader>:",
+                function() Snacks.picker.command_history() end,
+                desc = "Command History"
             },
-            quickfile = {
-                enabled = true,
-                exclude = { "latex" },
+            {
+                "<leader>n",
+                function() Snacks.picker.notifications() end,
+                desc = "Notification History"
             },
-            -- HACK: read picker docs @ https://github.com/folke/snacks.nvim/blob/main/docs/picker.md
-            picker = {
-                enabled = true,
-                matchers = {
-                    frecency = true,
-                    cwd_bonus = false,
-                },
-                formatters = {
-                    file = {
-                        filename_first = false,
-                        filename_only = false,
-                        icon_width = 2,
-                    },
-                },
-                layout = {
-                    -- presets options : "default" , "ivy" , "ivy-split" , "telescope" , "vscode", "select" , "sidebar"
-                    -- override picker layout in keymaps function as a param below
-                    preset = "telescope", -- defaults to this layout unless overidden
-                    cycle = false,
-                },
-                layouts = {
-                    select = {
-                        preview = false,
-                        layout = {
-                            backdrop = false,
-                            width = 0.6,
-                            min_width = 80,
-                            height = 0.4,
-                            min_height = 10,
-                            box = "vertical",
-                            border = "rounded",
-                            title = "{title}",
-                            title_pos = "center",
-                            { win = "input",   height = 1,          border = "bottom" },
-                            { win = "list",    border = "none" },
-                            { win = "preview", title = "{preview}", width = 0.6,      height = 0.4, border = "top" },
-                        }
-                    },
-                    telescope = {
-                        reverse = true, -- set to false for search bar to be on top
-                        layout = {
-                            box = "horizontal",
-                            backdrop = false,
-                            width = 0.8,
-                            height = 0.9,
-                            border = "none",
-                            {
-                                box = "vertical",
-                                { win = "list",  title = " Results ", title_pos = "center", border = "rounded" },
-                                { win = "input", height = 1,          border = "rounded",   title = "{title} {live} {flags}", title_pos = "center" },
-                            },
-                            {
-                                win = "preview",
-                                title = "{preview:Preview}",
-                                width = 0.50,
-                                border = "rounded",
-                                title_pos = "center",
-                            },
-                        },
-                    },
-                    ivy = {
-                        layout = {
-                            box = "vertical",
-                            backdrop = false,
-                            width = 0,
-                            height = 0.4,
-                            position = "bottom",
-                            border = "top",
-                            title = " {title} {live} {flags}",
-                            title_pos = "left",
-                            { win = "input", height = 1, border = "bottom" },
-                            {
-                                box = "horizontal",
-                                { win = "list",    border = "none" },
-                                { win = "preview", title = "{preview}", width = 0.5, border = "left" },
-                            },
-                        },
-                    },
-                }
+            {
+                "<leader>e",
+                function() Snacks.explorer() end,
+                desc = "File Explorer"
             },
-            image = {
-                enabled = true,
-                doc = {
-                    float = false,
-                    inline = true, -- if you want show image on cursor hover
-                    max_width = 50,
-                    max_height = 30,
-                    wo = {
-                        wrap = true,
-                    },
-                },
-                convert = {
-                    notify = true,
-                    command = "magick"
-                },
-                img_dirs = { "img", "images", "assets", "static", "public", "media", "attachments", "Archives/All-Vault-Images/", "~/Library", "~/Downloads" },
+            -- find
+            {
+                "<leader>fb",
+                function() Snacks.picker.buffers() end,
+                desc = "Buffers"
+            },
+            {
+                "<leader>fc",
+                function() Snacks.picker.files({ cwd = "~/.config/" }) end,
+                desc = "Find Config File"
+            },
+            {
+                "<leader>fp",
+                function() Snacks.picker.projects() end,
+                desc = "Projects"
+            },
+
+            -- git
+            {
+                "<leader>gb",
+                function() Snacks.picker.git_branches() end,
+                desc = "Git Branches"
+            },
+            {
+                "<leader>gl",
+                function() Snacks.picker.git_log() end,
+                desc = "Git Log"
+            },
+            {
+                "<leader>gL",
+                function() Snacks.picker.git_log_line() end,
+                desc = "Git Log Line"
+            },
+            {
+                "<leader>gs",
+                function() Snacks.picker.git_status() end,
+                desc = "Git Status"
+            },
+            {
+                "<leader>gS",
+                function() Snacks.picker.git_stash() end,
+                desc = "Git Stash"
+            },
+            {
+                "<leader>gd",
+                function() Snacks.picker.git_diff() end,
+                desc = "Git Diff (Hunks)"
+            },
+            {
+                "<leader>gf",
+                function() Snacks.picker.git_log_file() end,
+                desc = "Git Log File"
+            },
+            -- gh
+            {
+                "<leader>gi",
+                function() Snacks.picker.gh_issue() end,
+                desc = "GitHub Issues (open)"
+            },
+            {
+                "<leader>gI",
+                function() Snacks.picker.gh_issue({ state = "all" }) end,
+                desc = "GitHub Issues (all)"
+            },
+            {
+                "<leader>gp",
+                function() Snacks.picker.gh_pr() end,
+                desc = "GitHub Pull Requests (open)"
+            },
+            {
+                "<leader>gP",
+                function() Snacks.picker.gh_pr({ state = "all" }) end,
+                desc = "GitHub Pull Requests (all)"
+            },
+            -- Grep
+            {
+                "<leader>sb",
+                function() Snacks.picker.lines() end,
+                desc = "Buffer Lines"
+            },
+            {
+                "<leader>sB",
+                function() Snacks.picker.grep_buffers() end,
+                desc = "Grep Open Buffers"
+            },
+            {
+                "<leader>sg",
+                function() Snacks.picker.grep() end,
+                desc = "Grep"
+            },
+            {
+                "<leader>sw",
+                function() Snacks.picker.grep_word() end,
+                desc = "Visual selection or word",
+                mode = { "n", "x" }
+            },
+            -- search
+            {
+                '<leader>s"',
+                function() Snacks.picker.registers() end,
+                desc = "Registers"
+            },
+            {
+                '<leader>s/',
+                function() Snacks.picker.search_history() end,
+                desc = "Search History"
+            },
+            {
+                "<leader>sa",
+                function() Snacks.picker.autocmds() end,
+                desc = "Autocmds"
+            },
+            {
+                "<leader>sb",
+                function() Snacks.picker.lines() end,
+                desc = "Buffer Lines"
+            },
+            {
+                "<leader>sc",
+                function() Snacks.picker.command_history() end,
+                desc = "Command History"
+            },
+            {
+                "<leader>sC",
+                function() Snacks.picker.commands() end,
+                desc = "Commands"
+            },
+            {
+                "<leader>sd",
+                function() Snacks.picker.diagnostics() end,
+                desc = "Diagnostics"
+            },
+            {
+                "<leader>sD",
+                function() Snacks.picker.diagnostics_buffer() end,
+                desc = "Buffer Diagnostics"
+            },
+            {
+                "<leader>sh",
+                function() Snacks.picker.help() end,
+                desc = "Help Pages"
+            },
+            {
+                "<leader>sH",
+                function() Snacks.picker.highlights() end,
+                desc = "Highlights"
+            },
+            {
+                "<leader>si",
+                function() Snacks.picker.icons() end,
+                desc = "Icons"
+            },
+            {
+                "<leader>sj",
+                function() Snacks.picker.jumps() end,
+                desc = "Jumps"
+            },
+            {
+                "<leader>sk",
+                function() Snacks.picker.keymaps() end,
+                desc = "Keymaps"
+            },
+            {
+                "<leader>sl",
+                function() Snacks.picker.loclist() end,
+                desc = "Location List"
+            },
+            {
+                "<leader>sm",
+                function() Snacks.picker.marks() end,
+                desc = "Marks"
+            },
+            {
+                "<leader>sM",
+                function() Snacks.picker.man() end,
+                desc = "Man Pages"
+            },
+            {
+                "<leader>sp",
+                function() Snacks.picker.lazy() end,
+                desc = "Search for Plugin Spec"
+            },
+            {
+                "<leader>sq",
+                function() Snacks.picker.qflist() end,
+                desc = "Quickfix List"
+            },
+            {
+                "<leader>sR",
+                function() Snacks.picker.resume() end,
+                desc = "Resume"
+            },
+            {
+                "<leader>su",
+                function() Snacks.picker.undo() end,
+                desc = "Undo History"
+            },
+            {
+                "<leader>uC",
+                function() Snacks.picker.colorschemes() end,
+                desc = "Colorschemes"
+            },
+
+            -- Other
+            {
+                "<leader>.",
+                function() Snacks.scratch() end,
+                desc = "Toggle Scratch Buffer"
+            },
+            {
+                "<leader>S",
+                function() Snacks.scratch.select() end,
+                desc = "Select Scratch Buffer"
+            },
+            {
+                "<leader>n",
+                function() Snacks.notifier.show_history() end,
+                desc = "Notification History"
+            },
+            {
+                "<leader>un",
+                function() Snacks.notifier.hide() end,
+                desc = "Dismiss All Notifications"
             },
 
         },
-        -- NOTE: Keymaps
-        keys = {
+        init = function()
+            vim.api.nvim_create_autocmd("User", {
+                pattern = "VeryLazy",
+                callback = function()
+                    -- Setup some globals for debugging (lazy-loaded)
+                    _G.dd = function(...)
+                        Snacks.debug.inspect(...)
+                    end
+                    _G.bt = function()
+                        Snacks.debug.backtrace()
+                    end
 
-            -- Git Stuff
-            { "<leader>lg",  function() require("snacks").lazygit() end,                                  desc = "Lazygit" },
-            { "<leader>gl",  function() require("snacks").lazygit.log() end,                              desc = "Lazygit Logs" },
-            { "<leader>gbr", function() require("snacks").picker.git_branches({ layout = "select" }) end, desc = "Pick and Switch Git Branches" },
-            -- Snacks Picker
-            { "<leader>pk",  function() require("snacks").picker.keymaps({ layout = "ivy" }) end,         desc = "Search Keymaps (Snacks Picker)" },
-            -- Other Utils
-            { "<leader>h",   function() require("snacks").picker.help() end,                              desc = "Help Pages" },
-        }
-    },
-    -- NOTE: todo comments w/ snacks
-    {
-        "folke/todo-comments.nvim",
-        optional = true,
-        keys = {
-            { "<leader>pt", ":TodoTelescope<cr>" },
-        },
+                    -- Override print to use snacks for `:=` command
+                    if vim.fn.has("nvim-0.11") == 1 then
+                        vim._print = function(_, ...)
+                            dd(...)
+                        end
+                    else
+                        vim.print = _G.dd
+                    end
+
+                    -- Create some toggle mappings
+                    Snacks.toggle.option("spell", { name = "Spelling" }):map("<leader>us")
+                    Snacks.toggle.option("wrap", { name = "Wrap" }):map("<leader>uw")
+                    Snacks.toggle.option("relativenumber", { name = "Relative Number" }):map("<leader>uL")
+                    Snacks.toggle.diagnostics():map("<leader>ud")
+                    Snacks.toggle.line_number():map("<leader>ul")
+                    Snacks.toggle.option("conceallevel",
+                        { off = 0, on = vim.o.conceallevel > 0 and vim.o.conceallevel or 2 }):map("<leader>uc")
+                    Snacks.toggle.treesitter():map("<leader>uT")
+                    Snacks.toggle.option("background", { off = "light", on = "dark", name = "Dark Background" }):map(
+                        "<leader>ub")
+                    Snacks.toggle.inlay_hints():map("<leader>uh")
+                    Snacks.toggle.indent():map("<leader>ug")
+                    Snacks.toggle.dim():map("<leader>uD")
+                end,
+            })
+        end,
     }
 }

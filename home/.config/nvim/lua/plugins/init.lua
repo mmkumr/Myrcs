@@ -24,18 +24,18 @@ return {
     --         require('leap').add_default_mappings()
     --     end,
     -- },
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require 'nvim-tree'.setup {
-                diagnostics = {
-                    enable = true,
-                },
-            }
-            vim.cmd "map N :NvimTreeToggle<CR>"
-        end,
-    },
+    -- {
+    --     "nvim-tree/nvim-tree.lua",
+    --     dependencies = { "nvim-tree/nvim-web-devicons" },
+    --     config = function()
+    --         require 'nvim-tree'.setup {
+    --             diagnostics = {
+    --                 enable = true,
+    --             },
+    --         }
+    --         vim.cmd "map N :NvimTreeToggle<CR>"
+    --     end,
+    -- },
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
@@ -50,14 +50,21 @@ return {
         end,
     },
     {
-        "Exafunction/codeium.nvim",
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
         event = "InsertEnter",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "hrsh7th/nvim-cmp",
-        },
         config = function()
-            require("codeium").setup({})
+            require("copilot").setup({
+                suggestion = { enabled = false },
+                panel = { enabled = false },
+            })
+        end,
+    },
+
+    {
+        "zbirenbaum/copilot-cmp",
+        config = function()
+            require("copilot_cmp").setup()
         end
     },
     {
@@ -91,12 +98,5 @@ return {
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
     },
-    {
-        "anurag3301/nvim-platformio.lua",
-        dependencies = {
-            { "akinsho/nvim-toggleterm.lua" },
-            { "nvim-telescope/telescope.nvim" },
-            { "nvim-lua/plenary.nvim" },
-        },
-    },
+
 }
