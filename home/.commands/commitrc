@@ -1,11 +1,16 @@
 #!/usr/bin/zsh
-#Changing to configs git dir.
-cd ~/Myrcs
-git status | grep "nothing to commit"
-if [ $? -gt 0 ] # checking grep's exit status(previous command)
-then
-    sleep 2
+
+cd ~/Myrcs || exit 1
+
+# Get a short, machine-readable summary of what changed
+changes=$(git status --porcelain)
+
+if [ -n "$changes" ]; then
+    # Parse file names out into a clean single line string
+    changed_files=$(git status --porcelain | awk '{print $2}' | tr '\n' ',' | sed 's/,$//')
+    
     git add .
-    git commit -m "Auto commit"
+    git commit -m "Auto-update: $changed_files"
     git push
 fi
+
