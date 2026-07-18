@@ -18,3 +18,6 @@ vim.cmd("syntax enable") -- Turn on syntax highlighting
 vim.cmd("set backspace=indent,eol,start")
 vim.cmd("filetype plugin indent on")
 vim.opt.termguicolors = true
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99 -- Keeps files expanded when you first open them

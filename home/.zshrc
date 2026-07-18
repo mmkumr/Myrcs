@@ -143,3 +143,5 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 alias tmux='tmux -u'
 export ANTHROPIC_API_KEY="sk-ant-api03-..."
+export OLLAMA_NUM_PARALLEL=1
+export OLLAMA_NUM_THREAD=8

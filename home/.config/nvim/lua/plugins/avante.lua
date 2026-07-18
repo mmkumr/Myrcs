@@ -3,21 +3,26 @@ return {
         "yetone/avante.nvim",
         event = "VeryLazy",
         build = "make",
-
         opts = {
-            provider = "claude",
 
-            providers = {
-                claude = {
-                    model = "claude-sonnet-4",
-                    -- If using Anthropic API:
-                    api_key_name = "ANTHROPIC_API_KEY",
+            provider = "ollama",
 
-                    -- If using Claude Max/Pro OAuth instead of an API key:
-                    -- auth_type = "max",
+            vendors = {
+
+                ollama = {
+
+                    endpoint = "http://127.0.0.1:11434",
+
+                    model = "qwen3:14b",
+
+                    timeout = 30000,
+
                 },
+
             },
+
         },
+
 
         dependencies = {
             "nvim-lua/plenary.nvim",

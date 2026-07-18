@@ -21,4 +21,3 @@ vim.cmd "nnoremap <S-tab> :BufferLineCyclePrev<CR>"
 vim.cmd "map <esc> :noh<cr>"
 vim.cmd "map T :terminal<CR>"
 vim.cmd "nnoremap L :Lazy<CR>"
-vim.keymap.set("n", "<leader>gs", ":Telescope live_grep<CR>")
